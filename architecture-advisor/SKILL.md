@@ -6,7 +6,7 @@ model: inherit
 
 # Architecture Advisor
 
-Systematic project architecture analysis across JavaScript, React, Node.js, PHP, Swift, SwiftUI, and Go codebases. Scans project structure, detects the technology stack, applies language-specific analysis rules, and produces a structured report with rated strengths and issues.
+Systematic project architecture analysis across JavaScript, React, Vue/Nuxt, Node.js, PHP, Swift, SwiftUI, Go, and Kotlin codebases. Scans project structure, detects the technology stack, applies language-specific analysis rules, and produces a structured report with rated strengths and issues.
 
 **This skill produces analysis and recommendations only. It does NOT write implementation code.**
 
@@ -19,6 +19,7 @@ Language-specific analysis personas. Always load the persona that matches the de
 | **arch-php-pro** | PHP, Laravel, Symfony, WordPress | `composer.json`, `artisan`, `wp-config.php` |
 | **arch-javascript-pro** | Browser JS, Vanilla, build-tool frontends | `package.json` without framework markers, `webpack.config`, `vite.config` |
 | **arch-react-pro** | React, Next.js, Remix, Vite+React | `react` in `package.json` dependencies |
+| **arch-vue-pro** | Vue 3, Vue 2, Nuxt, Pinia, Vite+Vue | `vue` in `package.json` dependencies, `nuxt.config.ts`, `.vue` files |
 | **arch-node-pro** | Node.js backends, Express, Fastify, NestJS | `package.json` with server framework, no `react`/`vue` in deps |
 | **arch-swift-pro** | Swift, UIKit, mixed UIKit+SwiftUI, iOS/macOS | `Package.swift`, `.xcodeproj`, `.xcworkspace`, `UIViewController` subclasses dominant |
 | **arch-swiftui-pro** | SwiftUI-first, Swift 5.9+, SwiftData, iOS 16+ | `*App.swift` with `@main`, `struct * : View` dominant, `@Observable`, `NavigationStack` |
@@ -78,6 +79,7 @@ Language-specific analysis personas. Always load the persona that matches the de
 | 8 | SwiftUI Architecture | HIGH | Stack detected as SwiftUI-first (Swift 5.9+, iOS 16+) | [`references/swiftui-architecture-guide.md`](references/swiftui-architecture-guide.md) | `swiftui-` | 3 |
 | 9 | Go Architecture | HIGH | Stack detected as Go/Golang | [`references/golang-architecture-guide.md`](references/golang-architecture-guide.md) | `golang-` | 3 |
 | 10 | Kotlin Architecture | HIGH | Stack detected as Kotlin/Android/KMP/Backend | [`references/kotlin-architecture-guide.md`](references/kotlin-architecture-guide.md) | `kotlin-` | 3 |
+| 11 | Vue Architecture | HIGH | Stack detected as Vue 3 / Vue 2 / Nuxt | [`references/vue-architecture-guide.md`](references/vue-architecture-guide.md) | `vue-` | 4 |
 
 ## Rule Index
 
@@ -108,6 +110,9 @@ Language-specific analysis personas. Always load the persona that matches the de
 ### Kotlin Analysis (`kotlin-`)
 `kotlin-project-structure` · `kotlin-coroutine-patterns` · `kotlin-framework-patterns`
 
+### Vue Analysis (`vue-`)
+`vue-project-structure` · `vue-component-design` · `vue-state-management` · `vue-data-flow`
+
 ## Validation Checklist
 
 - [ ] Project scan completed (config files + directory tree read)
@@ -134,3 +139,8 @@ Language-specific analysis personas. Always load the persona that matches the de
 - [Kotlin Multiplatform Documentation](https://kotlinlang.org/docs/multiplatform.html)
 - [Android Developers Architecture Guide](https://developer.android.com/topic/architecture)
 - [Kotlin Coroutines Guide](https://kotlinlang.org/docs/coroutines-overview.html)
+- [Vue 3 — Scaling Up](https://vuejs.org/guide/scaling-up/sfc.html)
+- [Vue Style Guide](https://vuejs.org/style-guide/)
+- [Pinia — State Management](https://pinia.vuejs.org/core-concepts/)
+- [Vue Router 4](https://router.vuejs.org/)
+- [Nuxt Directory Structure](https://nuxt.com/docs/guide/directory-structure/app)

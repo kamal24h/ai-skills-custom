@@ -52,6 +52,18 @@ Applying React architectural rules to a Node.js backend, or Laravel rules to a W
 
 {
   "dependencies": {
+    "vue": "^3.5.13",               // → Vue 3 present
+    "pinia": "^3.0.0",              // → Pinia state layer
+    "nuxt": "^3.15.0"               // → Nuxt (SSR) → load arch-vue-pro
+  }
+}
+// → Stack: Vue 3.5 / Nuxt 3 / Pinia → load arch-vue-pro
+// No nuxt key + @vitejs/plugin-vue → Vue 3 SPA, still arch-vue-pro
+// "vue": "^2.7.x" or "@vue/composition-api" → Vue 2 legacy, arch-vue-pro
+//   (report migration debt explicitly — Vue 2 is end-of-life)
+
+{
+  "dependencies": {
     "express": "^4.18.0"            // → No UI framework → Node.js backend
   }
 }
@@ -84,6 +96,9 @@ Applying React architectural rules to a Node.js backend, or Laravel rules to a W
 | `composer.json` (no framework key) | Plain PHP | `arch-php-pro` |
 | `package.json` with `react` + `next` | Next.js | `arch-react-pro` |
 | `package.json` with `react` (no next/remix) | React SPA | `arch-react-pro` |
+| `package.json` with `vue` + `nuxt`, or `nuxt.config.ts` | Nuxt (SSR/SSG) | `arch-vue-pro` |
+| `package.json` with `vue@^3` (no nuxt) | Vue 3 SPA | `arch-vue-pro` |
+| `package.json` with `vue@^2` or `@vue/composition-api` | Vue 2 (legacy) | `arch-vue-pro` |
 | `package.json` with `express`/`fastify`/`@nestjs/core` | Node.js backend | `arch-node-pro` |
 | `package.json` — bundler only, no UI framework | Vanilla JS | `arch-javascript-pro` |
 | `Package.swift` or `.xcodeproj` | Swift/iOS | `arch-swift-pro` |
@@ -109,3 +124,18 @@ In this case:
 2. Run separate analysis for each sub-project
 3. Use `arch-php-pro` for backend, `arch-react-pro` for frontend
 4. Add a "Cross-Stack Integration" section to the report
+
+### Full-Stack Frameworks Are a Single Stack
+
+A Nuxt project ships both a client app and server routes (`server/api/`) from one `package.json`. Do **not** split it into two personas — `arch-vue-pro` covers the server layer as part of SSR and API-boundary analysis. The same applies to Next.js under `arch-react-pro`.
+
+```
+my-nuxt-app/
+├── nuxt.config.ts
+├── pages/          → client routes
+├── composables/
+└── server/api/     → server routes, secrets, DB access
+// → Single stack: Nuxt → arch-vue-pro (not arch-vue-pro + arch-node-pro)
+```
+
+Only route to a second persona when a genuinely separate service exists with its own dependency file (e.g. a sibling `api/` folder with its own `package.json` and Express, or a `backend/` folder with `composer.json`).

@@ -2,7 +2,7 @@
 
 A collection of specialized expert skills designed for AI coding agents. Includes structured rules, hook references, and best practices across multiple domains.
 
-**Contents:** 20 expert skills · 38 specialized agent personas.
+**Contents:** 20 expert skills · 39 specialized agent personas.
 
 ## Expert Skills
 
@@ -10,7 +10,7 @@ A collection of specialized expert skills designed for AI coding agents. Include
 
 | Skill | Description | Personas |
 | :--- | :--- | :--- |
-| **Architecture Advisor** | Analyzes project architecture, detects tech stack, reports strengths and gaps. | `arch-php-pro`, `arch-node-pro`, `arch-react-pro`, `arch-javascript-pro`, `arch-golang-pro`, `arch-kotlin-pro`, `arch-swift-pro`, `arch-swiftui-pro` |
+| **Architecture Advisor** | Analyzes project architecture, detects tech stack, reports strengths and gaps. | `arch-php-pro`, `arch-node-pro`, `arch-react-pro`, `arch-vue-pro`, `arch-javascript-pro`, `arch-golang-pro`, `arch-kotlin-pro`, `arch-swift-pro`, `arch-swiftui-pro` |
 | **Code Standards** | Universal code design and clean code principles. | SOLID, KISS, YAGNI, DRY, TDA, Testability, Complexity, Naming conventions. |
 
 ### Language & Framework Skills
@@ -62,6 +62,7 @@ All agents defined in this repository:
 | `arch-php-pro` | Architecture Advisor | PHP/Laravel/Symfony/WordPress architecture analysis |
 | `arch-node-pro` | Architecture Advisor | Node.js backend architecture analysis |
 | `arch-react-pro` | Architecture Advisor | React/Next.js/Remix architecture analysis |
+| `arch-vue-pro` | Architecture Advisor | Vue 3 / Vue 2 / Nuxt architecture analysis |
 | `arch-javascript-pro` | Architecture Advisor | Vanilla JS / browser JS architecture analysis |
 | `arch-golang-pro` | Architecture Advisor | Go service and package architecture analysis |
 | `arch-kotlin-pro` | Architecture Advisor | Kotlin/Android/KMP architecture analysis |
@@ -117,7 +118,7 @@ Rule ids are stable identifiers — cite them in reviews (`rx-computed-pure`, `c
 | Skill | Agents | Rules | References |
 | :--- | ---: | ---: | ---: |
 | `api-design-patterns` | 1 | 40 | 7 |
-| `architecture-advisor` | 8 | 27 | 10 |
+| `architecture-advisor` | 9 | 31 | 11 |
 | `code-standards` | 1 | — | 5 |
 | `docker` | 1 | 15 | 86 |
 | `golang` | 1 | 33 | 20 |
