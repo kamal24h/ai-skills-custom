@@ -1,26 +1,8 @@
 # AI Skills & Agents
 
-A collection of specialized expert skills and CLI wrapper agents designed for AI coding agents. Includes structured rules, hook references, best practices, and CLI wrappers across multiple domains.
+A collection of specialized expert skills designed for AI coding agents. Includes structured rules, hook references, and best practices across multiple domains.
 
-**Contents:** 20 expert skills · 4 CLI wrapper agents · 38 specialized agent personas.
-
-## Agent Definitions
-
-### CLI Wrapper Agents
-
-Non-interactive CLI wrappers that format commands, execute via CLI, and return raw output. They never interpret or synthesize results.
-
-| Agent | CLI Tool | Key Flags |
-| :--- | :--- | :--- |
-| **Gemini** | `gemini` | `--all-files`, `--yolo`, Here-Doc pipe |
-| **Claude** | `claude` | `-p` (print mode), `--allowedTools`, `--output-format` |
-| **Codex** | `codex` | `exec`, `-s read-only`, `-a never`, `-o` |
-| **OpenCode** | `opencode` | `run`, `-f` (file attach), `--format json`, `--attach` |
-
-Each CLI wrapper includes:
-- Flag reference and command patterns
-- Prompt formulation examples (`references/prompt-examples.md`)
-- Dual-memory architecture for CLI behavior persistence
+**Contents:** 20 expert skills · 38 specialized agent personas.
 
 ## Expert Skills
 
@@ -155,12 +137,6 @@ Rule ids are stable identifiers — cite them in reviews (`rx-computed-pure`, `c
 | `wordpress` | 1 | 28 | 24 |
 | `woocommerce` | 1 | 14 | 23 |
 
-### CLI Wrapper Structure
-
-Each CLI wrapper directory contains:
-- **`<name>.md`**: Agent definition with flag reference, command patterns, restrictions, and dual-memory system.
-- **`references/prompt-examples.md`**: Proven prompt templates for common analysis tasks.
-
 ### Hook References (WordPress & WooCommerce)
 
 Hook references are organized by domain in `references/hooks/`:
@@ -175,7 +151,6 @@ Hook references are organized by domain in `references/hooks/`:
 - Ask for a **code review** based on a specific skill (e.g., "Review this PHP code using the PHP skill").
 - Request a **new feature** following specific standards (e.g., "Design a REST API endpoint following the API Design Patterns skill").
 - Use for **debugging** (e.g., "Explain why this SQL query is slow using the SQL Expert skill").
-- Delegate to a **CLI wrapper** for multi-agent analysis (e.g., "Use the OpenCode wrapper to analyze this codebase").
 
 ### For AI Agents
 - Proactively load the relevant `SKILL.md` when a task matches its description.
@@ -183,7 +158,6 @@ Hook references are organized by domain in `references/hooks/`:
 - **Separation of Concerns (Mandatory):** Implementation agents (e.g., `golang-pro`, `typescript-pro`, `laravel-pro`, `kotlin-pro`, `swiftui-pro`, `vue-pro`) MUST NOT write tests. Delegate to the matching tester agent.
 - Reference specific rules in `rules/*.md` for concrete, example-backed feedback.
 - Use `references/*.md` for deeper understanding of patterns or hook lookups.
-- Invoke CLI wrapper agents for cross-model code analysis without interpreting results.
 
 ## Agent Delegation Flow
 
