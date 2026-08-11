@@ -16,6 +16,9 @@ Specialized personas for different JS/TS roles. Load these from `agents/` to pro
 |-------|------|-------|
 | **javascript-pro** | JS Expert | Node.js, async patterns, ES6+, performance. |
 | **typescript-pro** | TS Master | Advanced types, generics, strict safety, enterprise patterns. |
+| **js-test-pro** | Testing Expert | Vitest/Jest suites, mocking strategy, integration and component tests. |
+
+**Separation of concerns:** `javascript-pro` and `typescript-pro` do not write tests — delegate to `js-test-pro`.
 
 ## When to Use
 
@@ -72,13 +75,13 @@ const UserSchema = z.object({ id: z.string().uuid(), email: z.string().email() }
 
 | # | Category | Impact | Load when… | Reference | Prefix | Rules |
 |--:|----------|:------:|------------|-----------|--------|:-----:|
-| 1 | TypeScript Types | CRITICAL | Designing complex types, generics, or type-safe APIs | (Implicit) | `ts-` | 10 |
-| 2 | Async Patterns | CRITICAL | Managing concurrent tasks, timeouts, or retries | (Implicit) | `async-` | 2 |
-| 3 | Backend Architecture | HIGH | Structuring Node.js apps, DI, middleware, or DB transactions | (Implicit) | `backend-` | 13 |
-| 4 | Testing | HIGH | Writing unit/integration tests, mocking, or fixtures | (Implicit) | `test-` | 10 |
-| 5 | Functional Programming | HIGH | Chaining array methods, composition, or immutability | (Implicit) | `func-` | 3 |
-| 6 | ES6+ Features | MEDIUM | Using destructuring, spread, or modules | (Implicit) | `es-` | 4 |
-| 7 | Performance | MEDIUM | Implementing debouncing, throttling, or lazy loading | (Implicit) | `perf-` | 1 |
+| 1 | TypeScript Types | CRITICAL | Designing complex types, generics, or type-safe APIs | [`references/typescript-types.md`](references/typescript-types.md) | `ts-` | 10 |
+| 2 | Async Patterns | CRITICAL | Managing concurrent tasks, timeouts, or retries | [`references/async-patterns.md`](references/async-patterns.md) | `async-` | 2 |
+| 3 | Backend Architecture | HIGH | Structuring Node.js apps, DI, middleware, or DB transactions | [`references/backend-architecture.md`](references/backend-architecture.md) | `backend-` | 13 |
+| 4 | Testing | HIGH | Writing unit/integration tests, mocking, or fixtures | [`references/testing.md`](references/testing.md) | `test-` | 10 |
+| 5 | Functional Programming | HIGH | Chaining array methods, composition, or immutability | [`references/functional-programming.md`](references/functional-programming.md) | `func-` | 3 |
+| 6 | ES6+ Features | MEDIUM | Using destructuring, spread, or modules | [`references/es-features.md`](references/es-features.md) | `es-` | 4 |
+| 7 | Performance | MEDIUM | Implementing debouncing, throttling, or lazy loading | [`references/performance.md`](references/performance.md) | `perf-` | 1 |
 
 ## Rule Index
 
@@ -93,6 +96,15 @@ const UserSchema = z.object({ id: z.string().uuid(), email: z.string().email() }
 
 ### 4. Testing (`test-`) — HIGH
 `test-unit-pure` · `test-async-functions` · `test-mocking-modules` · `test-di-mocking` · `test-spying-fakes` · `test-integration-api` · `test-integration-database` · `test-react-components` · `test-react-hooks` · `test-fixtures-factories`
+
+### 5. Functional Programming (`func-`) — HIGH
+`func-array-methods` · `func-composition` · `func-pure-immutability`
+
+### 6. ES6+ Features (`es-`) — MEDIUM
+`es-modern-syntax` · `es-modules` · `es-optional-chaining` · `es-generators`
+
+### 7. Performance (`perf-`) — MEDIUM
+`perf-debounce-throttle`
 
 ## Validation Checklist
 

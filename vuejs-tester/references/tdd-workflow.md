@@ -227,3 +227,8 @@ pnpm vitest CartSummary      # narrow to the file you are working on
 | Bug fixed without a test | No regression guard | Reproduce, then fix |
 | Huge cycles | Hard to locate failures | One behavior at a time |
 | Only happy paths | Errors and edges ship broken | Order in §4 |
+
+## Sources
+
+- [Vue — Testing](https://vuejs.org/guide/scaling-up/testing.html)
+- [Martin Fowler — Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)

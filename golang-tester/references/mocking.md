@@ -324,3 +324,8 @@ type UserService struct {
     store UserStore // interface — can be any implementation
 }
 ```
+
+## Sources
+
+- [Go — Interfaces](https://go.dev/doc/effective_go#interfaces)
+- [go.uber.org/mock](https://pkg.go.dev/go.uber.org/mock/gomock)

@@ -246,3 +246,8 @@ Debounce user input; throttle scroll/resize/pointermove. Pair with an `AbortCont
 | `v-memo` with wrong deps | Stale UI | Measure, list every dep, verify |
 | Work in `onUpdated` | Runs constantly, can loop | `watch` + `flush: 'post'` / observers |
 | Static imports of every view | Huge initial bundle | `() => import()` |
+
+## Sources
+
+- [Vue — Performance](https://vuejs.org/guide/best-practices/performance.html)
+- [Vue — Rendering mechanism](https://vuejs.org/guide/extras/rendering-mechanism.html)

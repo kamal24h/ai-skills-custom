@@ -116,3 +116,9 @@ Phase 4: Remove "allowJs" once all files are .ts
 | **No Source Maps** | Build config missing `sourcemap: true` | Production errors undebuggable |
 | **Development Build in Prod** | `mode: 'development'` in webpack prod config | 3-5x larger bundle size |
 | **Circular Imports** | A imports B, B imports A | Runtime `undefined` export bugs |
+
+## Sources
+
+- [MDN — JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [Vite — Documentation](https://vite.dev/guide/)
+- [web.dev — Core Web Vitals](https://web.dev/articles/vitals)

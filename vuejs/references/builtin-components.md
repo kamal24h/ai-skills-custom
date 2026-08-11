@@ -234,3 +234,8 @@ Hooks: `created`, `beforeMount`, `mounted`, `beforeUpdate`, `updated`, `beforeUn
 | Async route component double-wrapped | Redundant indirection | `() => import()` in the route |
 | `v-memo` added preemptively | Stale UI | Measure first |
 | Directive without `unmounted` cleanup | Listener leak | Remove in `unmounted` |
+
+## Sources
+
+- [Vue — Built-in components API](https://vuejs.org/api/built-in-components.html)
+- [Vue — Transition](https://vuejs.org/guide/built-ins/transition.html)

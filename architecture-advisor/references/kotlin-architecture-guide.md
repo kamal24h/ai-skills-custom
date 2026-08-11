@@ -188,3 +188,8 @@ When analyzing or refactoring codebases, map architectural issues back to these 
 - **ViewModel Decoupling**: Composable UI components must not instantiate or directly hold view models. Violation flags `compose-no-vm-in-composable`.
 - **State Hoisting**: Keep Compose UI components stateless and testable. Violation flags `compose-no-side-effects`.
 
+## Sources
+
+- [Android — Guide to app architecture](https://developer.android.com/topic/architecture)
+- [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html)
+- [Kotlin — Coroutines guide](https://kotlinlang.org/docs/coroutines-overview.html)

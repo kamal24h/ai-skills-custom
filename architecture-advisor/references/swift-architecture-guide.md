@@ -195,3 +195,9 @@ deinit {
 | **Hardcoded secrets** | `let apiKey = "sk-..."` | Credential exposure in source |
 | **No SPM for large codebase** | >15k LOC in single target | Slow builds, tight coupling |
 | **Mixing GCD + async/await** | Both patterns without clear boundary | Race conditions, hard to reason about |
+
+## Sources
+
+- [Swift Package Manager](https://www.swift.org/documentation/package-manager/)
+- [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)
+- [Apple — UIKit](https://developer.apple.com/documentation/uikit)

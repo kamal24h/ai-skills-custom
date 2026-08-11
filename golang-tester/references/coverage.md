@@ -235,3 +235,8 @@ Lines shown in browser:
 - **Red** — not covered by any test
 - **Green** — covered by at least one test
 - **Gray** — not statements (declarations, blank lines)
+
+## Sources
+
+- [Go — Coverage profiling](https://go.dev/doc/build-cover)
+- [Go — The cover story](https://go.dev/blog/cover)

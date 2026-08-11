@@ -87,3 +87,9 @@ Costs: sidecar memory / CPU, control-plane ops burden, debugging hidden by the p
 | Per tenant | Service / DB | Multi-tenant isolation |
 
 Always return `429` with `Retry-After`, `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`.
+
+## Sources
+
+- [Microservices.io — API Gateway](https://microservices.io/patterns/apigateway.html)
+- [Istio — Documentation](https://istio.io/latest/docs/)
+- [Envoy Proxy](https://www.envoyproxy.io/docs)

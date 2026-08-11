@@ -320,3 +320,10 @@ CREATE INDEX idx_users_deleted_at ON users(deleted_at);
 - Regulatory compliance requirements
 - Audit trail needed
 - Accidental deletes are common
+
+## Sources
+
+- [PostgreSQL 17 — Data types](https://www.postgresql.org/docs/17/datatype.html)
+- [PostgreSQL 17 — Constraints](https://www.postgresql.org/docs/17/ddl-constraints.html)
+- [MySQL 8.4 — Data types](https://dev.mysql.com/doc/refman/8.4/en/data-types.html)
+- [SQL Server — Data types](https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql)

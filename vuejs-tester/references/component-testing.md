@@ -348,3 +348,9 @@ describe('LoginForm', () => {
 | Focus assertions without `attachTo` | Silently never matches | `attachTo: document.body` |
 | `wrapper.find` for teleported content | "Not found" false negative | Query `document.body` or stub teleport |
 | Asserting a prop equals what you passed | Tests Vue, not your code | Assert the rendered effect |
+
+## Sources
+
+- [Vue Test Utils](https://test-utils.vuejs.org/guide/)
+- [Testing Library — Vue](https://testing-library.com/docs/vue-testing-library/intro)
+- [Vue — Testing](https://vuejs.org/guide/scaling-up/testing.html)

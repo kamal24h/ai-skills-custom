@@ -163,3 +163,8 @@ Task.detached(priority: .utility) {
 - **Complex predicates:** Keep them simple; unsupported operations crash at runtime.
 - **Core Data mixing:** Do not mix SwiftData and Core Data for the same persistent store.
 - **Subclassing before iOS 26:** Use composition instead of inheritance on earlier targets.
+
+## Sources
+
+- [SwiftData](https://developer.apple.com/documentation/swiftdata)
+- [SwiftData — Model macro](https://developer.apple.com/documentation/swiftdata/model())

@@ -172,3 +172,7 @@ Do not report unit and E2E coverage separately and average them — the numbers 
 | Broad `v8 ignore` blocks | Real gaps hidden | Narrow, justified ignores |
 | Threshold set far below reality | Ratchet never engages | Set at current level + `autoUpdate` |
 | Comparing unit and E2E coverage | Incomparable numbers | Merge or report separately with context |
+
+## Sources
+
+- [Vitest — Coverage](https://vitest.dev/guide/coverage.html)

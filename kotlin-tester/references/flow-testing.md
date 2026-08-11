@@ -391,3 +391,9 @@ val rule = MainDispatcherRule(StandardTestDispatcher())
 
 - Related rules: `ctest-runtest-for-suspend`, `ctest-advance-until-idle`, `ctest-turbine-for-flow`, `ctest-fake-over-mock-flow`, `ctest-test-dispatcher`
 - Related references: [`unit-testing.md`](unit-testing.md), [`mocking.md`](mocking.md)
+
+## Sources
+
+- [Kotlin — Testing coroutines](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-test/)
+- [Turbine](https://github.com/cashapp/turbine)
+- [Android — Testing Kotlin flows](https://developer.android.com/kotlin/flow/test)

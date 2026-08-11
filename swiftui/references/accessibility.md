@@ -122,3 +122,8 @@ VStack {
 - **Missing labels on interactive elements:** Every `Button`, `Toggle`, `TextField` needs a clear label.
 - **Intense animations without Reduce Motion check:** Check `accessibilityReduceMotion` before animating.
 - **`onTapGesture` for primary actions:** Use `Button` — it provides correct traits and keyboard/switch access.
+
+## Sources
+
+- [Accessibility fundamentals](https://developer.apple.com/documentation/swiftui/accessibility-fundamentals)
+- [HIG — Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility)

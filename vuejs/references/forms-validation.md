@@ -277,3 +277,8 @@ Always render a form-level error for non-field failures — a silently failing s
 | Errors shown while typing | Hostile UX | Show on blur / after submit |
 | `@click` on the submit button | Enter key does not submit | `@submit.prevent` on the form |
 | No form-level error state | Silent failures | Render a non-field error |
+
+## Sources
+
+- [Vue — Form input bindings](https://vuejs.org/guide/essentials/forms.html)
+- [VeeValidate](https://vee-validate.logaretm.com/v4/)

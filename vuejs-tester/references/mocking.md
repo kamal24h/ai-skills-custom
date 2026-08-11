@@ -266,3 +266,8 @@ This is a strong argument for injecting services rather than importing singleton
 | Stubbing every child | Integration untested | Stub deliberately, explain why |
 | Mocking `Date` globally in `setup.ts` | Surprising failures everywhere | Per-test `setSystemTime` |
 | Real network in a component test | CI flake, slow suite | MSW |
+
+## Sources
+
+- [Vitest — Mocking](https://vitest.dev/guide/mocking.html)
+- [MSW — Mock Service Worker](https://mswjs.io/docs/)

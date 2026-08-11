@@ -63,20 +63,29 @@ sqlite3 --version
 
 ## Category Index — When to Load Which Reference
 
-| # | Category | Impact | Load when… | Reference |
-|--:|----------|:------:|------------|-----------|
-| 1 | Optimization | CRITICAL | Fixing slow queries, analyzing EXPLAIN plans | [`references/query-optimization.md`](references/query-optimization.md) |
-| 2 | Best Practices | CRITICAL | Designing schemas, naming conventions, security | [`references/best-practices.md`](references/best-practices.md) |
-| 3 | Indexing Strategy | CRITICAL | Creating indexes, composite index design, JSON column indexing | [`references/indexes-performance.md`](references/indexes-performance.md) |
-| 4 | Advanced Patterns | HIGH | Using CTEs, Window Functions, JSON operations | [`references/advanced-patterns.md`](references/advanced-patterns.md) |
-| 5 | Common Pitfalls | MEDIUM | Debugging common SQL errors or anti-patterns | [`references/common-pitfalls.md`](references/common-pitfalls.md) |
+| # | Category | Impact | Load when… | Reference | Prefix |
+|--:|----------|:------:|------------|-----------|--------|
+| 1 | Optimization | CRITICAL | Fixing slow queries, analyzing EXPLAIN plans | [`references/query-optimization.md`](references/query-optimization.md) | `qry-` |
+| 2 | Best Practices | CRITICAL | Designing schemas, naming conventions, security | [`references/best-practices.md`](references/best-practices.md) | `schema-` |
+| 3 | Indexing Strategy | CRITICAL | Creating indexes, composite index design, JSON column indexing | [`references/indexes-performance.md`](references/indexes-performance.md) | `idx-` |
+| 4 | Advanced Patterns | HIGH | Using CTEs, Window Functions, JSON operations | [`references/advanced-patterns.md`](references/advanced-patterns.md) | `qry-` |
+| 5 | Common Pitfalls | MEDIUM | Debugging common SQL errors or anti-patterns | [`references/common-pitfalls.md`](references/common-pitfalls.md) | `txn-` |
 
 ## Rule Index
 
-- **[R1] Query Optimization**: EXPLAIN, Indexed columns, SELECT *, EXISTS vs COUNT
-- **[R2] Schema Design**: Normalization, Data types, Timestamps, Constraints
-- **[R3] Indexing Strategy**: FK indexing, Composite indexes, Leftmost prefix, JSON column indexing
-- **[R4] Security & Transactions**: Prepared statements, Atomic modifications, Zero-downtime migrations
+All rules live in [`rules/core-directives.md`](rules/core-directives.md) in `Context` / `Rule` / `Avoid` form. Cite the ids in reviews.
+
+### 1. Query Optimization (`qry-`) — CRITICAL
+`qry-explain-before-tuning` · `qry-sargable-predicates` · `qry-no-select-star` · `qry-exists-over-count` · `qry-set-based-not-row-by-row` · `qry-join-over-correlated-subquery`
+
+### 2. Schema Design (`schema-`) — CRITICAL
+`schema-normalize-then-denormalize` · `schema-narrowest-correct-type` · `schema-timestamps-utc` · `schema-constraints-in-the-database`
+
+### 3. Indexing Strategy (`idx-`) — CRITICAL
+`idx-foreign-keys` · `idx-composite-column-order` · `idx-leftmost-prefix` · `idx-cover-the-hot-query` · `idx-json-and-fulltext`
+
+### 4. Transactions & Safe Change (`txn-`) — CRITICAL
+`txn-parameterized-statements` · `txn-short-transactions` · `txn-atomic-modifications` · `txn-zero-downtime-migrations`
 
 ## Validation Checklist
 

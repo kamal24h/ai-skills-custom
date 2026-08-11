@@ -147,3 +147,9 @@ export async function getStaticProps() {
 | **No Error Boundary** | Async errors crash entire app | White screen in production |
 | **No Code Splitting** | All routes in one bundle | Large initial load time |
 | **useEffect for server data** | `useEffect(() => fetch('/api/...'))` | Race conditions, no cache, no retry |
+
+## Sources
+
+- [React — Documentation](https://react.dev/learn)
+- [Next.js — Documentation](https://nextjs.org/docs)
+- [TanStack Query](https://tanstack.com/query/latest/docs/framework/react/overview)

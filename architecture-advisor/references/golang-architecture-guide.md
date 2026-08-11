@@ -185,3 +185,9 @@ func TestGetUser/valid_id, missing_id  (table-driven sub-tests)
 | **panic for errors** | `panic("user not found")` | Crashes server; use error return |
 | **Unused dependencies** | `go.mod` with packages not imported | Bloats binary, security surface |
 | **`replace` in production** | `replace` directives in committed go.mod | Breaks reproducible builds in CI |
+
+## Sources
+
+- [Effective Go](https://go.dev/doc/effective_go)
+- [Go — Organizing a Go module](https://go.dev/doc/modules/layout)
+- [Standard Go Project Layout](https://github.com/golang-standards/project-layout)

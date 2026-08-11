@@ -231,3 +231,9 @@ SwiftData context:             @Environment(\.modelContext) var context
 | **No #Preview** | Views not previewable without full app | Slows development, no canvas |
 | **Hardcoded API keys** | `let key = "sk-..."` | Security vulnerability |
 | **Missing @MainActor** | `@Observable` class with no actor annotation | Data race under Swift 6 strict concurrency |
+
+## Sources
+
+- [SwiftUI — Documentation](https://developer.apple.com/documentation/swiftui)
+- [Observation framework](https://developer.apple.com/documentation/observation)
+- [SwiftData](https://developer.apple.com/documentation/swiftdata)

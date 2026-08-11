@@ -74,6 +74,9 @@ Check `composer.json` for Pest vs PHPUnit and Inertia vs Blade stacks.
 | 4 | Testing | HIGH | Writing Pest/PHPUnit tests, factories, fakes | [`references/testing.md`](references/testing.md) | `http-`, `factory-`, `db-`, `fake-`, `auth-`, `pest-` |
 | 5 | Eloquent | HIGH | Relationships, scopes, casts, query builder | [`references/eloquent.md`](references/eloquent.md) | `eloquent-` |
 | 6 | Queues | HIGH | Jobs, Horizon, retries, batching | [`references/queues.md`](references/queues.md) | `arch-queue-` |
+| 7 | Patterns Deep-Dive | HIGH | Project layout, Controller→Service→Action flow, DTOs, value objects | [`references/patterns.md`](references/patterns.md) | `arch-` |
+| 8 | Routing & Requests | HIGH | Route definitions, API resources, form requests, middleware | [`references/routing.md`](references/routing.md) | `controller-`, `validation-` |
+| 9 | Testing Deep-Dive | HIGH | Feature/unit test structure, Pest syntax, mocking, API testing | [`references/testing-deep.md`](references/testing-deep.md) | `pest-`, `http-`, `factory-` |
 
 ## Rule Index
 

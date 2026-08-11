@@ -248,3 +248,8 @@ describe('useUser', () => {
 | Reading closure state via mocks | Couples to implementation | Assert returned refs |
 | Assertion without `await nextTick()` | Reads pre-update value | `await nextTick()` |
 | `withSetup` ceremony for pure composables | Noise | Call directly |
+
+## Sources
+
+- [Vue — Testing composables](https://vuejs.org/guide/scaling-up/testing.html)
+- [Vue — Composables](https://vuejs.org/guide/reusability/composables.html)

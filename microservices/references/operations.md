@@ -76,3 +76,8 @@ Automate rollback based on SLO burn rate (error rate, latency p99) — not just 
 - [ ] Feature hidden behind a flag if user-facing
 - [ ] Dashboards & alerts exist for the new code paths
 - [ ] `kubectl rollout undo` works (no one-way migrations tied to the deploy)
+
+## Sources
+
+- [The Twelve-Factor App](https://12factor.net/)
+- [Kubernetes — Configure liveness and readiness probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)

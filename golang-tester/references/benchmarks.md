@@ -231,3 +231,9 @@ func BenchmarkSomething(b *testing.B) {
     _ = sink
 }
 ```
+
+## Sources
+
+- [Go — testing package (benchmarks)](https://pkg.go.dev/testing#hdr-Benchmarks)
+- [Go — Profiling Go programs](https://go.dev/blog/pprof)
+- [benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat)

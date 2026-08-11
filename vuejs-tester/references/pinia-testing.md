@@ -247,3 +247,7 @@ it('logs each action', () => {
 | Asserting on `$state` internals a component never shows | Implementation coupling | Assert getters/rendered output |
 | Mocking the API module instead of the network | Real client code untested | MSW |
 | One store instance shared at module scope | Cross-test leakage | Fresh Pinia per test |
+
+## Sources
+
+- [Pinia — Testing stores](https://pinia.vuejs.org/cookbook/testing.html)

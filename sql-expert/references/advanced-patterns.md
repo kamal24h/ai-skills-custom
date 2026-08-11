@@ -361,3 +361,10 @@ FROM
 GROUP BY
     category_id, category_name;
 ```
+
+## Sources
+
+- [PostgreSQL 17 — Window functions](https://www.postgresql.org/docs/17/tutorial-window.html)
+- [PostgreSQL 17 — WITH queries (CTEs)](https://www.postgresql.org/docs/17/queries-with.html)
+- [MySQL 8.4 — Window functions](https://dev.mysql.com/doc/refman/8.4/en/window-functions.html)
+- [PostgreSQL 17 — JSON functions](https://www.postgresql.org/docs/17/functions-json.html)

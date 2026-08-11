@@ -250,3 +250,8 @@ it('resolves the lazily loaded view', async () => {
 | No param-change test | Stale-data bug ships | Assert refetch on `push` to a sibling param |
 | `RouterLink` unresolved warning ignored | Noise hides real warnings | Install router or stub deliberately |
 | Asserting only `push` was called | Passes while the guard cancels | Assert `currentRoute` |
+
+## Sources
+
+- [Vue Test Utils — Testing Vue Router](https://test-utils.vuejs.org/guide/advanced/vue-router.html)
+- [Vue Router](https://router.vuejs.org/)

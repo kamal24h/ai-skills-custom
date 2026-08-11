@@ -146,3 +146,8 @@ if (import.meta.env.DEV) {
 ```
 
 Add `onErrorCaptured` boundaries around async components and third-party widgets so a single failure does not blank the page. Ship sourcemaps to the error reporter (not to the public bundle) so stack traces are readable.
+
+## Sources
+
+- [Vue DevTools](https://devtools.vuejs.org/)
+- [Vue — Tooling](https://vuejs.org/guide/scaling-up/tooling.html)

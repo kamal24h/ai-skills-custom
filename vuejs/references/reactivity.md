@@ -319,3 +319,9 @@ Does it live outside a component?              → effectScope
 | Async watcher without cleanup | Stale response overwrites fresh | `onCleanup` + `AbortController` |
 | `reactive()` on an SDK instance | Broken identity/private fields | `markRaw` / `shallowRef` |
 | DOM read without `nextTick` | Stale or `null` | `await nextTick()` or `flush: 'post'` |
+
+## Sources
+
+- [Vue — Reactivity fundamentals](https://vuejs.org/guide/essentials/reactivity-fundamentals.html)
+- [Vue — Reactivity in depth](https://vuejs.org/guide/extras/reactivity-in-depth.html)
+- [Vue — Reactivity API](https://vuejs.org/api/reactivity-core.html)

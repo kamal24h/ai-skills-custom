@@ -465,3 +465,8 @@ class ScreenshotRule : TestWatcher() {
 
 - Related rules: `ui-test-robot-pattern`, `ui-test-idling-resource`, `ui-test-no-sleep`, `ui-test-orchestrator`, `ui-test-no-live-network`, `ui-test-stable-selectors`, `ui-test-per-test-isolation`
 - Related references: [`compose-testing.md`](compose-testing.md), [`instrumented-testing.md`](instrumented-testing.md), [`coverage.md`](coverage.md)
+
+## Sources
+
+- [Android — Espresso](https://developer.android.com/training/testing/espresso)
+- [Android — UI Automator](https://developer.android.com/training/testing/other-components/ui-automator)

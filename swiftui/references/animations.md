@@ -201,3 +201,8 @@ var body: some View {
 | Missing `ContentTransition` partner | Both insert and remove transitions needed |
 | `.navigationTransition` on wrong view | Apply to destination view, not NavigationLink label |
 | All animation declarations must include value parameters | Never use `.animation()` without `value:` |
+
+## Sources
+
+- [SwiftUI — Animations](https://developer.apple.com/documentation/swiftui/animations)
+- [HIG — Motion](https://developer.apple.com/design/human-interface-guidelines/motion)

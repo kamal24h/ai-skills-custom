@@ -194,3 +194,8 @@ Teleported content is serialized into a separate chunk of the payload and re-att
 | Fetch on server + refetch on mount | Doubled load, flicker | Hydrate the serialized state |
 | Global `data-allow-mismatch` | Real bugs hidden | Narrow, per-element use |
 | Suppressing hydration warnings | Debt accumulates invisibly | Fix determinism |
+
+## Sources
+
+- [Vue — Server-Side Rendering](https://vuejs.org/guide/scaling-up/ssr.html)
+- [Nuxt — Documentation](https://nuxt.com/docs)

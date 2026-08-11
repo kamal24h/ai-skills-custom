@@ -126,3 +126,8 @@ Features/
 - **Coordinators in SwiftUI:** Do NOT use UIKit Coordinator pattern. Use `NavigationStack` with `NavigationPath`.
 - **Logic in Body:** Keep business logic, networking, and direct data manipulation out of the `body` property.
 - **Mixed Patterns:** Do not mix `ObservableObject` and `@Observable` within the same feature module.
+
+## Sources
+
+- [SwiftUI — Model data](https://developer.apple.com/documentation/swiftui/model-data)
+- [Observation framework](https://developer.apple.com/documentation/observation)

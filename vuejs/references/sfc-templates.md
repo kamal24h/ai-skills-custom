@@ -261,3 +261,8 @@ SFCs are not subject to these rules. Prefer SFCs.
 | `v-html` with user content | XSS | Sanitize or don't use it |
 | Element selectors in scoped CSS | Slow selector matching | Class selectors |
 | Single-word component name | HTML collision risk | Multi-word PascalCase |
+
+## Sources
+
+- [Vue — Template syntax](https://vuejs.org/guide/essentials/template-syntax.html)
+- [Vue — SFC syntax specification](https://vuejs.org/api/sfc-spec.html)

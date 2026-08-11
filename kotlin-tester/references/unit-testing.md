@@ -166,3 +166,8 @@ viewModel.uiState.test {
 
 - Related rules: `test-given-when-then`, `test-junit5-android`, `ctest-runtest-for-suspend`, `ctest-turbine-for-flow`, `test-fresh-sut`, `test-no-sleep`
 - Related references: [`kotest.md`](kotest.md), [`mocking.md`](mocking.md), [`flow-testing.md`](flow-testing.md)
+
+## Sources
+
+- [JUnit 5 — User Guide](https://junit.org/junit5/docs/current/user-guide/)
+- [Android — Build local unit tests](https://developer.android.com/training/testing/local-tests)

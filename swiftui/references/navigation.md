@@ -135,3 +135,8 @@ Use `.confirmationDialog` for action sheets with multiple choices.
 - **Redundant Stacks:** Never nest one `NavigationStack` inside another.
 - **View instances in path:** Never store view types in `NavigationPath`.
 - **Router off MainActor:** Router classes must be `@MainActor` in Swift 6.
+
+## Sources
+
+- [SwiftUI — Navigation](https://developer.apple.com/documentation/swiftui/navigation)
+- [HIG — Navigation and search](https://developer.apple.com/design/human-interface-guidelines/navigation-and-search)

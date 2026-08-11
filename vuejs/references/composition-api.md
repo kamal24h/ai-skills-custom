@@ -288,3 +288,8 @@ app.mount('#app')   // mount() returns the root component instance, not the app
 | Runtime + type args to `defineEmits` | Compile error | Pick one |
 | `mixins` for shared logic | Implicit collisions | Composables |
 | `app.config.globalProperties` for services | Untyped, invisible in setup | `provide`/`inject` with `InjectionKey` |
+
+## Sources
+
+- [Vue — script setup](https://vuejs.org/api/sfc-script-setup.html)
+- [Vue — Composition API FAQ](https://vuejs.org/guide/extras/composition-api-faq.html)

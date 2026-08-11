@@ -357,3 +357,9 @@ func TestCLI_CreateUser(t *testing.T) {
     assert.Contains(t, buf.String(), "User created")
 }
 ```
+
+## Sources
+
+- [Go — Build constraints](https://pkg.go.dev/cmd/go#hdr-Build_constraints)
+- [Testcontainers for Go](https://golang.testcontainers.org/)
+- [net/http/httptest](https://pkg.go.dev/net/http/httptest)

@@ -185,3 +185,9 @@ export class ValidationError extends AppError {
 | **No request timeout** | Handlers can run forever | Slow endpoints drain connections |
 | **Long task inline** | >2s operations in request handler | HTTP timeout, no retry on failure |
 | **Missing graceful shutdown** | No SIGTERM handler | In-flight requests dropped on deploy |
+
+## Sources
+
+- [Node.js — Documentation](https://nodejs.org/docs/latest/api/)
+- [The Twelve-Factor App](https://12factor.net/)
+- [Express — Production best practices](https://expressjs.com/en/advanced/best-practice-performance.html)

@@ -181,3 +181,8 @@ Guard against empty queries. Show placeholder when search results are empty.
 - **Array indices as ForEach IDs:** Causes full re-renders and scroll position loss.
 - **Expensive shadows/blurs in lists:** `.shadow()`, `.blur()`, `.mask()` are expensive in scrollable lists.
 - **Heavy UI in body:** Move computation to `.task {}` or model layer.
+
+## Sources
+
+- [SwiftUI — View](https://developer.apple.com/documentation/swiftui/view)
+- [SwiftUI — View layout](https://developer.apple.com/documentation/swiftui/view-layout)

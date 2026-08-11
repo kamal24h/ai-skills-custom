@@ -167,3 +167,9 @@ When a PHP 8.x project doesn't use enums for domain states, or readonly for valu
 | **Static Facade in Domain** | `Mail::`, `Queue::`, `Cache::` in service | Cannot mock, tight framework coupling |
 | **Anemic Domain Model** | Models with only getters/setters, no behavior | Logic scattered across services |
 | **Missing Interface** | Concrete class used across 5+ files | Cannot mock, cannot swap implementation |
+
+## Sources
+
+- [PHP-FIG — PSRs](https://www.php-fig.org/psr/)
+- [Laravel — Documentation](https://laravel.com/docs)
+- [Symfony — Best practices](https://symfony.com/doc/current/best_practices.html)

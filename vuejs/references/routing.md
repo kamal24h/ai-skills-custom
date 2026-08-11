@@ -265,3 +265,8 @@ Default to fetching after navigation with explicit loading/error states — it i
 | Listeners without `onUnmounted` | Leaks across navigations | Pair cleanup / VueUse |
 | Path strings in `push` | Breaks on route refactors | Named routes |
 | Unbounded `<KeepAlive>` | Memory growth | `:include` + `:max` |
+
+## Sources
+
+- [Vue Router](https://router.vuejs.org/)
+- [Vue Router — Navigation guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)

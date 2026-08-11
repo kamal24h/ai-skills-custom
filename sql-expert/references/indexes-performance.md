@@ -178,3 +178,9 @@ ORDER BY
 -- MySQL: Check index cardinality
 SHOW INDEX FROM users;
 ```
+
+## Sources
+
+- [PostgreSQL 17 — Indexes](https://www.postgresql.org/docs/17/indexes.html)
+- [MySQL 8.4 — Optimization and indexes](https://dev.mysql.com/doc/refman/8.4/en/optimization-indexes.html)
+- [SQL Server — Indexes](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/indexes)

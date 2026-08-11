@@ -224,3 +224,9 @@ assert.Empty(t, list)
 assert.True(t, condition, "msg: %v", val)
 assert.Eventually(t, condition, timeout, tick)
 ```
+
+## Sources
+
+- [Go — testing package](https://pkg.go.dev/testing)
+- [testify](https://pkg.go.dev/github.com/stretchr/testify)
+- [go-cmp](https://pkg.go.dev/github.com/google/go-cmp/cmp)

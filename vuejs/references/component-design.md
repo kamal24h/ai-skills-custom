@@ -342,3 +342,9 @@ defineSlots<{
 | Wrapper without `inheritAttrs: false` | Attributes on the wrong element | `inheritAttrs: false` + `v-bind="$attrs"` |
 | Wrapper that drops slots | Lost functionality | Forward `$slots` |
 | 400-line route view | Untestable, unreusable | Split into container + sections + composables |
+
+## Sources
+
+- [Vue — Props](https://vuejs.org/guide/components/props.html)
+- [Vue — Events](https://vuejs.org/guide/components/events.html)
+- [Vue — Provide / Inject](https://vuejs.org/guide/components/provide-inject.html)

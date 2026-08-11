@@ -156,3 +156,8 @@ This prevents `waitForExistence` timeouts caused by animations.
 
 - Related rules: `ui-test-accessibility-identifiers`, `ui-test-page-objects`, `ui-test-no-sleep`, `ui-test-xctest-only`
 - Related references: [`swift-testing.md`](swift-testing.md), [`../../swiftui/references/accessibility.md`](../../swiftui/references/accessibility.md), [`../../swiftui/references/navigation.md`](../../swiftui/references/navigation.md)
+
+## Sources
+
+- [XCTest — User interface tests](https://developer.apple.com/documentation/xctest/user-interface-tests)
+- [XCUIApplication](https://developer.apple.com/documentation/xctest/xcuiapplication)

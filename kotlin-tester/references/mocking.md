@@ -319,3 +319,8 @@ Or use `@BeforeEach` / `@AfterEach` with JUnit 5. For JUnit 4, use `@Before` / `
 
 - Related rules: `test-no-mock-data-classes`, `ctest-fake-over-mock-flow`, `test-given-when-then`, `ctest-turbine-for-flow`
 - Related references: [`unit-testing.md`](unit-testing.md), [`flow-testing.md`](flow-testing.md)
+
+## Sources
+
+- [MockK](https://mockk.io/)
+- [Android — Use test doubles](https://developer.android.com/training/testing/fundamentals/test-doubles)

@@ -377,3 +377,8 @@ Differences from React JSX:
 | Three booleans for async state | Impossible states representable | Discriminated union |
 | Complex imported type in `defineProps` | Opaque compiler error | Flatten to a local interface |
 | `@ts-ignore` on a template error | Hides a real bug | Fix the type or narrow properly |
+
+## Sources
+
+- [Vue — TypeScript with Composition API](https://vuejs.org/guide/typescript/composition-api.html)
+- [Vue — TypeScript overview](https://vuejs.org/guide/typescript/overview.html)

@@ -65,12 +65,14 @@ Determine the project type (Block theme, Classic theme, Plugin, etc.) to apply t
 
 | # | Category | Impact | Load when… | Reference | Prefix | Rules |
 |--:|----------|:------:|------------|-----------|--------|:-----:|
-| 1 | Block Dev | CRITICAL | Building Gutenberg blocks, dynamic rendering | `rules/block-*` | `block-` | 5 |
+| 1 | Block Dev | CRITICAL | Building Gutenberg blocks, dynamic rendering | `rules/block-*` + [`references/block-json-reference.md`](references/block-json-reference.md) | `block-` | 5 |
 | 2 | Plugin Dev | CRITICAL | Structuring plugins, lifecycle, settings | `rules/plugin-*` | `plugin-` | 5 |
 | 3 | REST API | HIGH | Creating custom endpoints, schema, auth | `rules/rest-*` | `rest-` | 4 |
 | 4 | Performance | HIGH | Profiling, caching, DB optimization | `rules/perf-*` | `perf-` | 4 |
 | 5 | WP-CLI | MEDIUM | Automating tasks, multisite management | `rules/wpcli-*` | `wpcli-` | 3 |
-| 6 | Theme Dev | CRITICAL | Block themes, theme.json, template parts | `rules/theme-*` | `theme-` | 4 |
+| 6 | Theme Dev | CRITICAL | Block themes, theme.json, template parts | `rules/theme-*` + [`references/theme-json-reference.md`](references/theme-json-reference.md) | `theme-` | 4 |
+| 7 | Hooks Usage | HIGH | Registering actions/filters, priorities, removal, lifecycle timing | `rules/hooks-usage.md` | `hooks-` | 1 |
+| 8 | Coding Standards | HIGH | Naming, escaping/sanitizing conventions, file and inline docs style | [`references/coding-standards.md`](references/coding-standards.md) | — | — |
 
 ## Hook Discovery Protocol
 

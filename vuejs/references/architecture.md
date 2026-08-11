@@ -258,3 +258,8 @@ When Vue apps share a design system:
 | Singleton service imported directly | Hard to fake in tests | `provide`/`inject` with `InjectionKey` |
 | Tokens in `localStorage` | XSS-exfiltratable | httpOnly cookie or in-memory |
 | Two Vue copies in a monorepo | Broken inject/reactivity | Peer dep + `resolve.dedupe` |
+
+## Sources
+
+- [Vue — Single-File Components](https://vuejs.org/guide/scaling-up/sfc.html)
+- [Vue Style Guide](https://vuejs.org/style-guide/)

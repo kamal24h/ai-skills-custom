@@ -66,20 +66,29 @@ export class Product { /* Only what Product needs */ }
 
 ## Category Index — When to Load Which Reference
 
-| # | Category | Impact | Load when… | Reference | Rules |
-|--:|----------|:------:|------------|-----------|:-----:|
-| 1 | SOLID Principles | CRITICAL | Designing OOP systems, ensuring extensibility and maintainability | [`references/solid-principles.md`](references/solid-principles.md) | 5 |
-| 2 | Clean Code Patterns | CRITICAL | Writing daily code, choosing between simplicity and abstraction | [`references/clean-code-principles.md`](references/clean-code-principles.md) | 4 |
-| 3 | Function Design | HIGH | Designing methods, organizing logic, reducing complexity | [`references/function-design.md`](references/function-design.md) | 4 |
-| 4 | Anti-Patterns | MEDIUM | Identifying common design mistakes and refactoring code | [`references/anti-patterns-and-examples.md`](references/anti-patterns-and-examples.md) | - |
-| 5 | Pragmatic Software Design | HIGH | Enhancing readability, input safety, early returns, and cognitive simplicity | [`references/pragmatic-software-design.md`](references/pragmatic-software-design.md) | 5 |
+| # | Category | Impact | Load when… | Reference | Prefix | Rules |
+|--:|----------|:------:|------------|-----------|--------|:-----:|
+| 1 | SOLID Principles | CRITICAL | Designing OOP systems, ensuring extensibility and maintainability | [`references/solid-principles.md`](references/solid-principles.md) | `solid-` | 5 |
+| 2 | Clean Code Patterns | CRITICAL | Writing daily code, choosing between simplicity and abstraction | [`references/clean-code-principles.md`](references/clean-code-principles.md) | `clean-` | 4 |
+| 3 | Function Design | HIGH | Designing methods, organizing logic, reducing complexity | [`references/function-design.md`](references/function-design.md) | `fn-` | 4 |
+| 4 | Anti-Patterns | MEDIUM | Identifying common design mistakes and refactoring code | [`references/anti-patterns-and-examples.md`](references/anti-patterns-and-examples.md) | — | — |
+| 5 | Pragmatic Software Design | HIGH | Enhancing readability, input safety, early returns, and cognitive simplicity | [`references/pragmatic-software-design.md`](references/pragmatic-software-design.md) | `prag-` | 5 |
 
 ## Rule Index
 
-- **SOLID (OOP Design)**: SRP, OCP, LSP, ISP, DIP
-- **Clean Code**: KISS, YAGNI, DRY, TDA
-- **Function Design**: Small size, Meaningful names, Single level of abstraction, Early returns
-- **Pragmatic Design**: Guard clauses (Fail-fast), No exceptions for control flow, No flag arguments, Explaining variables, DOP vs OOP boundaries
+All rules live in [`rules/core-directives.md`](rules/core-directives.md) in `Context` / `Rule` / `Avoid` form. Cite the ids in reviews.
+
+### 1. SOLID Principles (`solid-`) — CRITICAL
+`solid-srp` · `solid-ocp` · `solid-lsp` · `solid-isp` · `solid-dip`
+
+### 2. Clean Code Patterns (`clean-`) — CRITICAL
+`clean-kiss` · `clean-yagni` · `clean-dry` · `clean-tda`
+
+### 3. Function Design (`fn-`) — HIGH
+`fn-small-functions` · `fn-meaningful-names` · `fn-single-abstraction-level` · `fn-early-returns`
+
+### 4. Pragmatic Software Design (`prag-`) — HIGH
+`prag-guard-clauses` · `prag-no-exceptions-for-flow` · `prag-no-flag-arguments` · `prag-explaining-variables` · `prag-dop-vs-oop-boundary`
 
 ## Validation Checklist
 

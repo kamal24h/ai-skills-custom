@@ -96,3 +96,8 @@ for await location in stream { update(location) }
 - **Thread.sleep:** Never use in async code; use `try await Task.sleep(for: .seconds(1))`.
 - **Third-Party Frameworks:** Do not introduce Combine, RxSwift, or other concurrency frameworks without user consent.
 - **Unstructured in Loops:** Do NOT call `Task { }` inside a loop without the parent task collecting results.
+
+## Sources
+
+- [Swift — Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+- [Swift.org — Concurrency](https://www.swift.org/documentation/concurrency/)

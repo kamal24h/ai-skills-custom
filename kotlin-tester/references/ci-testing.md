@@ -299,3 +299,8 @@ The `--num-uniform-shards` flag automatically splits tests across multiple virtu
 
 - Related rules: `cov-kover-config`, `cov-threshold-enforcement`, `ui-test-orchestrator`, `ui-test-no-sleep`, `ui-test-per-test-isolation`
 - Related references: [`coverage.md`](coverage.md), [`espresso-testing.md`](espresso-testing.md), [`compose-testing.md`](compose-testing.md), [`instrumented-testing.md`](instrumented-testing.md)
+
+## Sources
+
+- [Gradle — Testing in Java & JVM projects](https://docs.gradle.org/current/userguide/java_testing.html)
+- [Android — Test from the command line](https://developer.android.com/studio/test/command-line)

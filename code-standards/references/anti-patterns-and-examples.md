@@ -154,3 +154,9 @@ export class ArgonPasswordHasher implements PasswordHasher {
   }
 }
 ```
+
+## Sources
+
+- [Martin Fowler — Code Smell](https://martinfowler.com/bliki/CodeSmell.html)
+- [Refactoring catalog](https://refactoring.com/catalog/)
+- [Martin Fowler — Refactoring](https://martinfowler.com/books/refactoring.html)

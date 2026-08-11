@@ -196,3 +196,7 @@ afterAll(() => worker.stop())
 | MSW Node server in Browser Mode | Requests are not intercepted | `setupWorker` from `msw/browser` |
 | Browser binaries not cached in CI | Minutes added per run | Cache the Playwright browser path |
 | Non-retrying assertions on locators | Flake on timing | `await expect.element(...)` |
+
+## Sources
+
+- [Vitest — Browser mode](https://vitest.dev/guide/browser/)

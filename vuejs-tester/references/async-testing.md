@@ -252,3 +252,8 @@ Without this, a rejected promise inside a component logs a warning and the test 
 | Only the final state asserted | Skipped loading state goes unnoticed | Assert the sequence |
 | Unhandled rejection ignored | Green test hiding a real error | Fail on `unhandledRejection` |
 | Chained `flushPromises()` calls | Guessing at tick counts | `vi.waitFor` / `findBy*` |
+
+## Sources
+
+- [Vue Test Utils — Asynchronous behavior](https://test-utils.vuejs.org/guide/advanced/async-suspense.html)
+- [Vitest — API](https://vitest.dev/api/)

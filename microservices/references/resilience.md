@@ -85,3 +85,9 @@ orders service
 4. **Explicit error** — `503 Service Unavailable` with `Retry-After`
 
 Never silently swallow errors — always log + emit a metric.
+
+## Sources
+
+- [Martin Fowler — Circuit Breaker](https://martinfowler.com/bliki/CircuitBreaker.html)
+- [Microservices.io — Circuit breaker](https://microservices.io/patterns/reliability/circuit-breaker.html)
+- [AWS — Timeouts, retries and backoff with jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)

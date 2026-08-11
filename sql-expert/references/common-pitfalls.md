@@ -363,3 +363,9 @@ LOAD DATA INFILE 'users.csv' INTO TABLE users;  -- Trigger might not fire!
 - Don't rely solely on triggers
 - Validate in application too
 - Test bulk operations specifically
+
+## Sources
+
+- [PostgreSQL 17 — Transaction isolation](https://www.postgresql.org/docs/17/transaction-iso.html)
+- [MySQL 8.4 — InnoDB locking](https://dev.mysql.com/doc/refman/8.4/en/innodb-locking.html)
+- [OWASP — SQL Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)

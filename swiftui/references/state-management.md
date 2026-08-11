@@ -62,3 +62,8 @@ struct UserView: View {
     }
 }
 ```
+
+## Sources
+
+- [SwiftUI — State and data flow](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
+- [Observation framework](https://developer.apple.com/documentation/observation)

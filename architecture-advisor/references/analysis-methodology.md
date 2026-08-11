@@ -129,3 +129,8 @@ For projects with separate backend + frontend:
    - Authentication handoff (JWT, session, OAuth2 flow)
    - Shared type definitions (if any)
    - Deployment coupling (same CI/CD? separate?)
+
+## Sources
+
+- [Martin Fowler — Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/)
+- [The Twelve-Factor App](https://12factor.net/)

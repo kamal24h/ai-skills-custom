@@ -293,3 +293,9 @@ pkg/
     user.go
     user_test.go
 ```
+
+## Sources
+
+- [Go — Add a test](https://go.dev/doc/tutorial/add-a-test)
+- [Go Wiki — TableDrivenTests](https://go.dev/wiki/TableDrivenTests)
+- [go.uber.org/goleak](https://pkg.go.dev/go.uber.org/goleak)

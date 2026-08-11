@@ -85,3 +85,10 @@ Compensations must be **idempotent** (may be retried) and **semantic** (refund, 
 - Polling endpoint (`GET /orders/123`) shows current projected state
 - WebSocket / SSE pushes state transitions to the client
 - Always expose `updated_at` or `version` so clients can detect drift
+
+## Sources
+
+- [Microservices.io — Saga](https://microservices.io/patterns/data/saga.html)
+- [Martin Fowler — Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)
+- [Microservices.io — Transactional outbox](https://microservices.io/patterns/data/transactional-outbox.html)
+- [Martin Fowler — CQRS](https://martinfowler.com/bliki/CQRS.html)

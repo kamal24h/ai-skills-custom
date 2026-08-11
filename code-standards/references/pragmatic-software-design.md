@@ -207,3 +207,9 @@ export function calculateOrderTotal(order: Order): number {
   return subTotal;
 }
 ```
+
+## Sources
+
+- [Martin Fowler — Tell Don't Ask](https://martinfowler.com/bliki/TellDontAsk.html)
+- [Refactoring catalog — Replace Nested Conditional with Guard Clauses](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html)
+- [Martin Fowler — Anemic Domain Model](https://martinfowler.com/bliki/AnemicDomainModel.html)

@@ -40,3 +40,9 @@ Bad boundaries cause every problem later — chatty calls, shared databases, dep
 - **Too small** — every feature touches 3+ services, chatty RPCs, deploy-coupling
 - **Too large** — team can't understand it end-to-end, multiple unrelated bounded contexts inside
 - **About right** — one team owns it; one bounded context; can be rewritten in ~2 sprints
+
+## Sources
+
+- [Martin Fowler — Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
+- [Microservices.io — Decompose by business capability](https://microservices.io/patterns/decomposition/decompose-by-business-capability.html)
+- [Martin Fowler — Microservices](https://martinfowler.com/articles/microservices.html)

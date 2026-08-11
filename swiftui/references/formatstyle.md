@@ -173,3 +173,8 @@ Custom `FormatStyle` types must conform to `Codable` and `Hashable` for framewor
 - [ ] Currency uses ISO 4217 codes, not hardcoded symbols.
 - [ ] Measurements include `usage:` parameter for correct unit context.
 - [ ] Custom `FormatStyle` conforms to `Codable` and `Hashable`.
+
+## Sources
+
+- [Foundation — FormatStyle](https://developer.apple.com/documentation/foundation/formatstyle)
+- [Formatting numbers, dates and measurements](https://developer.apple.com/documentation/foundation/data-formatting)

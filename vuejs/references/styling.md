@@ -247,3 +247,8 @@ src/styles/
 | Animating `width`/`top` | Layout thrash, jank | `transform` / `opacity` |
 | No `prefers-reduced-motion` handling | Accessibility failure | Media query override |
 | Styling `v-html` with scoped CSS | Rules do not apply | `:deep()` or a global rule |
+
+## Sources
+
+- [Vue — SFC CSS features](https://vuejs.org/api/sfc-css-features.html)
+- [Vue — Class and style bindings](https://vuejs.org/guide/essentials/class-and-style.html)

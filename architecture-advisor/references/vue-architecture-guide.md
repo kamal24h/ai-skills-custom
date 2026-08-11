@@ -224,3 +224,10 @@ When `vue@^2` or `@vue/composition-api` is present, flag these as migration bloc
 | `Vue.filter` usage | MEDIUM | Removed in Vue 3 — must become computed/method |
 | Vuex modules with heavy boilerplate | MEDIUM | Pinia setup stores are the Vue 3 path |
 | `vue-class-component` decorators | MEDIUM | No Vue 3 successor; requires a rewrite per component |
+
+## Sources
+
+- [Vue — Scaling up](https://vuejs.org/guide/scaling-up/sfc.html)
+- [Vue Style Guide](https://vuejs.org/style-guide/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Nuxt — Directory structure](https://nuxt.com/docs/guide/directory-structure/app)

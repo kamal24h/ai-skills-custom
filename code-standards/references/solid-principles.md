@@ -246,3 +246,9 @@ export class CreateUserUseCase {
 - [ ] Low-level modules implement interfaces
 - [ ] Dependencies flow toward abstractions
 - [ ] Easy to swap implementations for testing
+
+## Sources
+
+- [Robert C. Martin — The Principles of OOD](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+- [Martin Fowler — Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html)
+- [Martin Fowler — Liskov Substitution Principle](https://martinfowler.com/bliki/LiskovSubstitutionPrinciple.html)

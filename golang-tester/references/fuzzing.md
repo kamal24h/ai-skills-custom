@@ -232,3 +232,8 @@ For continuous fuzzing in CI, use `gotip` or run with a short timeout:
 - name: Fuzz (short run)
   run: go test -fuzz=FuzzParseConfig -fuzztime=30s ./pkg/config/
 ```
+
+## Sources
+
+- [Go — Fuzzing](https://go.dev/doc/security/fuzz/)
+- [Go — Tutorial: Getting started with fuzzing](https://go.dev/doc/tutorial/fuzz)

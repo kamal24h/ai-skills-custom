@@ -209,3 +209,8 @@ Nightly is the right home for: cross-browser E2E (firefox, webkit), mobile viewp
 | One serial 20-minute job | Developers stop waiting | Shard the suite |
 | `skip` without an issue link | Permanently dead test | Reference a ticket |
 | Coverage reported but not enforced | Silent decline | Thresholds + PR diff |
+
+## Sources
+
+- [Vitest — CI](https://vitest.dev/guide/cli.html)
+- [Playwright — Continuous integration](https://playwright.dev/docs/ci)

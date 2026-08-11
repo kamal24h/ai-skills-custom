@@ -210,3 +210,8 @@ filters {
 
 - Related rules: `cov-kover-config`, `cov-threshold-enforcement`
 - Related references: [`ci-testing.md`](ci-testing.md), [`espresso-testing.md`](espresso-testing.md), [`compose-testing.md`](compose-testing.md)
+
+## Sources
+
+- [Kotlin — Kover](https://kotlin.github.io/kotlinx-kover/)
+- [JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/)

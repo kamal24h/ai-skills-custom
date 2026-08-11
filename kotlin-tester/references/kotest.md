@@ -573,3 +573,8 @@ class StringOpsTest : StringSpec({
 | Property-based testing | [property-testing.md](property-testing.md) |
 | Test coverage configuration | [coverage.md](coverage.md) |
 | TDD workflow | [tdd-workflow.md](tdd-workflow.md) |
+
+## Sources
+
+- [Kotest](https://kotest.io/docs/framework/framework.html)
+- [Kotest — Assertions](https://kotest.io/docs/assertions/assertions.html)

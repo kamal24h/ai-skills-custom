@@ -91,3 +91,9 @@ Every service ships:
 - **USE** (for resources): Utilization, Saturation, Errors
 
 Dashboard every service with both views.
+
+## Sources
+
+- [OpenTelemetry — Documentation](https://opentelemetry.io/docs/)
+- [Google SRE Workbook — Implementing SLOs](https://sre.google/workbook/implementing-slos/)
+- [Microservices.io — Distributed tracing](https://microservices.io/patterns/observability/distributed-tracing.html)

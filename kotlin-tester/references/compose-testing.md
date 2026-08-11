@@ -369,3 +369,8 @@ Use `useUnmergedTree = true` when a composable merges its children's semantics (
 
 - Related rules: `ui-test-testtag-selectors`, `ui-test-no-sleep`, `ui-test-per-test-isolation`, `ui-test-robot-pattern`
 - Related references: [`espresso-testing.md`](espresso-testing.md), [`instrumented-testing.md`](instrumented-testing.md), [`coverage.md`](coverage.md)
+
+## Sources
+
+- [Android — Testing your Compose layout](https://developer.android.com/develop/ui/compose/testing)
+- [Android — Compose testing cheat sheet](https://developer.android.com/develop/ui/compose/testing/testing-cheatsheet)

@@ -70,6 +70,18 @@ Check `composer.json` for the required PHP version:
 - Rely on global variables (use Dependency Injection)
 - Use MD5 or SHA1 for passwords (use `password_hash`)
 
+## Category Index — When to Load Which Reference
+
+| # | Category | Impact | Load when… | Reference | Prefix | Rules |
+|--:|----------|:------:|------------|-----------|--------|:-----:|
+| 1 | Type System | CRITICAL | Adding type declarations, choosing union/intersection/nullable, raising analyzer level | [`references/type-system.md`](references/type-system.md) | `type-` | 9 |
+| 2 | Modern PHP Features | CRITICAL | Using 8.x syntax, enums, readonly, property hooks — check the version floor first | [`references/modern-php.md`](references/modern-php.md) | `modern-` | 16 |
+| 3 | PSR Standards | HIGH | Autoload config, code style tooling, naming, choosing PSR interfaces | [`references/psr-standards.md`](references/psr-standards.md) | `psr-` | 6 |
+| 4 | SOLID Principles | HIGH | Designing or splitting a class, reviewing an interface or hierarchy | [`references/solid-principles.md`](references/solid-principles.md) | `solid-` | 5 |
+| 5 | Error Handling | HIGH | Designing exceptions, reviewing try/catch, resource and transaction cleanup | [`references/error-handling.md`](references/error-handling.md) | `error-` | 5 |
+| 6 | Security | CRITICAL | Any external input, SQL, output, passwords, file uploads, security audit | [`references/security.md`](references/security.md) | `sec-` | 5 |
+| 7 | Performance | MEDIUM | Large collections, memory ceilings, profiling a slow script | [`references/performance.md`](references/performance.md) | `perf-` | 5 |
+
 ## Rule Index
 
 ### 1. Type System (`type-`) — CRITICAL
@@ -83,11 +95,20 @@ Check `composer.json` for the required PHP version:
 **8.4+**: `modern-property-hooks` · `modern-asymmetric-visibility`
 **8.5+**: `modern-pipe-operator`
 
-### 3. SOLID Principles (`solid-`) — HIGH
+### 3. PSR Standards (`psr-`) — HIGH
+`psr-4-autoloading` · `psr-12-coding-style` · `psr-namespace-usage` · `psr-file-structure` · `psr-naming-classes` · `psr-naming-methods`
+
+### 4. SOLID Principles (`solid-`) — HIGH
 `solid-srp` · `solid-ocp` · `solid-lsp` · `solid-isp` · `solid-dip`
 
-### 4. Error Handling (`error-`) — HIGH
+### 5. Error Handling (`error-`) — HIGH
 `error-custom-exceptions` · `error-exception-hierarchy` · `error-try-catch-specific` · `error-finally-cleanup` · `error-never-suppress`
+
+### 6. Security (`sec-`) — CRITICAL
+`sec-input-validation` · `sec-output-escaping` · `sec-sql-prepared` · `sec-password-hashing` · `sec-file-uploads`
+
+### 7. Performance (`perf-`) — MEDIUM
+`perf-array-functions` · `perf-string-functions` · `perf-generators` · `perf-lazy-loading` · `perf-avoid-globals`
 
 ## Validation Checklist
 

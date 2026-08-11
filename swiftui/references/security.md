@@ -224,3 +224,9 @@ func cleanStaleCredentials() throws {
 - Related references: [`networking.md`](networking.md), [`concurrency.md`](concurrency.md)
 
 App Transport Security config, CloudKit encryption, server-side auth, WebAuthn server logic, code signing, jailbreak detection, and third-party crypto libraries.
+
+## Sources
+
+- [Security framework](https://developer.apple.com/documentation/security)
+- [Keychain services](https://developer.apple.com/documentation/security/keychain-services)
+- [OWASP Mobile Application Security](https://owasp.org/www-project-mobile-app-security/)

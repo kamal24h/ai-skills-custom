@@ -135,3 +135,8 @@ Image(systemName: "chevron.right")
 - **`.left`/`.right` alignment:** Use `.leading`/`.trailing` for RTL support.
 - **Fixed-width layouts:** Text expands 30–40% in German; use flexible sizing.
 - **Hardcoded locales:** Never `.locale(Locale(identifier: "en_US"))` unless required for server communication.
+
+## Sources
+
+- [Xcode — Localization](https://developer.apple.com/documentation/xcode/localization)
+- [String Catalogs](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog)

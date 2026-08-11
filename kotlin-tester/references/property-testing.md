@@ -392,3 +392,7 @@ fun `property test with custom seed for reproducibility`() {
 
 - Related rules: `test-behavior-names`, `test-given-when-then`, `test-kotest-assertions`
 - Related references: [`unit-testing.md`](unit-testing.md), [`tdd-workflow.md`](tdd-workflow.md), [`mocking.md`](mocking.md)
+
+## Sources
+
+- [Kotest — Property testing](https://kotest.io/docs/proptest/property-based-testing.html)

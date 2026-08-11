@@ -269,3 +269,8 @@ Never persist tokens or PII to `localStorage` in a browser app — use httpOnly 
 | Filters in a store | Lost on refresh, unshareable | URL query params |
 | Raw `JSON.stringify` for SSR payload | XSS via `</script>` | `devalue` |
 | Tokens in `localStorage` | XSS-exfiltratable | httpOnly cookies |
+
+## Sources
+
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue — State management](https://vuejs.org/guide/scaling-up/state-management.html)

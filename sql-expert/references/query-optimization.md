@@ -135,3 +135,9 @@ JOIN orders ON users.id = orders.user_id;
 SELECT users.id, users.name FROM users
 WHERE EXISTS (SELECT 1 FROM orders WHERE orders.user_id = users.id);
 ```
+
+## Sources
+
+- [PostgreSQL 17 — Using EXPLAIN](https://www.postgresql.org/docs/17/using-explain.html)
+- [MySQL 8.4 — Optimizing SELECT statements](https://dev.mysql.com/doc/refman/8.4/en/select-optimization.html)
+- [SQL Server — Execution plans](https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans)

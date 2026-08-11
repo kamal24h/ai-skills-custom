@@ -301,3 +301,7 @@ One composable per file, named exactly after the exported function.
 | Mutating an argument | Surprising caller-side bugs | Copy and derive |
 | Module singleton state in SSR | Cross-request data leak | `createInjectionState` / per-request store |
 | Pure helper in `composables/` | Misleading contract | Move to `utils/` |
+
+## Sources
+
+- [Vue — Composables](https://vuejs.org/guide/reusability/composables.html)

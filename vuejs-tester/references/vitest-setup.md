@@ -266,3 +266,8 @@ describe.skip('…')
 | Shared router/Pinia instance | Cross-test state leakage | Fresh instances per render |
 | jsdom for every test including pure logic | Slow suite | Vitest projects with a `node` project |
 | E2E specs matched by `include` | Playwright specs run under Vitest | Exclude `e2e/**` |
+
+## Sources
+
+- [Vitest — Getting started](https://vitest.dev/guide/)
+- [Vitest — Configuration](https://vitest.dev/config/)

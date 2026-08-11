@@ -167,3 +167,8 @@ try await task.send(.string("ping"))
 - **Third-party libraries (Alamofire, Moya):** Avoid when URLSession suffices.
 - **Disable ATS:** Never in production. Exception domains require justification and are for legacy servers only.
 - **Completion handlers:** All new networking code uses async/await exclusively.
+
+## Sources
+
+- [Foundation — URLSession](https://developer.apple.com/documentation/foundation/urlsession)
+- [App Transport Security](https://developer.apple.com/documentation/security/preventing-insecure-network-connections)

@@ -161,3 +161,8 @@ Action Class (single operation)
 - [ ] Security audit (recommend dedicated security-review skill)
 - [ ] Test coverage report (requires running test suite with coverage flag)
 ```
+
+## Sources
+
+- [Martin Fowler — Technical Debt Quadrant](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html)
+- [Architecture Decision Records](https://adr.github.io/)

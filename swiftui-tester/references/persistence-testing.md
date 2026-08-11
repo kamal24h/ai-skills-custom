@@ -170,3 +170,9 @@ struct OrderRepositoryTests {
 
 - Related rules: `test-swiftdata-inmemory`, `test-predicate-validation`, `test-no-shared-state`
 - Related references: [`swift-testing.md`](swift-testing.md), [`../../swiftui/references/swiftdata.md`](../../swiftui/references/swiftdata.md), [`../../swiftui/references/state-management.md`](../../swiftui/references/state-management.md)
+
+## Sources
+
+- [SwiftData](https://developer.apple.com/documentation/swiftdata)
+- [SwiftData — ModelContainer](https://developer.apple.com/documentation/swiftdata/modelcontainer)
+- [Swift Testing](https://developer.apple.com/documentation/testing)

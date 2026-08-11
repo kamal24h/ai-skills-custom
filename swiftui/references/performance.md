@@ -88,3 +88,8 @@ struct UserBadge: View {
 - **Frequent Global Updates:** Avoid triggering updates in a global `@Observable` accessed by many views unless necessary.
 - **Blocking Body:** No synchronous file I/O, heavy computation, or network calls in `body`.
 - **Shadow/blur in ForEach rows:** Compositing cost multiplies with scroll velocity.
+
+## Sources
+
+- [Instruments](https://developer.apple.com/documentation/instruments)
+- [SwiftUI — View fundamentals](https://developer.apple.com/documentation/swiftui/view-fundamentals)

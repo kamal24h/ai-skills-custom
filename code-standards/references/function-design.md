@@ -161,3 +161,9 @@ function calculateDiscount(user: User, amount: number): number {
   return discount;
 }
 ```
+
+## Sources
+
+- [Martin Fowler — Function Length](https://martinfowler.com/bliki/FunctionLength.html)
+- [Refactoring catalog — Extract Function](https://refactoring.com/catalog/extractFunction.html)
+- [Martin Fowler — Two Hard Things](https://martinfowler.com/bliki/TwoHardThings.html)

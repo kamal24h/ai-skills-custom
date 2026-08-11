@@ -241,3 +241,9 @@ func invalidIndexCrash() {
 
 - Related rules: `test-struct-suites`, `test-expect-vs-require`, `test-parameterized`, `test-async-confirmation`, `test-known-issue`, `test-no-sleep`, `test-no-shared-state`, `test-mainactor-isolation`, `test-behavior-names`, `test-serialized-scope`
 - Related references: [`ui-testing.md`](ui-testing.md), [`persistence-testing.md`](persistence-testing.md), [`../../swiftui/references/concurrency.md`](../../swiftui/references/concurrency.md)
+
+## Sources
+
+- [Swift Testing](https://developer.apple.com/documentation/testing)
+- [Swift Testing — Expectations](https://developer.apple.com/documentation/testing/expectations)
+- [Migrating a test from XCTest](https://developer.apple.com/documentation/testing/migratingfromxctest)

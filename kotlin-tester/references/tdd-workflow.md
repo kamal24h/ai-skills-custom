@@ -358,3 +358,8 @@ fun `should return error for blank email`() { }
 
 - Related rules: `test-behavior-names`, `test-given-when-then`, `test-tdd-red-first`
 - Related references: [`unit-testing.md`](unit-testing.md), [`mocking.md`](mocking.md), [`property-testing.md`](property-testing.md)
+
+## Sources
+
+- [Android — Test apps on Android](https://developer.android.com/training/testing)
+- [Martin Fowler — Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)

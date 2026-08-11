@@ -187,3 +187,8 @@ Every custom gesture must have an accessibility alternative:
 | `onTapGesture` for primary actions | Use `Button` |
 | Unresolved parent/child conflicts | Use `.highPriorityGesture()` or `.simultaneousGesture()` |
 | Missing accessibility alternatives | Add `.accessibilityAction()` |
+
+## Sources
+
+- [SwiftUI — Gestures](https://developer.apple.com/documentation/swiftui/gestures)
+- [HIG — Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures)

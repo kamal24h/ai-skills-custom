@@ -261,3 +261,9 @@ if (user.failedLoginAttempts >= 5) {
 - [ ] Methods are commands, not just getters
 - [ ] Clients tell, don't ask
 - [ ] Encapsulation is preserved
+
+## Sources
+
+- [Martin Fowler — Yagni](https://martinfowler.com/bliki/Yagni.html)
+- [Martin Fowler — Beck Design Rules](https://martinfowler.com/bliki/BeckDesignRules.html)
+- [Martin Fowler — Tell Don't Ask](https://martinfowler.com/bliki/TellDontAsk.html)

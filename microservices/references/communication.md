@@ -79,3 +79,9 @@ See [`comm-idempotent-consumers`](../rules/comm-idempotent-consumers.md) for cod
 3. Codegen produces server stubs + typed clients for PHP **and** TypeScript
 4. Breaking changes → new version (same rules as API versioning)
 5. Publish specs to a registry (Backstage, Buf Schema Registry, or SwaggerHub)
+
+## Sources
+
+- [Microservices.io — Messaging](https://microservices.io/patterns/communication-style/messaging.html)
+- [Microservices.io — Remote Procedure Invocation](https://microservices.io/patterns/communication-style/rpi.html)
+- [gRPC — Documentation](https://grpc.io/docs/)
