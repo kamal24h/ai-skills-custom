@@ -158,7 +158,7 @@ plugins {
 
 android {
     namespace = "com.example.app"
-    compileSdk = 35
+    compileSdk = 36   // Android 16; verify current API level
 
     defaultConfig {
         applicationId = "com.example.app"
@@ -376,3 +376,8 @@ See related references for project setup:
 | KSP Documentation                                | <https://kotlinlang.org/docs/ksp-overview.html>                      |
 | Gradle Wrapper                                   | <https://docs.gradle.org/current/userguide/gradle_wrapper.html>      |
 | Android Gradle Plugin Release Notes              | <https://developer.android.com/build/releases/gradle-plugin>         |
+
+## Sources
+
+- [Create an Android project](https://developer.android.com/studio/projects/create-project)
+- [SDK versions and API levels](https://developer.android.com/tools/releases/platforms)

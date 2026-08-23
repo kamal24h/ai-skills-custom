@@ -395,3 +395,8 @@ class UserViewModelTest : KoinTest {
 
 - Related rules: `arch-di-only-in-app`, `arch-repo-iface-in-domain`, `arch-no-entity-in-ui`, `net-protocol-client`
 - Related references: [`networking.md`](networking.md), [`persistence.md`](persistence.md), [`build-configuration.md`](build-configuration.md)
+
+## Sources
+
+- [Hilt documentation](https://developer.android.com/training/dependency-injection/hilt-android)
+- [Koin documentation](https://insert-koin.io/docs/quickstart/kotlin/)

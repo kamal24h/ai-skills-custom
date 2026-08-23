@@ -345,3 +345,9 @@ suspend fun fetchUser(id: String): User {
 
 - Related rules: `net-status-validation`, `net-no-main-thread-calls`, `net-protocol-client`, `net-no-completion-handlers`, `net-retry-with-backoff`, `kt-server-response-nullable`
 - Related references: [`dependency-injection.md`](dependency-injection.md), [`persistence.md`](persistence.md), [`build-configuration.md`](build-configuration.md)
+
+## Sources
+
+- [Retrofit](https://square.github.io/retrofit/)
+- [OkHttp](https://square.github.io/okhttp/)
+- [Ktor Client](https://ktor.io/docs/client-create-multiplatform-application.html)

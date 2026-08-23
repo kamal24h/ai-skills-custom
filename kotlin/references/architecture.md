@@ -503,3 +503,8 @@ class HomeFeedUseCase(
 
 - Related rules: `arch-domain-pure-kotlin`, `arch-no-entity-in-ui`, `arch-logic-in-usecases`, `arch-no-fat-repository`, `arch-no-circular-deps`, `arch-no-feature-cross-dep`, `arch-no-component-cross-dep`, `arch-no-dependency-on-app`, `arch-no-business-in-feature`, `arch-no-ui-in-component`, `arch-di-only-in-app`, `arch-repo-iface-in-domain`
 - Related references: [`kotlin-conventions.md`](kotlin-conventions.md), [`coroutines.md`](coroutines.md), [`compose-ui.md`](compose-ui.md), [`navigation-coordinator.md`](navigation-coordinator.md)
+
+## Sources
+
+- [Guide to app architecture (Android Developers)](https://developer.android.com/topic/architecture)
+- [Kotlin coding conventions — project layout](https://kotlinlang.org/docs/coding-conventions.html#project-layout)

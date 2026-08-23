@@ -593,3 +593,8 @@ See related rules and references:
 | Firebase Test Lab                                | <https://firebase.google.com/docs/test-lab>                          |
 | Android Emulator on CI                           | <https://github.com/ReactiveCircus/android-emulator-runner>          |
 | Gradle Build Cache                               | <https://docs.gradle.org/current/userguide/build_cache.html>         |
+
+## Sources
+
+- [GitHub Actions for Android](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle)
+- [Gradle Managed Devices](https://developer.android.com/studio/test/managed-devices)

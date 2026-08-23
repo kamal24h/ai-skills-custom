@@ -215,3 +215,9 @@ tasks.named("prepareKotlinBuildScriptModel") {
 - [Ktlint Documentation](https://pinterest.github.io/ktlint/)
 - [Android Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
 - [Kotlin Coding Conventions](https://kotlinlang.org/docs/coding-conventions.html)
+
+## Sources
+
+- [ktlint](https://pinterest.github.io/ktlint/)
+- [detekt](https://detekt.dev/)
+- [Android lint](https://developer.android.com/studio/write/lint)

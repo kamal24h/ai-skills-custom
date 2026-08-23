@@ -469,3 +469,9 @@ fun Context.accelerometerFlow(): Flow<Triple<Float, Float, Float>> = callbackFlo
 
 - Related rules: `coro-no-globalscope`, `coro-inject-dispatchers`, `coro-supervisor-job`, `coro-no-cancel-swallow`, `coro-no-runblocking`, `coro-lifecycle-collection`, `coro-single-uistate`, `coro-cooperative-cancellation`, `coro-callback-flow-cleanup`, `coro-no-mutable-in-stateflow`, `coro-no-flow-on-main`
 - Related references: [`kotlin-conventions.md`](kotlin-conventions.md), [`architecture.md`](architecture.md), [`compose-ui.md`](compose-ui.md)
+
+## Sources
+
+- [Coroutines guide (kotlinlang.org)](https://kotlinlang.org/docs/coroutines-guide.html)
+- [kotlinx.coroutines README](https://github.com/Kotlin/kotlinx.coroutines)
+- [Flow documentation](https://kotlinlang.org/docs/flow.html)

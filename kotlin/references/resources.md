@@ -276,3 +276,8 @@ See related rules for resource management:
 | RTL Support                                      | <https://developer.android.com/develop/ui/views/layout/rtl>          |
 | Material Design Icons                            | <https://fonts.google.com/icons>                                     |
 | Android Vector Drawables                         | <https://developer.android.com/develop/ui/views/graphics/vector-drawable-resources> |
+
+## Sources
+
+- [App resources overview](https://developer.android.com/guide/topics/resources/providing-resources)
+- [Resource qualifiers](https://developer.android.com/guide/topics/resources/providing-resources#AlternativeResources)

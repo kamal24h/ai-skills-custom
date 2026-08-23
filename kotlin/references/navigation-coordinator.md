@@ -705,3 +705,8 @@ class PaymentCoordinator(
 
 - Related rules: `nav-coordinator-pattern`, `nav-no-navigation-in-vm`, `nav-flow-coordinator`, `nav-root-coordinator`, `nav-parent-child`, `nav-navigator-abstraction`, `nav-ab-testing`, `nav-dsl-builder`, `nav-actor-coordinator`, `nav-no-god-coordinator`, `nav-stateless-coordinator`
 - Related references: [`kotlin-conventions.md`](kotlin-conventions.md), [`coroutines.md`](coroutines.md), [`architecture.md`](architecture.md), [`compose-ui.md`](compose-ui.md)
+
+## Sources
+
+- [Navigation Compose](https://developer.android.com/develop/ui/compose/navigation)
+- [Navigation type-safe routes (2.8+)](https://developer.android.com/develop/ui/compose/navigation/type-safe)

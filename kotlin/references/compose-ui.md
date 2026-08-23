@@ -444,3 +444,9 @@ fun LocationTracker(onLocationUpdate: (Location) -> Unit) {
 
 - Related rules: `compose-stable-params`, `compose-no-vm-in-composable`, `compose-launched-effect-for-async`, `compose-no-side-effects`, `compose-remember-flow`, `compose-testtag-for-testing`
 - Related references: [`kotlin-conventions.md`](kotlin-conventions.md), [`coroutines.md`](coroutines.md), [`architecture.md`](architecture.md), [`navigation-coordinator.md`](navigation-coordinator.md)
+
+## Sources
+
+- [Jetpack Compose documentation](https://developer.android.com/develop/ui/compose/documentation)
+- [Compose state and Jetpack State hoisting](https://developer.android.com/develop/ui/compose/state)
+- [Compose performance best practices](https://developer.android.com/develop/ui/compose/performance/best-practices)

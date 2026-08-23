@@ -515,3 +515,9 @@ class MigrationTest {
 
 - Related rules: `arch-no-entity-in-ui`, `arch-repo-iface-in-domain`, `arch-no-fat-repository`
 - Related references: [`dependency-injection.md`](dependency-injection.md), [`networking.md`](networking.md), [`build-configuration.md`](build-configuration.md)
+
+## Sources
+
+- [Room persistence library](https://developer.android.com/training/data-storage/room)
+- [DataStore](https://developer.android.com/topic/libraries/architecture/datastore)
+- [SQLDelight (KMP)](https://sqldelight.github.io/sqldelight/)

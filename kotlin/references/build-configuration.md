@@ -378,3 +378,9 @@ android {
 
 - Related rules: `gradle-version-catalog`, `gradle-ksp-over-kapt`, `gradle-implementation-over-api`
 - Related references: [`build-convention-plugins.md`](build-convention-plugins.md), [`dependency-injection.md`](dependency-injection.md)
+
+## Sources
+
+- [Kotlin Gradle plugin reference](https://kotlinlang.org/docs/gradle-configure-project.html)
+- [Compose Compiler Gradle plugin (Kotlin 2.0+)](https://developer.android.com/develop/ui/compose/compiler)
+- [Gradle version catalogs](https://docs.gradle.org/current/userguide/version_catalogs.html)

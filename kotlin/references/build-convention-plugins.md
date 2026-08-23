@@ -317,3 +317,8 @@ If the answer is "yes" to all, create a new plugin. If the config is only in one
 
 - Related rules: `conv-no-duplicate-config`, `conv-no-hardcoded-versions`, `conv-one-concern-per-plugin`, `conv-shared-logic-extracted`, `gradle-version-catalog`
 - Related references: [`build-configuration.md`](build-configuration.md), [`dependency-injection.md`](dependency-injection.md)
+
+## Sources
+
+- [Convention plugins (Gradle docs)](https://docs.gradle.org/current/samples/sample_convention_plugins.html)
+- [Now in Android — build-logic convention plugins](https://github.com/android/nowinandroid/tree/main/build-logic)

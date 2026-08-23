@@ -39,7 +39,7 @@ Check `build.gradle.kts` or `libs.versions.toml`:
 ```kotlin
 // build.gradle.kts
 android {
-    compileSdk = 35
+    compileSdk = 36   // Android 16 (Baklava); check current target before advising
     defaultConfig { minSdk = 26 }
 }
 kotlinOptions { jvmTarget = "17" }
@@ -50,10 +50,11 @@ kotlinOptions { jvmTarget = "17" }
 | Feature | Version |
 |---------|---------|
 | Coroutines Flow, StateFlow | Kotlin 1.4+ |
-| Compose Compiler (stable) | Kotlin 1.9+ / Compose BOM 2024+ |
 | `@JvmInline value class` | Kotlin 1.5+ |
 | Sealed interfaces | Kotlin 1.5+ |
 | KSP (replace KAPT) | Kotlin 1.7+ |
+| Compose Compiler (stable) | Kotlin 1.9+ / Compose BOM 2024+ |
+| **Compose compiler bundled with Kotlin plugin** | **Kotlin 2.0+** (`org.jetbrains.kotlin.plugin.compose`) — no separate `composeOptions.kotlinCompilerExtensionVersion` |
 | Compose Material 3 | Compose BOM 2023+ |
 | Type-safe Navigation | Navigation 2.8.0+ |
 

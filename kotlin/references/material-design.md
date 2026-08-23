@@ -236,3 +236,8 @@ Use this checklist when reviewing UI/UX code.
 | JankStats                                              | <https://developer.android.com/reference/kotlin/androidx/metrics/performance/JankStats> |
 | Window Size Classes                                    | <https://developer.android.com/guide/topics/large-screens/support-different-screen-sizes> |
 | Material 3 Motion                                      | <https://m3.material.io/styles/motion/overview>            |
+
+## Sources
+
+- [Material Design 3](https://m3.material.io/)
+- [Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3)

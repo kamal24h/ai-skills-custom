@@ -574,3 +574,8 @@ fun User.Companion.fromJson(json: JsonObject): User =
 
 - Related rules: `kt-no-force-unwrap`, `kt-immutable-data-class`, `kt-sealed-interface`, `kt-default-params`, `kt-no-exception-control-flow`, `kt-sequences-large-collections`, `kt-no-mutable-public`, `kt-value-classes`, `kt-naming-conventions`, `kt-server-response-nullable`, `kt-no-lateinit-unsafe`, `kt-lambda-return-label`, `kt-lifecycle-paired-observer`, `kt-no-nested-scope-functions`, `kt-handle-java-platform-types`, `kt-value-class-validation`, `kt-logging-levels`, `kt-type-safe-navigation`, `kt-serialization-json`, `kt-kmp-expect-actual`, `kt-composable-preview-parameter`, `kt-opt-in-annotations`
 - Related references: [`coroutines.md`](coroutines.md), [`architecture.md`](architecture.md), [`compose-ui.md`](compose-ui.md), [`navigation-coordinator.md`](navigation-coordinator.md)
+
+## Sources
+
+- [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
+- [Kotlin style guide (AOSP)](https://developer.android.com/kotlin/style-guide)
