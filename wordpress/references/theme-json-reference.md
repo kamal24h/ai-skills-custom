@@ -280,3 +280,8 @@ Access via CSS: `var(--wp--custom--base-font-size)`
 **Important:** User customizations in Site Editor are stored in the database and always override theme.json values. If your changes seem "ignored," check for user customizations.
 
 Reference: [theme.json](https://developer.wordpress.org/themes/global-settings-and-styles/) | [CSS Custom Properties](https://developer.wordpress.org/themes/global-settings-and-styles/styles/)
+
+## Sources
+
+- [theme.json Reference (Block Editor Handbook)](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/)
+- [Global Settings and Styles](https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/)

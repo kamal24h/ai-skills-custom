@@ -157,3 +157,8 @@
 ```
 
 Reference: [block.json Metadata](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/) | [Attributes](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-attributes/)
+
+## Sources
+
+- [Block Editor Handbook — block.json](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/)
+- [Block API Versions](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-api-versions/)

@@ -137,3 +137,8 @@ add_action( 'save_post_product', 'my_product_handler', 10, 3 );
 | `template_include` | — | Filter | Filter main template include path |
 
 Reference: [WordPress Hooks Database](https://adambrown.info/p/wp_hooks) | [Plugin API](https://developer.wordpress.org/plugins/hooks/)
+
+## Sources
+
+- [WordPress Hook Reference](https://adambrown.info/p/wp_hooks)
+- [Plugin API — Hooks](https://developer.wordpress.org/plugins/hooks/)

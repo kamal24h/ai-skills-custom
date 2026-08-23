@@ -120,3 +120,8 @@ $wpdb->delete( $table, [ 'id' => $id ], [ '%d' ] );
 ```
 
 Reference: [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/) | [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
+
+## Sources
+
+- [WordPress Coding Standards — PHP](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
+- [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/)

@@ -1,7 +1,7 @@
 # WordPress Actions: Multisite
 
-> Non-deprecated action hooks for WordPress 6.9+, organized by functional category.
-> Full list: https://adambrown.info/p/wp_hooks/hook/actions
+> Core action hooks, organized by functional category. Sourced from WordPress core docblocks (wp-includes / wp-admin).
+> Tags: #Legacy = superseded API kept for backward compatibility · #deprecated = do not use in new code · others are current.
 
 ---
 
@@ -370,3 +370,8 @@ Fires during multisite/network processing.
 **Since:** 6.9 | **Tags:** #multisite
 Fires during multisite/network processing.
 
+## Sources
+
+- [WordPress Hook Reference (adambrown.info)](https://adambrown.info/p/wp_hooks)
+- [developer.wordpress.org — Plugin API](https://developer.wordpress.org/plugins/hooks/)
+- Extracted from local WordPress core docblocks (`apply_filters` / `do_action` calls)
