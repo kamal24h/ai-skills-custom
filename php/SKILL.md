@@ -6,7 +6,9 @@ model: inherit
 
 # PHP Best Practices
 
-Modern PHP 8.x patterns, PSR standards, type system best practices, and SOLID principles. Contains 51 rules for writing clean, maintainable PHP code.
+Modern PHP 8.x patterns, PSR standards, type system best practices, and SOLID principles. Contains 55 rules for writing clean, maintainable PHP code.
+
+> **Testing:** Use the `phpunit` skill alongside this one when writing or reviewing tests — implementation guidance lives here, test guidance there. Do not mix the two in a single pass.
 
 ## Specialized Agents
 
@@ -79,7 +81,7 @@ Check `composer.json` for the required PHP version:
 | 3 | PSR Standards | HIGH | Autoload config, code style tooling, naming, choosing PSR interfaces | [`references/psr-standards.md`](references/psr-standards.md) | `psr-` | 6 |
 | 4 | SOLID Principles | HIGH | Designing or splitting a class, reviewing an interface or hierarchy | [`references/solid-principles.md`](references/solid-principles.md) | `solid-` | 5 |
 | 5 | Error Handling | HIGH | Designing exceptions, reviewing try/catch, resource and transaction cleanup | [`references/error-handling.md`](references/error-handling.md) | `error-` | 5 |
-| 6 | Security | CRITICAL | Any external input, SQL, output, passwords, file uploads, security audit | [`references/security.md`](references/security.md) | `sec-` | 5 |
+| 6 | Security | CRITICAL | Any external input, SQL, output, passwords, file uploads, sessions, deserialization, shell exec, headers, security audit | [`references/security.md`](references/security.md) | `sec-` | 9 |
 | 7 | Performance | MEDIUM | Large collections, memory ceilings, profiling a slow script | [`references/performance.md`](references/performance.md) | `perf-` | 5 |
 
 ## Rule Index
@@ -105,7 +107,7 @@ Check `composer.json` for the required PHP version:
 `error-custom-exceptions` · `error-exception-hierarchy` · `error-try-catch-specific` · `error-finally-cleanup` · `error-never-suppress`
 
 ### 6. Security (`sec-`) — CRITICAL
-`sec-input-validation` · `sec-output-escaping` · `sec-sql-prepared` · `sec-password-hashing` · `sec-file-uploads`
+`sec-input-validation` · `sec-output-escaping` · `sec-sql-prepared` · `sec-password-hashing` · `sec-file-uploads` · `sec-session-security` · `sec-deserialization` · `sec-command-injection` · `sec-security-headers`
 
 ### 7. Performance (`perf-`) — MEDIUM
 `perf-array-functions` · `perf-string-functions` · `perf-generators` · `perf-lazy-loading` · `perf-avoid-globals`
@@ -114,11 +116,16 @@ Check `composer.json` for the required PHP version:
 
 - [ ] `declare(strict_types=1)` is present at the top of all files
 - [ ] All method parameters and return types are explicitly hinted
-- [ ] Modern PHP features (e.g., Match, Enums) are used instead of legacy patterns
+- [ ] PHPStan (or Psalm) passes at the project's configured level — level 6 minimum, max as declared in `phpstan.neon`
+- [ ] No `@` suppression and no `mixed` where a specific type works
 - [ ] Code follows PSR-12 formatting and PSR-4 directory structure
 - [ ] SOLID principles are respected (especially SRP)
-- [ ] Sensitive operations are protected against common vulnerabilities (SQLi, XSS)
-- [ ] No global state is used; dependencies are injected
+- [ ] All SQL goes through prepared statements; all output escaped per context
+- [ ] Passwords use `password_hash`/`password_verify`; no MD5/SHA1 anywhere
+- [ ] Sessions regenerate IDs on privilege change; cookies carry `HttpOnly`, `Secure`, `SameSite`
+- [ ] No `unserialize()` on user-controlled input
+- [ ] Shell calls (if any) use `escapeshellarg()`/array `proc_open()` with absolute binary paths
+- [ ] Security headers (CSP, nosniff, frame-ancestors) sent on every response
 - [ ] Custom exceptions are thrown instead of generic ones
 
 ## External References

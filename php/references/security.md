@@ -26,6 +26,10 @@ Input validation, output escaping, SQL, password storage, and file uploads — m
 - [`sec-input-validation`](../rules/sec-input-validation.md) — Validate against an allow-list at the boundary
 - [`sec-password-hashing`](../rules/sec-password-hashing.md) — `password_hash()` / `password_verify()`
 - [`sec-file-uploads`](../rules/sec-file-uploads.md) — Verify type, size, and storage location
+- [`sec-session-security`](../rules/sec-session-security.md) — Strict mode, cookie flags, ID regeneration
+- [`sec-deserialization`](../rules/sec-deserialization.md) — Never `unserialize()` attacker input; prefer JSON
+- [`sec-command-injection`](../rules/sec-command-injection.md) — No shells; `escapeshellarg()`/array `proc_open()` when unavoidable
+- [`sec-security-headers`](../rules/sec-security-headers.md) — CSP with nonces plus the standard defensive headers
 
 ## Key Principles
 
