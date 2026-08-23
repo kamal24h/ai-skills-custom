@@ -172,3 +172,8 @@ const { list, containerProps, wrapperProps } = useVirtualList(rows, { itemHeight
 | `useVModel` on Vue 3.4+ | Redundant indirection | `defineModel` |
 | Array helpers for trivial derivations | Indirection with no gain | Plain `computed` |
 | Adding `@vueuse/integrations` unprompted | Unrequested dependency | Ask first |
+\
+## Sources\
+\
+- [VueUse Documentation](https://vueuse.org/)\
+- [Vue - Composables Guide](https://vuejs.org/guide/reusability/composables.html)

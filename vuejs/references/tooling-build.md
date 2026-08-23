@@ -268,3 +268,9 @@ export default defineConfig({
 | Bundling `vue` in a library | Duplicate runtime for consumers | `external: ['vue']` |
 | Heavy pre-commit hooks | Developers bypass them | Move to CI |
 | Hand-tuned `manualChunks` without data | Worse caching than the default | Measure first |
+\
+## Sources\
+\
+- [Vite Official Guide](https://vite.dev/guide/)\
+- [Vue - Tooling Overview](https://vuejs.org/guide/scaling-up/tooling.html)\
+- [vue-tsc / Volar](https://github.com/vuejs/language-tools)
