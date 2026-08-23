@@ -1,12 +1,29 @@
 ---
 name: javascript
-description: Expert JavaScript & TypeScript skill for modern Backend (Node.js), Advanced Testing, TypeScript Type Systems, and ES6+ Patterns. Use for building scalable Node.js services, writing robust Vitest/Jest suites, or designing complex TypeScript type logic.
+description: Expert JavaScript & TypeScript skill for modern Backend (Node.js), Advanced Testing, TypeScript Type Systems, and ES6+ Patterns. Use for building scalable Node.js services, writing robust Vitest/Jest suites, or designing complex TypeScript type logic. Triggers on "Node", "TypeScript", "TS types", "Express", "Fastify", "Vitest", "Jest", "async patterns".
 model: inherit
 ---
 
 # JavaScript & TypeScript Best Practices
 
-Modern JavaScript & TypeScript patterns for backend development, testing, advanced types, and ES6+ features. Contains 43 rules organized into 7 categories.
+Modern JavaScript & TypeScript patterns for backend development, testing, advanced types, and ES6+ features. Contains 41 rules organized into 7 categories.
+
+> **React components/hooks:** React-specific rules live in the `react` skill — load it for component and hook guidance. This skill covers Node.js backends, TS type systems, and JS/TS testing.
+
+## Step 1: Detect Runtime and Compiler Version
+
+**Always check versions before recommending APIs — the ecosystem moves fast.**
+
+```bash
+node --version          # runtime
+npx tsc --version       # compiler (or check package.json)
+```
+
+| Component | Current baseline | Notes |
+|---|---|---|
+| Node.js | **v24 'Krypton' (Active LTS)**; v22 'Jod' maintenance | Check `.nvmrc`/`engines` in package.json |
+| TypeScript | **7.x** — native compiler port (10× faster); 5.x still widely deployed | Detect from lockfile before assuming syntax support |
+| ES target | ES2023+ default in modern toolchains | Verify `tsconfig.json` `target`/`lib` |
 
 ## Specialized Agents
 
@@ -78,7 +95,7 @@ const UserSchema = z.object({ id: z.string().uuid(), email: z.string().email() }
 | 1 | TypeScript Types | CRITICAL | Designing complex types, generics, or type-safe APIs | [`references/typescript-types.md`](references/typescript-types.md) | `ts-` | 10 |
 | 2 | Async Patterns | CRITICAL | Managing concurrent tasks, timeouts, or retries | [`references/async-patterns.md`](references/async-patterns.md) | `async-` | 2 |
 | 3 | Backend Architecture | HIGH | Structuring Node.js apps, DI, middleware, or DB transactions | [`references/backend-architecture.md`](references/backend-architecture.md) | `backend-` | 13 |
-| 4 | Testing | HIGH | Writing unit/integration tests, mocking, or fixtures | [`references/testing.md`](references/testing.md) | `test-` | 10 |
+| 4 | Testing | HIGH | Writing unit/integration tests, mocking, or fixtures | [`references/testing.md`](references/testing.md) | `test-` | 8 |
 | 5 | Functional Programming | HIGH | Chaining array methods, composition, or immutability | [`references/functional-programming.md`](references/functional-programming.md) | `func-` | 3 |
 | 6 | ES6+ Features | MEDIUM | Using destructuring, spread, or modules | [`references/es-features.md`](references/es-features.md) | `es-` | 4 |
 | 7 | Performance | MEDIUM | Implementing debouncing, throttling, or lazy loading | [`references/performance.md`](references/performance.md) | `perf-` | 1 |
@@ -95,7 +112,9 @@ const UserSchema = z.object({ id: z.string().uuid(), email: z.string().email() }
 `backend-layered-architecture` · `backend-dependency-injection` · `backend-middleware-auth` · `backend-input-validation` · `backend-rate-limiting` · `backend-custom-errors` · `backend-error-handler` · `backend-database-transactions` · `backend-jwt-auth` · `backend-redis-caching` · `backend-api-response` · `backend-graceful-shutdown` · `backend-structured-logging`
 
 ### 4. Testing (`test-`) — HIGH
-`test-unit-pure` · `test-async-functions` · `test-mocking-modules` · `test-di-mocking` · `test-spying-fakes` · `test-integration-api` · `test-integration-database` · `test-react-components` · `test-react-hooks` · `test-fixtures-factories`
+`test-unit-pure` · `test-async-functions` · `test-mocking-modules` · `test-di-mocking` · `test-spying-fakes` · `test-integration-api` · `test-integration-database` · `test-fixtures-factories`
+
+> React component/hook tests (`test-react-components`, `test-react-hooks`) moved to the `react` skill.
 
 ### 5. Functional Programming (`func-`) — HIGH
 `func-array-methods` · `func-composition` · `func-pure-immutability`

@@ -15,7 +15,7 @@ You are a JavaScript/TypeScript testing expert specializing in Vitest and Jest.
 - Test isolation and determinism (no shared state, no flakiness)
 - Code coverage analysis and enforcement (v8, istanbul)
 - TDD/BDD workflows and test-driven design feedback
-- Framework-aware testing (Node.js, Express, Fastify, NestJS, React)
+- Framework-aware testing (Node.js, Express, Fastify, NestJS; React component tests → `react` skill)
 - Factory functions and fixtures for test data setup
 
 ## Approach

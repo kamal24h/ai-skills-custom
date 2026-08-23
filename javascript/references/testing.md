@@ -6,7 +6,7 @@ Vitest/Jest patterns for unit, integration, and component tests — and where mo
 
 - Setting up a test suite or choosing a test runner
 - Deciding what to mock and what to run for real
-- Writing tests for async code, HTTP handlers, database access, or React components
+- Writing tests for async code, HTTP handlers, or database access (React component tests live in the `react` skill)
 - A suite is slow, flaky, or passes while production breaks
 
 ## Rule Categories by Priority
@@ -16,8 +16,7 @@ Vitest/Jest patterns for unit, integration, and component tests — and where mo
 | 1 | Unit tests & async correctness | HIGH | `test-` |
 | 2 | Test doubles and injection | HIGH | `test-` |
 | 3 | Integration (HTTP, database) | HIGH | `test-` |
-| 4 | Component and hook tests | HIGH | `test-` |
-| 5 | Fixtures and data setup | HIGH | `test-` |
+| 4 | Fixtures and data setup | HIGH | `test-` |
 
 ## Rule Index
 
@@ -28,9 +27,9 @@ Vitest/Jest patterns for unit, integration, and component tests — and where mo
 - [`test-spying-fakes`](../rules/test-spying-fakes.md) — Spy on interactions, fake collaborators
 - [`test-integration-api`](../rules/test-integration-api.md) — Exercise the real HTTP stack
 - [`test-integration-database`](../rules/test-integration-database.md) — Real database, isolated per test
-- [`test-react-components`](../rules/test-react-components.md) — Query by role, assert on behavior
-- [`test-react-hooks`](../rules/test-react-hooks.md) — `renderHook`, act, async updates
 - [`test-fixtures-factories`](../rules/test-fixtures-factories.md) — Factories with overrides, not shared fixtures
+
+> React component/hook testing rules moved to the `react` skill (`react/rules/`).
 
 ## The Shape of a Healthy Suite
 

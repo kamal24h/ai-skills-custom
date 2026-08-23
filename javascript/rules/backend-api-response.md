@@ -49,7 +49,7 @@ export class ApiResponse {
     });
   }
 
-  static error(res: Response, message: string, statusCode = 500, errors?: any) {
+  static error(res: Response, message: string, statusCode = 500, errors?: Record<string, string[]>) {
     return res.status(statusCode).json({
       status: "error",
       message,
