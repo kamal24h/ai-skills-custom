@@ -8,6 +8,8 @@ model: inherit
 
 Modern testing patterns using **Swift Testing** (Xcode 16+, Swift 6+) and **XCTest**. Focused on unit testing business logic, integration testing SwiftUI data flow, and UI testing.
 
+> **Implementation:** Use the `swiftui` skill alongside this one — production-code guidance lives there (`swiftui/rules/core-directives.md`), test guidance here. Separation of concerns: `swiftui-pro` does not write tests; delegate to `swiftui-tester-pro`.
+
 ## Specialized Agents
 
 | Agent | Role | Focus |
@@ -67,6 +69,8 @@ Reference these guidelines when:
 | 1 | Swift Testing | CRITICAL | `@Test`, traits, async assertions, migration | [`references/swift-testing.md`](references/swift-testing.md) |
 | 2 | Persistence Testing | HIGH | SwiftData, CRUD, predicates, delete rules | [`references/persistence-testing.md`](references/persistence-testing.md) |
 | 3 | UI Testing | HIGH | XCTest UI flows, identifiers, launch args, screenshots | [`references/ui-testing.md`](references/ui-testing.md) |
+| 4 | Mocking & Doubles | CRITICAL | Faking network/session/model dependencies, protocol-based DI | [`references/mocking.md`](references/mocking.md) |
+| 5 | Coverage & CI | MEDIUM | Coverage gates, `xcodebuild`/`xccov`, flaky-test hygiene in CI | [`references/coverage-ci.md`](references/coverage-ci.md) |
 
 ## Rule Index
 
