@@ -216,7 +216,7 @@ func GetUser(id string) *User {
 }
 ```
 
-## References
+## Sources
 
 - [Working with Errors in Go 1.13](https://go.dev/blog/go1.13-errors)
 - [errors package](https://pkg.go.dev/errors)

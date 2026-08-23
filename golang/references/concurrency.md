@@ -89,7 +89,7 @@ func produce(ctx context.Context) <-chan int {
 func consume(ctx context.Context, ch <-chan int) error { ... }
 ```
 
-### References
+## Sources
 
 - [Go Concurrency Patterns](https://go.dev/talks/2012/concurrency.slide)
 - [Context package](https://pkg.go.dev/context)

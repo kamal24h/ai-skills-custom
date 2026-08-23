@@ -44,7 +44,7 @@ Check `go.mod` for the module path and minimum Go version:
 ```
 module github.com/example/app
 
-go 1.22
+go 1.24
 ```
 
 ### Feature Availability by Version

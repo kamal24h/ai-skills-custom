@@ -65,7 +65,7 @@ Use `internal/` to prevent external packages from importing your private code:
 myapp/internal/database/  ← cannot be imported outside myapp module
 ```
 
-### References
+## Sources
 
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)

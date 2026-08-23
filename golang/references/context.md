@@ -223,7 +223,7 @@ func TestCreateUser(t *testing.T) {
 | Passing context to goroutines without `WithoutCancel` | Background goroutine cancelled when parent request finishes |
 | Using context values as function parameters | Breaks function signatures — values in context are invisible to callers |
 
-## References
+## Sources
 
 - [context package](https://pkg.go.dev/context)
 - [Go Concurrency Patterns: Context](https://go.dev/blog/context)

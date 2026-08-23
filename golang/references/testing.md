@@ -108,7 +108,7 @@ go test -count=1 ./...                  # disable test cache
 go test -v ./...                        # verbose output
 ```
 
-## References
+## Sources
 
 - [testing package](https://pkg.go.dev/testing)
 - [testify](https://github.com/stretchr/testify)

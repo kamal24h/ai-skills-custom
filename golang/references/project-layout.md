@@ -188,7 +188,7 @@ When starting a new Go project:
 - [ ] Add `.golangci.yml` (see `references/linting.md`)
 - [ ] Run `gofmt -s -w .` to ensure formatting
 
-## References
+## Sources
 
 - [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
 - [12-Factor App](https://12factor.net/)

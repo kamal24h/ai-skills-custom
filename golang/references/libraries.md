@@ -182,3 +182,8 @@ More libraries: https://github.com/avelino/awesome-go
 | `unique` | Go 1.23 | Value canonicalization |
 | `math/rand/v2` | Go 1.22 | Improved random (auto-seeded) |
 | `weak` | Go 1.24 | Weak references for caches |
+\
+## Sources\
+\
+- [Go Standard Library Documentation](https://pkg.go.dev/std)\
+- [Go Release Notes](https://go.dev/doc/devel/release)

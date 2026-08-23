@@ -74,3 +74,9 @@ Many rules here are enforceable automatically:
 ```bash
 golangci-lint run ./...
 ```
+\
+## Sources\
+\
+- [Effective Go](https://go.dev/doc/effective_go)\
+- [Google Go Style Guide](https://google.github.io/styleguide/go/)\
+- [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments)

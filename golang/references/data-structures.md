@@ -280,7 +280,7 @@ For advanced data structures beyond stdlib:
 - `deckarep/golang-set` — thread-safe and non-thread-safe sets
 - `gammazero/deque` — fast double-ended queue
 
-## References
+## Sources
 
 - [Go Data Structures (Russ Cox)](https://research.swtch.com/godata)
 - [slices package](https://pkg.go.dev/slices)

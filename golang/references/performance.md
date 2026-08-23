@@ -298,7 +298,7 @@ fieldalignment ./...
 | No `GOMEMLIMIT` in containers | Risk of OOM kill — set to 80-90% of container memory |
 | `sync.Pool` for objects that must be retained | Pool entries are GC'd between cycles — use for temporary buffers only |
 
-## References
+## Sources
 
 - [Profiling Go Programs](https://go.dev/blog/pprof)
 - [benchstat](https://pkg.go.dev/golang.org/x/perf/cmd/benchstat)

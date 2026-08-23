@@ -177,7 +177,7 @@ func (c *Cache) init() {
 }
 ```
 
-## References
+## Sources
 
 - [Go Spec — Comparison operators](https://go.dev/ref/spec#Comparison_operators)
 - [Go FAQ — nil interface](https://go.dev/doc/faq#nil_error)

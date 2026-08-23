@@ -143,7 +143,7 @@ issues:
 └── file:line
 ```
 
-## References
+## Sources
 
 - [golangci-lint](https://golangci-lint.run)
 - [golangci-lint linters list](https://golangci-lint.run/usage/linters/)

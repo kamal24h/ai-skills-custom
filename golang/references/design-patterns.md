@@ -212,7 +212,7 @@ var version string
 
 Embeds at compile time — no runtime file path errors, single binary deployment.
 
-## References
+## Sources
 
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Go Patterns](https://github.com/tmrts/go-patterns)

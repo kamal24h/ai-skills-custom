@@ -218,7 +218,7 @@ result, err := db.Query("SELECT ...")
 result, err := db.QueryContext(ctx, "SELECT ...")
 ```
 
-## References
+## Sources
 
 - [log/slog](https://pkg.go.dev/log/slog)
 - [Prometheus Go client](https://github.com/prometheus/client_golang)

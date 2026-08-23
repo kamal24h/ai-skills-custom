@@ -40,7 +40,4 @@ The section ID (in parentheses) is the filename prefix used to group rules.
 **Impact:** MEDIUM
 **Description:** Performance optimizations including pre-allocation, `strings.Builder`, `sync.Pool`, and escape analysis. Profile before optimizing — measure, then act.
 
-## 8. Security (sec)
-
-**Impact:** CRITICAL
-**Description:** Security practices including input validation, prepared SQL statements, cryptographic primitives from `crypto/...`, and safe TLS configuration to protect against common vulnerabilities.
+> **Note:** Security topics currently live in [`references/security.md`](../references/security.md) and [`references/safety.md`](../references/safety.md) rather than dedicated `sec-*` rule files; the `safety-*` prefix (see `safety-nil-interface.md`) covers nil-interface and panic-safety rules.

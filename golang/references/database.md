@@ -267,7 +267,7 @@ db.Query("SELECT ...")
 db.QueryContext(ctx, "SELECT ...")
 ```
 
-## References
+## Sources
 
 - [database/sql documentation](https://pkg.go.dev/database/sql)
 - [sqlx](https://github.com/jmoiron/sqlx)

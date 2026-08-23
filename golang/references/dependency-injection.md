@@ -236,7 +236,7 @@ func init() {
 }
 ```
 
-## References
+## Sources
 
 - [samber/do](https://github.com/samber/do)
 - [google/wire](https://github.com/google/wire)

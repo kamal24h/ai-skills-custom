@@ -310,7 +310,7 @@ govulncheck ./...
 go test -race ./...
 ```
 
-## References
+## Sources
 
 - [Go Security Best Practices](https://go.dev/doc/security/best-practices)
 - [gosec Security Linter](https://github.com/securego/gosec)

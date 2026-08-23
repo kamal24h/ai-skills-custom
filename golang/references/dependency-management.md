@@ -135,7 +135,7 @@ updates:
 
 Auto-merge patch updates; require human review for minor and major.
 
-## References
+## Sources
 
 - [Go Modules Reference](https://go.dev/ref/mod)
 - [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck)

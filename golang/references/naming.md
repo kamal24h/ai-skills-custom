@@ -169,7 +169,7 @@ See rule `idiomatic-enum-zero-value`.
 | `predeclared` | Names that shadow builtins |
 | `misspell` | Typos in identifiers and comments |
 
-## References
+## Sources
 
 - [Effective Go — Names](https://go.dev/doc/effective_go#names)
 - [Go Code Review Comments — Naming](https://github.com/golang/go/wiki/CodeReviewComments#mixed-caps)

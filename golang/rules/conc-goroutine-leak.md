@@ -58,5 +58,5 @@ startWorker(ctx, jobs)
 - **Detectability**: Use `goleak` (uber-go/goleak) in tests to detect leaks automatically
 - **Ownership**: The goroutine's creator is responsible for its lifecycle
 
-Reference: [Goroutine Leaks — Dave Cheney](https://dave.cheney.net/2016/12/22/never-start-a-goroutine-without-knowing-how-it-will-stop) | [uber-go/goleak](https://github.com/uber-go/goleak) | [Concurrency reference](../references/concurrency.md) | [test-goleak rule](test-goleak.md)
+Reference: [Goroutine Leaks — Dave Cheney](https://dave.cheney.net/2016/12/22/never-start-a-goroutine-without-knowing-how-it-will-stop) | [uber-go/goleak](https://github.com/uber-go/goleak) | [Concurrency reference](../references/concurrency.md) | [golang-tester gt-goleak rule](../../golang-tester/rules/gt-goleak.md)
 See also: `golang/references/concurrency.md`

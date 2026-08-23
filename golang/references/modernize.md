@@ -168,7 +168,7 @@ linters:
 
 Also available via `gopls` (IDE) and `go fix` (Go 1.26+).
 
-## References
+## Sources
 
 - [Go Release Notes](https://go.dev/doc/devel/release)
 - [golangci-lint modernize](https://golangci-lint.run/usage/linters/#modernize)
