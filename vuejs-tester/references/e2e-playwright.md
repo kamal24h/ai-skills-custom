@@ -270,3 +270,9 @@ Cache the browser binaries; keep `retries: 2` on CI but treat a test that only p
 | Testing the dev server | Dev-only behavior masks bugs | `build` + `preview` |
 | Retries without investigation | Real races ship | Fix the root cause |
 | No trace/artifacts | CI failures undiagnosable | `trace: 'on-first-retry'` + upload |
+\
+## Sources\
+\
+- [Playwright Documentation](https://playwright.dev/docs/intro)\
+- [Testing Vue Apps with Playwright](https://playwright.dev/docs/api-testing)\
+- [Vue - Testing Library](https://testing-library.com/docs/vue-testing-library/intro/)
