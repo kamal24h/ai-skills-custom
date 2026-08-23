@@ -317,3 +317,8 @@ do_action( 'woocommerce_order_status_pending_to_processing', $order_id, $order )
 | `$tag` | — | Filter | Dynamic tag filter |
 
 Reference: [WooCommerce Code Reference - Hooks](https://woocommerce.github.io/code-reference/hooks/hooks.html)
+
+## Sources
+
+- [WooCommerce Code Reference — Hooks](https://woocommerce.github.io/code-reference/hooks/hooks.html)
+- [WordPress variable hooks pattern](https://adambrown.info/p/wp_hooks)

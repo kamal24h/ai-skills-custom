@@ -39,6 +39,8 @@ wp eval "echo WC_VERSION;"
 wp option get woocommerce_custom_orders_table_enabled
 ```
 
+> **Version baseline:** this skill's hook reference is extracted from WooCommerce **11.x** source. Hook signatures and availability may differ on older versions — verify against the detected `WC_VERSION`.
+
 ## Core Directives
 
 ### MUST DO
@@ -62,16 +64,26 @@ wp option get woocommerce_custom_orders_table_enabled
 
 ## Category Index — When to Load Which Reference
 
-| # | Category | Impact | Load when… | Reference | Prefix |
-|--:|----------|:------:|------------|-----------|--------|
-| 1 | Backend Dev | CRITICAL | Class structure, DI, naming conventions | `rules/woo-backend-*` | `woo-backend-` |
-| 2 | Products | CRITICAL | Product types, inventory, pricing | `rules/woo-product-*` | `woo-product-` |
-| 3 | Orders | CRITICAL | Statuses, fulfillment, refunds | `rules/woo-order-*` | `woo-order-` |
-| 4 | Checkout | HIGH | Fields, validation, order creation | `rules/woo-checkout-*` | `woo-checkout-` |
-| 5 | Performance | HIGH | Cache priming, query optimization | `rules/woo-performance-*` | `woo-performance-` |
-| 6 | Payments | CRITICAL | Gateway development, webhooks | `rules/woo-payment-*` | `woo-payment-` |
+| # | Category | Impact | Rule file | Load when… |
+|--:|----------|:------:|-----------|------------|
+| 1 | Backend Conventions | CRITICAL | [`rules/woo-backend-dev.md`](rules/woo-backend-dev.md) | Class structure, DI, naming conventions |
+| 2 | Data Integrity | CRITICAL | [`rules/woo-data-integrity.md`](rules/woo-data-integrity.md) | Verifying entities before modification, CRUD safety |
+| 3 | Hook Conventions | CRITICAL | [`rules/woo-hooks-conventions.md`](rules/woo-hooks-conventions.md) | Callback naming, priorities, removing hooks |
+| 4 | Products | CRITICAL | [`rules/woo-product-development.md`](rules/woo-product-development.md) | Product types, inventory, pricing |
+| 5 | Orders | CRITICAL | [`rules/woo-order-processing.md`](rules/woo-order-processing.md) | Statuses, fulfillment, refunds |
+| 6 | Payments | CRITICAL | [`rules/woo-payment-gateways.md`](rules/woo-payment-gateways.md) | Gateway development, webhooks |
+| 7 | Checkout | HIGH | [`rules/woo-checkout.md`](rules/woo-checkout.md) | Fields, validation, order creation |
+| 8 | Emails | MEDIUM | [`rules/woo-email-customization.md`](rules/woo-email-customization.md) | Email triggers, templates, headers |
+| 9 | Shipping | HIGH | [`rules/woo-shipping.md`](rules/woo-shipping.md) | Custom shipping methods, rates |
+| 10 | REST API | HIGH | [`rules/woo-rest-api.md`](rules/woo-rest-api.md) | Extending or consuming the WC REST API |
+| 11 | Admin | LOW | [`rules/woo-admin.md`](rules/woo-admin.md) | Admin screens, settings pages, notices |
+| 12 | Performance | HIGH | [`rules/woo-performance.md`](rules/woo-performance.md) | Cache priming, query optimization |
+
+All rules live in `rules/` — one file per category, each with Bad/Good examples and a closing `Reference:` link.
 
 ## Hook Discovery Protocol
+
+`references/hooks/` documents **2,621 unique core hooks** (11 action + 11 filter files), extracted from the WooCommerce 11.x plugin source: typed `**Params:**` where docblocks exist, raw `**Args:**` at call sites otherwise, plus `**Since:**` version and description where documented.
 
 **DO NOT** read hook files blindly. Use this protocol:
 
@@ -93,6 +105,6 @@ wp option get woocommerce_custom_orders_table_enabled
 ## External References
 
 - [WooCommerce Developer Documentation](https://developer.woocommerce.com)
-- [WooCommerce Hook Reference](https://hooks.woocommerce.com)
+- [WooCommerce Code Reference — Hooks](https://woocommerce.github.io/code-reference/hooks/hooks.html)
 - [WooCommerce REST API Documentation](https://woocommerce.github.io/woocommerce-rest-api-docs/)
 - [HPOS Development Guide](https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Guide)
