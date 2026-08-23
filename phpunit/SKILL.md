@@ -8,6 +8,8 @@ model: inherit
 
 Procedural knowledge and patterns for effective PHP testing with **PHPUnit 12.x** (PHP 8.3+). Emphasises strict comparison, the AAA pattern, deterministic isolation, and attribute-based metadata. 19 rules across 6 categories with bad / good examples in `rules/`; per-category guides in `references/`.
 
+> **Implementation:** Use the `php` skill alongside this one for production-code guidance — test guidance lives here, implementation guidance there. Separation of concerns: `php-pro` does not write tests; delegate to `phpunit-pro`.
+
 ## Specialized Agents
 
 Specialized personas for PHP testing. Load these from `agents/` to provide expert context.
