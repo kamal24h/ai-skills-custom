@@ -11,7 +11,7 @@ tags: validation, arrays, nested-data
 
 Validate arrays and nested data structures with Laravel's powerful array validation syntax.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual array validation
@@ -40,7 +40,7 @@ class OrderController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Proper array validation

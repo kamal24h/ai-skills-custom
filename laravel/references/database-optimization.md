@@ -144,6 +144,6 @@ DB::transaction(function () {
 });
 ```
 
-## References
+## Sources
 
 - [Eloquent](https://laravel.com/docs/13.x/eloquent) · [Queries](https://laravel.com/docs/13.x/queries) · [Cache](https://laravel.com/docs/13.x/cache) · [Pagination](https://laravel.com/docs/13.x/pagination) · [Migrations](https://laravel.com/docs/13.x/migrations) · [Redis](https://laravel.com/docs/13.x/redis)

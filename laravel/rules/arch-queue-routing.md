@@ -11,7 +11,7 @@ tags: architecture, queues, jobs, routing
 
 Laravel 13 adds `Queue::route()` to define default queue and connection routing for jobs in a central place, eliminating scattered `$connection` and `$queue` properties across job classes.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Queue/connection config scattered across every job class
@@ -63,7 +63,7 @@ class GenerateReport implements ShouldQueue
 // and update every job class individually.
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Centralized queue routing in a service provider (Laravel 13+)

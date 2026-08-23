@@ -412,4 +412,10 @@ return response()->json([
 ### Configuration and Environments
 
 - Keep secrets in `.env` and config in `config/*.php`
-- Use per-environment config overrides and `config:cache` in production
+- Use per-environment config overrides and `config:cache` in production\
+## Sources\
+\
+- [Laravel Directory Structure](https://laravel.com/docs/13.x/structure)\
+- [Laravel Service Container](https://laravel.com/docs/13.x/container)\
+- [Laravel Events](https://laravel.com/docs/13.x/events)\
+- [Laravel Caching](https://laravel.com/docs/13.x/cache)

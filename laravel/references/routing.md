@@ -359,4 +359,9 @@ return [
     'max_age' => 0,
     'supports_credentials' => true,
 ];
-```
+```\
+## Sources\
+\
+- [Laravel Routing](https://laravel.com/docs/13.x/routing)\
+- [Laravel API Resources](https://laravel.com/docs/13.x/eloquent-resources)\
+- [Laravel CORS Configuration](https://laravel.com/docs/13.x/routing#cors)

@@ -13,7 +13,7 @@ tags: controllers, rest, routing, conventions
 
 Resource controllers provide a consistent, RESTful structure for CRUD operations. They follow Laravel conventions, making code predictable and easier for other developers to understand.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Inconsistent naming and structure
@@ -34,7 +34,7 @@ class PostController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ### Resource Route
 

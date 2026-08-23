@@ -11,7 +11,7 @@ tags: testing, ai, image, audio, transcription, fake, assert, laravel-ai-sdk
 
 Use `Image::fake()`, `Audio::fake()`, and `Transcription::fake()` to prevent real generation calls. Assert prompts, aspect ratios, voices, and diarization.
 
-## Bad Example — Pest
+## Incorrect — Pest
 
 ```php
 <?php
@@ -25,7 +25,7 @@ test('generates product image', function () {
 });
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -78,7 +78,7 @@ test('no unexpected media generation', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

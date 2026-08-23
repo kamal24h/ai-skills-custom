@@ -11,7 +11,7 @@ tags: database, assertions, assertDatabaseMissing, assertModelMissing, delete, p
 
 Use `assertDatabaseMissing()` to verify that no row matching given constraints exists in a table. Use `assertModelMissing()` when you have the model instance. Always pair a delete operation with a missing assertion — a 200/204 response alone does not confirm the record was removed.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -35,7 +35,7 @@ test('user is removed', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

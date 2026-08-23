@@ -11,7 +11,7 @@ tags: authentication, actingAs, session, guard, policy, pest
 
 Use `actingAs($user)` to authenticate a user for the duration of a test. This sets session state correctly so middleware, policies, and gates evaluate as expected. Always test both authenticated and unauthenticated paths for protected routes.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -31,7 +31,7 @@ test('posts can be created', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

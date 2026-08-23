@@ -11,7 +11,7 @@ tags: validation, conditional, dynamic-rules
 
 Apply validation rules conditionally based on input values or other conditions.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual conditional logic in controller
@@ -51,7 +51,7 @@ class PaymentController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Form Request with conditional rules

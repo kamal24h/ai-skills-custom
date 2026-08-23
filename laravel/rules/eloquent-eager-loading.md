@@ -1,17 +1,17 @@
 ---
-title: Eager Loading Relationships
+title: Eager Load Relationships to Kill N+1
 impact: CRITICAL
 impactDescription: 10-100× query performance improvement
 tags: eloquent, eager-loading, n+1, performance
 ---
 
-## Eager Loading Relationships
+## Eager Load Relationships to Kill N+1
 
 **Impact: CRITICAL (10-100× query performance improvement)**
 
-Always eager load relationships to prevent N+1 query problems and improve performance.
+This is the canonical N+1 rule. Accessing a relationship on each model of a looped collection fires one query per model — eager load with `with()` so the whole collection resolves in a fixed number of queries. Constrained loads (column selection, row limits) are covered by [`query-eager-loading`](query-eager-loading.md); Laravel 13's automatic batching by [`query-auto-eager-loading`](query-auto-eager-loading.md).
 
-## Bad Example
+## Incorrect
 
 ```php
 // N+1 query problem - executes 101 queries for 100 posts
@@ -43,7 +43,7 @@ foreach ($posts as $post) {
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Eager load with 'with' - only 3 queries total

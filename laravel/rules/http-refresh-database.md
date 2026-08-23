@@ -11,7 +11,7 @@ tags: http, RefreshDatabase, DatabaseTransactions, database, isolation, pest
 
 Use `RefreshDatabase` for most feature tests — it migrates a fresh schema and wraps each test in a transaction that rolls back on completion. Use `DatabaseTransactions` when you need the schema already migrated (e.g., in CI with a pre-built test database). Never share database state across tests.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -30,7 +30,7 @@ test('post is deleted', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

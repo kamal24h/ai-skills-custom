@@ -11,7 +11,7 @@ tags: controllers, api, resources, transformation
 
 Use API Resources to transform models into consistent JSON responses.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual array transformation in controller
@@ -52,7 +52,7 @@ class UserController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // app/Http/Resources/UserResource.php

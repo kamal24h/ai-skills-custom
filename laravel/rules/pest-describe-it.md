@@ -13,7 +13,7 @@ tags: pest, phpunit, describe, it, organisation, readability, test-class
 
 **PHPUnit:** Use one test class per controller/feature, with method names that describe the scenario. Group related scenarios in the same class.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -33,7 +33,7 @@ class PostTest extends TestCase
 }
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -99,7 +99,7 @@ describe('PostController', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

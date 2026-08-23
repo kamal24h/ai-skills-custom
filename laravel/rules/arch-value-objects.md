@@ -11,7 +11,7 @@ tags: architecture, value-objects, domain-driven, type-safety
 
 Encapsulate domain concepts with value objects to enforce business rules and improve type safety.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Primitive obsession - using strings/numbers for domain concepts
@@ -48,7 +48,7 @@ $user->phone = '+1-555-123-4567';
 $cleanPhone = preg_replace('/[^0-9]/', '', $user->phone); // Manual parsing
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Email value object

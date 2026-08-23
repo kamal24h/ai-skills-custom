@@ -11,7 +11,7 @@ tags: architecture, dto, type-safety, validation
 
 Use DTOs to transfer data between layers with type safety and validation.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Passing arrays everywhere
@@ -42,7 +42,7 @@ class UserController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // app/DTOs/CreateUserDTO.php

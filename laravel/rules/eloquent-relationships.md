@@ -11,7 +11,7 @@ tags: eloquent, relationships, associations
 
 Define relationships properly and use them effectively for clean, efficient database queries.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual joins instead of relationships
@@ -33,7 +33,7 @@ foreach ($users as $user) {
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Model with well-defined relationships

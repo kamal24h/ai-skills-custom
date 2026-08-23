@@ -13,7 +13,7 @@ tags: pest, phpunit, beforeEach, afterEach, setUp, tearDown, uses, hooks, setup
 
 **PHPUnit:** Use `setUp()` for per-test setup and `tearDown()` for teardown. Apply traits with `use` inside the class. Share base setup through a common `TestCase` subclass.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -34,7 +34,7 @@ test('user can create a post', function () {
 });
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -121,7 +121,7 @@ describe('admin routes', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

@@ -11,7 +11,7 @@ tags: faking, mail, Mail::fake, assertSent, assertNothingSent, pest
 
 Call `Mail::fake()` before any code that triggers mail. This swaps the mailer with a fake that records calls instead of sending. Always assert both that the correct mailable was sent and that nothing unexpected was sent.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -35,7 +35,7 @@ test('user registration triggers welcome email', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

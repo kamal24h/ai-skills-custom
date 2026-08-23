@@ -11,7 +11,7 @@ tags: eloquent, scopes, queries, reusability
 
 Encapsulate reusable query constraints in model scopes for cleaner, more maintainable code.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Repeated query logic scattered across controllers
@@ -54,7 +54,7 @@ class ApiPostController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Model with reusable scopes

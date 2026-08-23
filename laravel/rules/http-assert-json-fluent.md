@@ -11,7 +11,7 @@ tags: http, assertJson, AssertableJson, fluent, json, pest
 
 Pass a closure to `assertJson()` to receive an `AssertableJson` instance. This fluent API allows you to assert specific values, count nested arrays, check for missing keys, and drill into nested structures — all without array comparison fragility.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -33,7 +33,7 @@ test('post show', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

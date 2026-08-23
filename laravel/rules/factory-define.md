@@ -11,7 +11,7 @@ tags: factory, faker, definition, typed, PHP 8.3, pest
 
 Define model factories using Faker to generate realistic typed attributes. Use PHP 8.3 typed properties in the factory class. Every model that appears in tests should have a factory — raw `DB::table()->insert()` calls are fragile, bypass model events and casts, and duplicate schema knowledge across tests.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -43,7 +43,7 @@ class UserFactory extends Factory
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

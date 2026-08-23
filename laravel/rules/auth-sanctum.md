@@ -11,7 +11,7 @@ tags: authentication, sanctum, api, token, actingAs, pest
 
 Use `Sanctum::actingAs($user)` to authenticate API requests with a token in tests. Pass an array of abilities to test scope-restricted endpoints. Always test both valid and missing token paths for protected API routes.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -38,7 +38,7 @@ test('api request with token', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

@@ -11,7 +11,7 @@ tags: validation, form-requests, authorization
 
 Encapsulate validation logic in Form Request classes for cleaner controllers and reusability.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Validation cluttering the controller
@@ -47,7 +47,7 @@ class ProductController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Dedicated Form Request class

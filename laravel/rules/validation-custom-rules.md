@@ -11,7 +11,7 @@ tags: validation, custom-rules, reusability
 
 Create reusable custom validation rules for complex or domain-specific validation logic.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Complex validation logic in controller
@@ -58,7 +58,7 @@ class UserController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Custom rule class for strong password

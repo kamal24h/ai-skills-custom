@@ -11,7 +11,7 @@ tags: controllers, invokable, single-action
 
 Use invokable controllers for actions that don't fit RESTful resource methods.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Controller with unrelated methods
@@ -35,7 +35,7 @@ Route::post('/users/import', [UserController::class, 'importFromCsv']);
 Route::post('/users/{user}/newsletter', [UserController::class, 'sendNewsletter']);
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Single action (invokable) controller

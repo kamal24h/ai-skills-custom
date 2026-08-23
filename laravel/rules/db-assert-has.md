@@ -11,7 +11,7 @@ tags: database, assertions, assertDatabaseHas, assertModelExists, pest
 
 Use `assertDatabaseHas()` to verify that a table row matching given key/value pairs exists after an operation. Use `assertModelExists()` when you have an Eloquent model instance. Avoid re-fetching the model just to check it exists.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -42,7 +42,7 @@ test('user is registered', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

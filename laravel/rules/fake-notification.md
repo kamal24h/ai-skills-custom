@@ -11,7 +11,7 @@ tags: faking, notification, Notification::fake, assertSentTo, pest
 
 Call `Notification::fake()` before any code that triggers notifications. This stops real SMS, email, Slack, and database notifications from being sent. Assert that the right notification was sent to the right user with the correct data.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -35,7 +35,7 @@ test('resetting password sends a notification', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

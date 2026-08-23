@@ -11,7 +11,7 @@ tags: eloquent, casts, type-conversion, attributes
 
 Use Eloquent casts to automatically convert attributes to appropriate types.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual type handling
@@ -45,7 +45,7 @@ $total = (float) $order->total;
 $createdAt = Carbon::parse($order->created_at);
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Built-in casts

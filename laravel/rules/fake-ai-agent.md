@@ -11,7 +11,7 @@ tags: testing, ai, agent, fake, assert, laravel-ai-sdk
 
 Use `Agent::fake()` to prevent real AI provider calls in tests. Fake responses can be static strings, arrays, or dynamic closures. Assert that agents were prompted with expected inputs.
 
-## Bad Example — Pest
+## Incorrect — Pest
 
 ```php
 <?php
@@ -27,7 +27,7 @@ test('coach analyzes transcript', function () {
 });
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -64,7 +64,7 @@ test('no unexpected agent calls', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

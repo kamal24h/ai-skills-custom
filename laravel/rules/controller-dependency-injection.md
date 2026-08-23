@@ -11,7 +11,7 @@ tags: controllers, dependency-injection, testability
 
 Use constructor and method injection to provide dependencies instead of using facades or creating instances.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Using facades and manual instantiation
@@ -43,7 +43,7 @@ class OrderController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Constructor injection for shared dependencies

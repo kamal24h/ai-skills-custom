@@ -11,7 +11,7 @@ tags: factory, states, scenarios, pest, PHP 8.3
 
 Define named states on factories for distinct model configurations. States make tests readable by naming the scenario rather than spelling out every attribute override. They also centralise scenario logic so changes propagate automatically.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -37,7 +37,7 @@ test('suspended user cannot post', function () {
 // If 'suspended_by' is renamed, every test must be updated manually
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

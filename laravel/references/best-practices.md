@@ -179,7 +179,7 @@ $posts = Post::with([
 ])->get();
 ```
 
-## References
+## Sources
 
 - [Laravel 13 docs](https://laravel.com/docs/13.x)
 - [PHP 8.3 release notes](https://www.php.net/releases/8.3/en.php)

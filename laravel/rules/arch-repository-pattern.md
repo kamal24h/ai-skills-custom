@@ -11,7 +11,7 @@ tags: architecture, repository, data-access, abstraction
 
 Abstract database queries into repository classes to decouple business logic from data access.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Eloquent queries scattered in controllers
@@ -48,7 +48,7 @@ class ProductController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Repository interface

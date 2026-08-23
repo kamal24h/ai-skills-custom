@@ -11,7 +11,7 @@ tags: factory, relationships, has, for, recycle, afterCreating, pest
 
 Use `has()` for HasMany/MorphMany relationships, `for()` for BelongsTo, `recycle()` to reuse existing models instead of creating duplicates, and `afterCreating()` for post-creation side effects. These helpers wire foreign keys correctly and keep test setup concise.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -33,7 +33,7 @@ test('posts belong to users', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

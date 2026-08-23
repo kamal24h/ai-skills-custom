@@ -11,7 +11,7 @@ tags: eloquent, chunking, memory, performance
 
 Process large datasets in chunks to prevent memory exhaustion and timeout issues.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Loading all records into memory - will crash with large datasets
@@ -34,7 +34,7 @@ $orders = Order::where('status', 'completed')->get();
 $total = User::all()->sum('balance'); // Loads all users
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Chunk for processing large datasets

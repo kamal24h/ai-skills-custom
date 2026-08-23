@@ -13,7 +13,7 @@ tags: architecture, services, separation-of-concerns, business-logic
 
 Controllers should be thin - they handle HTTP requests and delegate business logic. Service classes encapsulate complex business operations, making code reusable, testable, and maintainable.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Fat controller with business logic
@@ -83,7 +83,7 @@ class OrderController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Service class with business logic

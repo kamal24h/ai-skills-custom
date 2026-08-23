@@ -348,4 +348,9 @@ User::upsert(
 5. **Cache expensive queries** - Use Redis/Memcached
 6. **Use database indexing** - Add indexes in migrations
 7. **Avoid using model events for heavy operations** - Use queues instead
-8. **Use lazy collections** - For processing large datasets
+8. **Use lazy collections** - For processing large datasets\
+## Sources\
+\
+- [Laravel Eloquent ORM](https://laravel.com/docs/13.x/eloquent)\
+- [Laravel Eloquent Relationships](https://laravel.com/docs/13.x/eloquent-relationships)\
+- [Laravel Collections](https://laravel.com/docs/13.x/collections)

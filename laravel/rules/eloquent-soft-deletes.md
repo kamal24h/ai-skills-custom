@@ -11,7 +11,7 @@ tags: eloquent, soft-deletes, safety
 
 Use soft deletes to retain data while hiding it from normal queries, enabling recovery and audit trails.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Hard delete with no recovery option
@@ -39,7 +39,7 @@ $users = User::where('is_deleted', false)->get();
 $activeUsers = User::where('is_deleted', false)->where('status', 'active')->get();
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Enable soft deletes on model

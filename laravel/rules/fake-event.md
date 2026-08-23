@@ -11,7 +11,7 @@ tags: faking, events, Event::fake, assertDispatched, assertNotDispatched, pest
 
 Call `Event::fake()` to prevent listeners from executing while still recording which events were dispatched. This isolates the unit under test from listener side effects. Assert that the correct events are dispatched with the right payloads.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -35,7 +35,7 @@ test('post is indexed after publish', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

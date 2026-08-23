@@ -11,7 +11,7 @@ tags: eloquent, events, observers, lifecycle
 
 Use model events and observers to react to model lifecycle changes cleanly.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Logic scattered in controllers
@@ -45,7 +45,7 @@ class UserController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Using model events in the model itself

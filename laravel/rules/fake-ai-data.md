@@ -11,7 +11,7 @@ tags: testing, ai, embeddings, reranking, files, vector-stores, fake, assert, la
 
 Use `Embeddings::fake()`, `Reranking::fake()`, `Files::fake()`, and `Stores::fake()` to test data operations without provider connections.
 
-## Bad Example — Pest
+## Incorrect — Pest
 
 ```php
 <?php
@@ -25,7 +25,7 @@ test('stores document with embedding', function () {
 });
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -88,7 +88,7 @@ test('no unexpected data operations', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

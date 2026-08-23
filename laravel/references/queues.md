@@ -420,4 +420,9 @@ return [
 7. **Implement proper error handling** - Use failed() method
 8. **Use unique jobs** - Prevent duplicate processing
 9. **Queue long-running tasks** - Don't block requests
-10. **Use Horizon for Redis queues** - Better monitoring
+10. **Use Horizon for Redis queues** - Better monitoring\
+## Sources\
+\
+- [Laravel Queues](https://laravel.com/docs/13.x/queues)\
+- [Laravel Horizon](https://laravel.com/docs/13.x/horizon)\
+- [Laravel Queue Testing (Fakes)](https://laravel.com/docs/13.x/queues#testing)

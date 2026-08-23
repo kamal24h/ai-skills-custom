@@ -11,7 +11,7 @@ tags: http, feature-test, arrange-act-assert, pest, structure
 
 Structure every feature test with three clear phases: Arrange (set up state with factories), Act (make the HTTP request), Assert (verify the response and side effects). Test behavior and outcomes — not implementation details.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -30,7 +30,7 @@ test('create post', function () {
 });
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -63,7 +63,7 @@ test('authenticated user can create a post', function () {
 });
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php

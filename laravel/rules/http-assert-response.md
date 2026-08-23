@@ -11,7 +11,7 @@ tags: http, assertions, assertStatus, assertJson, assertRedirect, pest
 
 Use the full range of HTTP assertion methods on `TestResponse` to verify status codes, JSON content, redirects, headers, and validation errors. Always assert the specific status code — never rely on `assertOk()` alone when a `201` or `422` is expected.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -29,7 +29,7 @@ test('post list', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

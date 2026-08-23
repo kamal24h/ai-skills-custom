@@ -11,7 +11,7 @@ tags: validation, hooks, custom-validation
 
 Use after validation hooks for complex validation that depends on multiple fields or external data.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Complex validation logic mixed in controller
@@ -53,7 +53,7 @@ class BookingController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Form Request with after validation hook

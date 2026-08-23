@@ -11,7 +11,7 @@ tags: controllers, rest, crud, conventions
 
 Use resource controllers with standard RESTful methods for CRUD operations.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Non-standard method names
@@ -36,7 +36,7 @@ Route::post('/articles/{id}/change', [ArticleController::class, 'change']);
 Route::post('/articles/{id}/remove', [ArticleController::class, 'remove']);
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Standard resource controller

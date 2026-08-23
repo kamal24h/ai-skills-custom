@@ -11,7 +11,7 @@ tags: eloquent, database, vector, embeddings, search, ai, pgvector
 
 Laravel 13 adds native vector column support and similarity query methods for PostgreSQL with pgvector. Use these to build semantic search, recommendation engines, and RAG (retrieval-augmented generation) features.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual similarity calculation — slow, no index, error-prone
@@ -47,7 +47,7 @@ class DocumentController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Migration — use vector column with pgvector extension

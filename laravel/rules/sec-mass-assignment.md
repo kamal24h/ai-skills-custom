@@ -13,7 +13,7 @@ tags: security, mass-assignment, eloquent, protection
 
 Mass assignment vulnerabilities allow attackers to modify database fields they shouldn't have access to. A malicious user could set `is_admin=1` or `role=admin` if those fields aren't protected.
 
-## Bad Example
+## Incorrect
 
 ```php
 // No protection - allows any field to be mass assigned
@@ -50,7 +50,7 @@ class Post extends Model
 }
 ```
 
-## Good Example
+## Correct
 
 ### Use $fillable Restrictively
 

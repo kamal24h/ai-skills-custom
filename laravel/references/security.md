@@ -235,3 +235,9 @@ Priority map:
 | 7 | Auth & Rate Limiting | [`sec-authentication-rate-limiting`](../rules/sec-authentication-rate-limiting.md) |
 | 8 | Inertia Data Exposure | [`sec-inertia-data-exposure`](../rules/sec-inertia-data-exposure.md) |
 | — | Mass Assignment | [`sec-mass-assignment`](../rules/sec-mass-assignment.md) |
+\
+## Sources\
+\
+- [OWASP Top 10 (2021)](https://owasp.org/Top10/)\
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)\
+- [Laravel Security Documentation](https://laravel.com/docs/13.x/authentication)

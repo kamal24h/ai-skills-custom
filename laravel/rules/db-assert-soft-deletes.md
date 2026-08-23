@@ -11,7 +11,7 @@ tags: database, soft-delete, assertSoftDeleted, assertNotSoftDeleted, trashed, p
 
 Use `assertSoftDeleted()` to confirm a record has a non-null `deleted_at` timestamp while still existing in the database. Use `assertNotSoftDeleted()` to assert a model is active. Use the built-in `trashed()` factory state to generate pre-soft-deleted records for restore tests.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -36,7 +36,7 @@ test('post has deleted_at', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

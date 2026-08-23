@@ -11,7 +11,7 @@ tags: architecture, actions, single-responsibility, testability
 
 Use single-purpose action classes for discrete operations to achieve maximum reusability and testability.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Service class doing too many things
@@ -44,7 +44,7 @@ class UserService
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // app/Actions/User/RegisterUserAction.php

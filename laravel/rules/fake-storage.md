@@ -11,7 +11,7 @@ tags: faking, storage, Storage::fake, assertExists, assertMissing, file upload, 
 
 Call `Storage::fake('disk')` before any code that reads or writes files. This swaps the real filesystem with an in-memory fake. Use `UploadedFile::fake()` to generate fake files for upload tests. Assert presence or absence of files with `Storage::disk()->assertExists()`.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -34,7 +34,7 @@ test('user can upload avatar', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

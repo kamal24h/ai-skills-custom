@@ -149,6 +149,6 @@ Notification::assertSentTo($user, OrderShipped::class);
 Storage::disk('avatars')->assertExists('user-1.png');
 ```
 
-## References
+## Sources
 
 - [Laravel Testing](https://laravel.com/docs/13.x/testing) · [Pest](https://pestphp.com) · [PHPUnit](https://phpunit.de)

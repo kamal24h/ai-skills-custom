@@ -11,7 +11,7 @@ tags: architecture, organization, domain-driven, structure
 
 Organize code by feature/domain rather than by type for better cohesion and discoverability.
 
-## Bad Example
+## Incorrect
 
 ```
 app/
@@ -56,7 +56,7 @@ app/
     └── UpdateProductRequest.php
 ```
 
-## Good Example
+## Correct
 
 ```
 app/

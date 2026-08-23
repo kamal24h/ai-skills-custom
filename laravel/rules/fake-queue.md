@@ -11,7 +11,7 @@ tags: faking, queue, jobs, Queue::fake, assertPushed, assertNothingPushed, pest
 
 Call `Queue::fake()` before code that dispatches jobs. The fake records dispatches without executing them, making tests fast and deterministic. Assert that jobs were dispatched with the right data, to the right queue, the right number of times.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -33,7 +33,7 @@ test('bulk import queues a job', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

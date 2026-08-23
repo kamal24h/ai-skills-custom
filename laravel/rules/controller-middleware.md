@@ -11,7 +11,7 @@ tags: controllers, middleware, authentication, authorization
 
 Use middleware to handle cross-cutting concerns like authentication, rate limiting, and request modification.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Authentication and authorization checks in every method
@@ -58,7 +58,7 @@ class AdminController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // PHP Attributes (Laravel 13+) — preferred declarative approach

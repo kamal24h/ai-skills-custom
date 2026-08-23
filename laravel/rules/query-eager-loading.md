@@ -1,55 +1,46 @@
 ---
-title: Always Eager Load Known Relationships
-impact: CRITICAL
-impactDescription: "Reduces N+1 queries — 101 queries down to 2"
-tags: n-plus-one, eager-loading, with, performance
+title: Constrain Eager Loads — Select Columns, Limit Rows
+impact: HIGH
+impactDescription: "Cuts memory and transfer: only needed columns and rows are hydrated"
+tags: eager-loading, with-constraints, column-selection, performance
 ---
 
-## Always Eager Load Known Relationships
+## Constrain Eager Loads — Select Columns, Limit Rows
 
-**Impact: CRITICAL (Reduces N+1 queries — 101 queries down to 2)**
+**Impact: HIGH (Only needed columns and rows get hydrated)**
 
-Accessing relationships inside loops without eager loading triggers a separate query for every iteration. A page listing 100 posts with their authors fires 101 queries (1 for posts + 100 for each author), degrading response time linearly with dataset size.
+The base N+1 fix is [`eloquent-eager-loading`](eloquent-eager-loading.md); automatic loading is covered by [`query-auto-eager-loading`](query-auto-eager-loading.md). This rule covers what to do *after* you eager load: an unconstrained `with('comments')` on a hot post still hydrates thousands of Eloquent models it never displays. Constrain every eager load on list endpoints — select the columns each view renders, cap related-row counts with `limit()`.
 
 ## Incorrect
 
 ```php
-// ❌ N+1 problem — 101 queries for 100 posts
-$posts = Post::all(); // 1 query
-
-foreach ($posts as $post) {
-    echo $post->author->name; // 1 query per post (100 queries)
-    echo $post->tags->pluck('name')->join(', '); // 1 query per post (100 more)
-}
-// Total: 201 queries
+// ❌ Hydrates every column of every related row
+$posts = Post::with(['author', 'comments'])->get();
+// author rows: all columns including bio (TEXT), settings (JSON)
+// comments per post: unbounded — a popular post loads 5,000 models
 ```
-
-**Problems:**
-- Each loop iteration fires a separate SQL query for every accessed relationship
-- Query count grows linearly with the number of records, causing severe slowdowns
-- Database connection overhead multiplied across hundreds of round-trips
 
 ## Correct
 
 ```php
-// ✅ Eager load all known relationships — 3 queries total
-$posts = Post::with(['author', 'tags'])->get(); // 3 queries
+// ✅ Column selection + per-relationship constraints — 3 lean queries
+$posts = Post::with([
+    'author:id,name,avatar',                      // only rendered columns
+    'comments' => fn ($q) => $q->latest()->limit(5), // capped preview rows
+])->get();
+
+// ✅ Counts instead of rows when the number is all you render
+$posts = Post::withCount('comments')->get();      // $post->comments_count
 
 foreach ($posts as $post) {
-    echo $post->author->name;       // No additional query
-    echo $post->tags->pluck('name')->join(', '); // No additional query
+    echo $post->author->name;                     // hydrated, no extras
+    echo $post->comments->pluck('body');          // at most 5 models each
 }
-
-// ✅ Constrained eager loading — load only what you need
-$posts = Post::with([
-    'author:id,name,avatar',
-    'comments' => fn ($q) => $q->latest()->limit(5),
-])->get();
 ```
 
 **Benefits:**
-- Constant query count regardless of result set size (2-3 queries instead of 201)
-- Constrained eager loads reduce memory usage by loading only relevant related records
-- Predictable, measurable database load that scales with relationship count, not row count
+- Memory drops with column count: TEXT/JSON columns never hydrate when unselected
+- Row caps keep popular-parent queries O(1) regardless of related-row totals
+- `withCount()` answers "how many?" without hydrating a single model
 
-Reference: [Laravel Eager Loading](https://laravel.com/docs/13.x/eloquent-relationships#eager-loading)
+Reference: [Laravel Eager Loading — Constraining](https://laravel.com/docs/13.x/eloquent-relationships#constraining-eager-loads)

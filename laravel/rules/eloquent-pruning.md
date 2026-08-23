@@ -11,7 +11,7 @@ tags: eloquent, pruning, cleanup, maintenance
 
 Use model pruning to automatically clean up old or obsolete database records.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual cleanup in random places
@@ -47,7 +47,7 @@ class CleanupOldRecords extends Command
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Model with Prunable trait

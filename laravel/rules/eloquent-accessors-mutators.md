@@ -11,7 +11,7 @@ tags: eloquent, accessors, mutators, attributes
 
 Use accessors and mutators to transform attribute values when getting or setting them.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Manual transformations scattered in code
@@ -47,7 +47,7 @@ In views, more manual formatting:
 <p>{{ strtoupper($user->first_name) }} {{ strtoupper($user->last_name) }}</p>
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Modern accessors and mutators (Laravel 9+)

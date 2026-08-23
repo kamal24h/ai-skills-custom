@@ -11,7 +11,7 @@ tags: architecture, events, listeners, decoupling, async
 
 Use events and listeners to decouple components and handle side effects asynchronously.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Tightly coupled code with mixed concerns
@@ -51,7 +51,7 @@ class OrderController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Event class

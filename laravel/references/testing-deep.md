@@ -519,4 +519,9 @@ php artisan test --stop-on-failure
 7. **Fake queues and events** - Test async code synchronously
 8. **Test edge cases** - Invalid data, permissions, etc.
 9. **Achieve >85% coverage** - Test critical paths
-10. **Run tests in CI/CD** - Automate test execution
+10. **Run tests in CI/CD** - Automate test execution\
+## Sources\
+\
+- [Laravel HTTP Tests](https://laravel.com/docs/13.x/http-tests)\
+- [Laravel Database Testing](https://laravel.com/docs/13.x/database-testing)\
+- [Pest Documentation](https://pestphp.com/docs)

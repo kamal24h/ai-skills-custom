@@ -11,7 +11,7 @@ tags: factory, sequence, count, varied-data, pest
 
 Use `sequence()` to assign alternating or ordered attribute values when creating multiple records. This avoids creating multiple separate factory calls and makes the data pattern explicit in the test.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -36,7 +36,7 @@ test('admin sees all statuses', function () {
 });
 ```
 
-## Good Example
+## Correct
 
 ```php
 <?php

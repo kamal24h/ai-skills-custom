@@ -11,7 +11,7 @@ tags: controllers, form-requests, validation
 
 Move validation and authorization logic from controllers to dedicated Form Request classes.
 
-## Bad Example
+## Incorrect
 
 ```php
 // Validation logic cluttering the controller
@@ -62,7 +62,7 @@ class ArticleController extends Controller
 }
 ```
 
-## Good Example
+## Correct
 
 ```php
 // Store request

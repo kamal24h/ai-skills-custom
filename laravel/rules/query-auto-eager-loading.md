@@ -2,14 +2,14 @@
 title: Use Automatic Eager Loading (Laravel 13+)
 impact: CRITICAL
 impactDescription: "Eliminates N+1 queries without manual with() calls"
-tags: auto-eager-loading, n-plus-one, laravel-12
+tags: auto-eager-loading, n-plus-one, laravel-13
 ---
 
 ## Use Automatic Eager Loading (Laravel 13+)
 
 **Impact: CRITICAL (Eliminates N+1 queries without manual with() calls)**
 
-Laravel 13 introduces automatic eager loading, which detects when multiple models in a collection access the same relationship and batches those queries automatically. This eliminates the most common source of N+1 bugs without requiring developers to remember every `with()` call.
+Laravel 13 introduces automatic eager loading, which detects when multiple models in a collection access the same relationship and batches those queries automatically. This eliminates the most common source of N+1 bugs without requiring developers to remember every `with()` call. Complements the manual `with()` rule ([`eloquent-eager-loading`](eloquent-eager-loading.md)); constrained loads stay explicit per [`query-eager-loading`](query-eager-loading.md).
 
 ## Incorrect
 

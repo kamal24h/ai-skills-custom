@@ -13,7 +13,7 @@ tags: pest, phpunit, datasets, dataProvider, parameterised, with, data-driven
 
 **PHPUnit:** Use `#[DataProvider]` attribute pointing to a static method that returns arrays of arguments. Note: the `@dataProvider` annotation was removed in PHPUnit 12 — use the attribute instead.
 
-## Bad Example
+## Incorrect
 
 ```php
 <?php
@@ -36,7 +36,7 @@ test('title must not exceed 255 characters', function () {
 // Three identical tests — one parameterised test handles all three
 ```
 
-## Good Example — Pest
+## Correct — Pest
 
 ```php
 <?php
@@ -89,7 +89,7 @@ it('rejects invalid post status on update', function (string $status) {
 })->with('invalid_statuses');
 ```
 
-## Good Example — PHPUnit
+## Correct — PHPUnit
 
 ```php
 <?php
