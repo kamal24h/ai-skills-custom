@@ -202,6 +202,10 @@ Inconsistent error formats force API consumers to handle multiple error structur
 
 **Note:** Never expose stack traces or internal details in production.
 
+### Relation to RFC 9457 (Problem Details)
+
+This envelope follows the same intent as RFC 9457 (`application/problem+json`): machine-readable type/code, human-readable message, and extensible details. It is **not** byte-compatible with the RFC's `type`/`title`/`status`/`detail`/`instance` members. If your consumers require strict RFC conformance, serve `application/problem+json` instead and map fields 1:1: `code` → `type` + `title`, `message` → `detail`, HTTP status → `status`, `details[]` → extension members. Pick **one** shape for the whole API — either is acceptable; mixing them is not.
+
 ## Implementation
 
 ### TypeScript/Node.js
@@ -396,4 +400,4 @@ BAD_REQUEST
 - Human-readable messages for display
 - Detailed validation feedback for field-level errors
 
-Reference: [RFC 7807 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc7807)
+Reference: [RFC 9457 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc9457)

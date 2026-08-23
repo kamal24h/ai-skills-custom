@@ -1,13 +1,13 @@
 ---
 title: Include Pagination Metadata in Responses
 impact: HIGH
-impactDescription: "Eliminates guesswork pagination and reduces unnecessary API calls by 30-50%"
+impactDescription: "Removes guesswork from pagination and cuts wasted client fetches"
 tags: pagination, metadata, total-count
 ---
 
 ## Include Pagination Metadata in Responses
 
-**Impact: HIGH (Eliminates guesswork pagination and reduces unnecessary API calls by 30-50%)**
+**Impact: HIGH (Removes guesswork from pagination and cuts wasted client fetches)**
 
 Without pagination metadata, clients must make an extra request to discover there are no more results, or blindly paginate until they receive an empty response. Including metadata in every paginated response gives clients everything they need to render UI controls and make efficient decisions about fetching more data.
 

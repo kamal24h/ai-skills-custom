@@ -64,3 +64,8 @@ Warning:     299 - "This endpoint is deprecated. Migrate to /v2/users before 202
 4. **Announce deprecation** with headers and changelog
 5. **Sunset window** ≥ 6 months (longer for widely-adopted APIs)
 6. **Remove v1** after the sunset date
+
+## Sources
+
+- [Microsoft API Guidelines — Versioning](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#12-versioning)
+- [Treat deprecation as a process — info flags](https://datatracker.ietf.org/doc/html/rfc8594)

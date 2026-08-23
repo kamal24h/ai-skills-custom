@@ -74,3 +74,8 @@ GET /users?fields=id,name,email           # sparse fieldset
 - Small, bounded table
 - User needs random access ("jump to page 7")
 - Admin UIs with page numbers
+
+## Sources
+
+- [JSON:API — Pagination](https://jsonapi.org/format/#fetching-pagination)
+- [Zalando API Guidelines — Pagination](https://zalando.github.io/restful-api-guidelines/)

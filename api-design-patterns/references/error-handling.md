@@ -65,3 +65,8 @@ Use `SCREAMING_SNAKE_CASE`, namespaced by domain when helpful:
 - ✓ Map each code to an HTTP status; don't use 200 with `{"error": ...}`
 - ✗ Don't expose DB error strings, file paths, or internal class names
 - ✗ Don't return different shapes from different endpoints
+
+## Sources
+
+- [RFC 9457 — Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc9457)
+- [MDN — HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

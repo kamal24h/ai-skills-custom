@@ -55,3 +55,9 @@ Retry-After: 60
 - ✗ Don't log request bodies that may contain passwords, tokens, or PII
 - ✗ Don't put secrets in URL query params — they end up in server + proxy logs
 - ✗ Don't rely on "obscure endpoint" as a security boundary
+
+## Sources
+
+- [OWASP API Security Top 10](https://owasp.org/API-Security/)
+- [RFC 6750 — OAuth 2.0 Bearer Token Usage](https://www.rfc-editor.org/rfc/rfc6750)
+- [MDN — CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

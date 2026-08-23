@@ -79,6 +79,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 | 5 | Versioning | HIGH | Launching v1, breaking changes, sunset windows | [`references/versioning.md`](references/versioning.md) | `ver-` | 4 |
 | 6 | Response Format | MEDIUM | Picking envelope, casing, sparse fields, compression | [`references/response-format.md`](references/response-format.md) | `resp-` | 4 |
 | 7 | Documentation | MEDIUM | OpenAPI spec, examples, changelog | [`references/documentation.md`](references/documentation.md) | `doc-` | 3 |
+| 8 | Protocol Alternatives | HIGH | Evaluating GraphQL or gRPC instead of REST; mixed-protocol topologies | [`references/graphql-grpc.md`](references/graphql-grpc.md) | — | — |
 
 ## Rule Index — Direct Jumps
 

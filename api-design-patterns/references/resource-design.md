@@ -68,3 +68,8 @@ GET    /users/123/posts/456/comments  # Nested (2 levels — max)
 | 429 | Too Many Requests | Rate limited |
 | 500 | Server Error | Unhandled exception |
 | 503 | Service Unavailable | Upstream / maintenance |
+
+## Sources
+
+- [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110)
+- [Google API Design Guide — Resource Names](https://cloud.google.com/apis/design/resource_names)

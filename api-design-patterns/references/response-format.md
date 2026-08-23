@@ -72,3 +72,8 @@ Vary: Accept-Encoding
 ```
 
 Rule of thumb: enable gzip/br for responses > 1 KiB — skip compressing pre-compressed payloads (images, video).
+
+## Sources
+
+- [RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259)
+- [Google JSON Style Guide](https://google.github.io/styleguide/jsoncstyleguide.xml)

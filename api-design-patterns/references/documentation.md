@@ -99,3 +99,8 @@ examples:
 - ✓ Validate the spec in CI (`redocly lint`, `spectral lint`)
 - ✓ Keep examples in sync with the schema (lint will catch drift)
 - ✗ Don't let the docs site and the spec diverge — docs are generated, not authored
+
+## Sources
+
+- [OpenAPI Specification 3.1](https://spec.openapis.org/oas/latest.html)
+- [Microsoft API Guidelines — Documentation](https://github.com/microsoft/api-guidelines)
