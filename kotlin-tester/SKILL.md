@@ -8,6 +8,8 @@ model: inherit
 
 Modern testing patterns for Android, Kotlin, and KMP — JUnit 5, Kotest, MockK, Coroutines Test, Turbine, Espresso, Compose Testing, and UIAutomator. Focused on reliability, speed, and maintainability.
 
+> **Implementation:** Use the `kotlin` skill alongside this one — production-code guidance lives there (`kotlin/rules/core-directives.md`), test guidance here. Separation of concerns: `kotlin-pro` does not write tests; delegate to `kotlin-tester-pro`.
+
 ## Specialized Agents
 
 | Agent | Role | Focus |

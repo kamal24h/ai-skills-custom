@@ -236,3 +236,9 @@ companion object {
 
 - Related rules: `ui-test-orchestrator`, `ui-test-no-sleep`, `ui-test-per-test-isolation`, `ui-test-idling-resource`, `ui-test-testtag-selectors`, `ui-test-robot-pattern`, `ui-test-no-live-network`, `ui-test-stable-selectors`
 - Related references: [`espresso-testing.md`](espresso-testing.md), [`compose-testing.md`](compose-testing.md), [`ci-testing.md`](ci-testing.md), [`coverage.md`](coverage.md)
+
+## Sources
+
+- [Espresso documentation](https://developer.android.com/training/testing/espresso)
+- [UI Automator](https://developer.android.com/training/testing/other-components/ui-automator)
+- [Gradle Managed Devices](https://developer.android.com/studio/test/managed-devices)

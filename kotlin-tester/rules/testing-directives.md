@@ -16,8 +16,8 @@ Actionable directives for authoring and debugging tests in Kotlin.
 
 ### `test-no-sleep`
 - **Context:** Async synchronization.
-- **Rule:** Never use `Thread.sleep` or `Task.sleep` in tests. Use `advanceUntilIdle()`, `advanceTimeBy()`, Turbine `awaitItem()`, or `confirmation`.
-- **Avoid:** `Thread.sleep(1000)` or `delay(1000)` as timing workarounds.
+- **Rule:** Never use `Thread.sleep` in tests. Use virtual time (`advanceUntilIdle()`, `advanceTimeBy()`) with the test dispatcher, Turbine's `awaitItem()`/`awaitComplete()`, or awaitility-style polling as a last resort.
+- **Avoid:** `Thread.sleep(1000)` or real `delay(1000)` as timing workarounds.
 
 ### `test-no-shared-state`
 - **Context:** Test isolation.
