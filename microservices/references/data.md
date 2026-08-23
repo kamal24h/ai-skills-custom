@@ -20,6 +20,7 @@ No distributed two-phase commit. Each service owns its data; cross-service consi
 | [`data-saga-choreography`](../rules/data-saga-choreography.md) | Services react to events — no central coordinator |
 | [`data-event-sourcing`](../rules/data-event-sourcing.md) | Events are the source of truth; state is a projection |
 | [`data-cqrs`](../rules/data-cqrs.md) | Separate write model from read projections |
+| [`data-transactional-outbox`](../rules/data-transactional-outbox.md) | Publish events atomically with the state change that caused them |
 
 ## Orchestration vs Choreography
 

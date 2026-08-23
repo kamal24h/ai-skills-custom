@@ -21,6 +21,7 @@ Pick the right shape (sync vs async), contract it, and make consumers idempotent
 | [`comm-pubsub-events`](../rules/comm-pubsub-events.md) | Publish domain events; subscribers are decoupled |
 | [`comm-idempotent-consumers`](../rules/comm-idempotent-consumers.md) | Dedupe by `event_id` — brokers deliver at-least-once |
 | [`comm-api-contracts`](../rules/comm-api-contracts.md) | OpenAPI / proto / AsyncAPI are the source of truth |
+| [`comm-event-schema-evolution`](../rules/comm-event-schema-evolution.md) | Evolve event payloads additively; enforce with a schema registry |
 
 ## Sync vs Async — Decision Matrix
 

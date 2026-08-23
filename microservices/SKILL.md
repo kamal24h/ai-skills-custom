@@ -71,8 +71,8 @@ Specialized personas for microservices architecture. Load these from `agents/` t
 | # | Category | Impact | Load when… | Reference | Prefix | Rules |
 |--:|----------|:------:|------------|-----------|--------|:-----:|
 | 1 | Service Boundaries & Decomposition | CRITICAL | Splitting a monolith, drawing service boundaries, deciding data ownership | [`references/boundaries.md`](references/boundaries.md) | `boundary-` | 4 |
-| 2 | Inter-Service Communication | CRITICAL | Choosing sync vs async, REST / gRPC / Kafka / RabbitMQ, contracts | [`references/communication.md`](references/communication.md) | `comm-` | 5 |
-| 3 | Data Management | CRITICAL | Saga vs 2PC, event sourcing, CQRS, eventual consistency | [`references/data.md`](references/data.md) | `data-` | 4 |
+| 2 | Inter-Service Communication | CRITICAL | Choosing sync vs async, REST / gRPC / Kafka / RabbitMQ, contracts | [`references/communication.md`](references/communication.md) | `comm-` | 6 |
+| 3 | Data Management | CRITICAL | Saga vs 2PC, event sourcing, CQRS, eventual consistency, outbox | [`references/data.md`](references/data.md) | `data-` | 5 |
 | 4 | Resilience | CRITICAL | Adding circuit breakers, retries, bulkheads, timeouts, fallbacks | [`references/resilience.md`](references/resilience.md) | `resil-` | 5 |
 | 5 | Observability | HIGH | Correlation IDs, tracing, structured logs, SLI / SLO | [`references/observability.md`](references/observability.md) | `obs-` | 4 |
 | 6 | Deployment & Operations | HIGH | Health probes, graceful shutdown, config, zero-downtime rollouts | [`references/operations.md`](references/operations.md) | `ops-` | 4 |
@@ -88,10 +88,10 @@ Each `rules/<name>.md` has: frontmatter (title, impact, tags), rationale, **bad 
 [`boundary-ddd-bounded-contexts`](rules/boundary-ddd-bounded-contexts.md) · [`boundary-database-per-service`](rules/boundary-database-per-service.md) · [`boundary-single-responsibility`](rules/boundary-single-responsibility.md) · [`boundary-strangler-fig`](rules/boundary-strangler-fig.md)
 
 ### 2. Communication (`comm-`) — CRITICAL
-[`comm-sync-rest-grpc`](rules/comm-sync-rest-grpc.md) · [`comm-async-messaging`](rules/comm-async-messaging.md) · [`comm-pubsub-events`](rules/comm-pubsub-events.md) · [`comm-idempotent-consumers`](rules/comm-idempotent-consumers.md) · [`comm-api-contracts`](rules/comm-api-contracts.md)
+[`comm-sync-rest-grpc`](rules/comm-sync-rest-grpc.md) · [`comm-async-messaging`](rules/comm-async-messaging.md) · [`comm-pubsub-events`](rules/comm-pubsub-events.md) · [`comm-idempotent-consumers`](rules/comm-idempotent-consumers.md) · [`comm-api-contracts`](rules/comm-api-contracts.md) · [`comm-event-schema-evolution`](rules/comm-event-schema-evolution.md)
 
 ### 3. Data (`data-`) — CRITICAL
-[`data-saga-orchestration`](rules/data-saga-orchestration.md) · [`data-saga-choreography`](rules/data-saga-choreography.md) · [`data-event-sourcing`](rules/data-event-sourcing.md) · [`data-cqrs`](rules/data-cqrs.md)
+[`data-saga-orchestration`](rules/data-saga-orchestration.md) · [`data-saga-choreography`](rules/data-saga-choreography.md) · [`data-event-sourcing`](rules/data-event-sourcing.md) · [`data-cqrs`](rules/data-cqrs.md) · [`data-transactional-outbox`](rules/data-transactional-outbox.md)
 
 ### 4. Resilience (`resil-`) — CRITICAL
 [`resil-circuit-breaker`](rules/resil-circuit-breaker.md) · [`resil-retry-backoff`](rules/resil-retry-backoff.md) · [`resil-timeouts`](rules/resil-timeouts.md) · [`resil-bulkhead`](rules/resil-bulkhead.md) · [`resil-graceful-degradation`](rules/resil-graceful-degradation.md)
@@ -109,7 +109,7 @@ Each `rules/<name>.md` has: frontmatter (title, impact, tags), rationale, **bad 
 
 | Concern | PHP suggestion | TypeScript suggestion |
 |---------|---------------|----------------------|
-| HTTP framework | Laravel 13, Symfony 7, Slim 4 | NestJS 10, Fastify, Express 4 |
+| HTTP framework | Laravel 13, Symfony 7, Slim 4 | NestJS 11, Fastify, Express 5 |
 | Async broker | Laravel queues (Redis/SQS), Symfony Messenger, php-amqplib | @nestjs/microservices, kafkajs, amqplib, bullmq |
 | RPC | spiral/roadrunner-grpc, google/protobuf | `@grpc/grpc-js`, `ts-proto` |
 | Circuit breaker | `ackintosh/ganesha` | `opossum`, `cockatiel` |
