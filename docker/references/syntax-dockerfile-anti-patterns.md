@@ -404,3 +404,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl
 ```
 
 **Why:** Recommended packages can add 50-200MB of unnecessary software. In container images, you ALWAYS want the minimal set of packages.
+
+## Sources
+
+- [Docker Docs — Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+- Canonical links: see the category hub [`syntax-dockerfile.md`](syntax-dockerfile.md) → "Official Sources"

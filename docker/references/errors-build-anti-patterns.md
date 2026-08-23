@@ -494,3 +494,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 | 15 | Missing syntax directive | BuildKit features fail | Medium |
 | 16 | Numeric stage references | Fragile multi-stage builds | Low |
 | 17 | ENV for build-only vars | Variable pollution in image | Low |
+
+## Sources
+
+- [Docker Docs — Build troubleshooting](https://docs.docker.com/build/troubleshoot/)
+- Canonical links: see the category hub [`errors-build.md`](errors-build.md) → "Official Sources"

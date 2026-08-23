@@ -281,3 +281,7 @@ docker inspect --format=\"{{.State.Status}}\" myapp
 | AP-13: Hardcoded names | Brittle scripts | Use labels/filters |
 | AP-14: No --no-stream | Script hangs | ALWAYS use --no-stream in scripts |
 | AP-15: Platform quoting | Cross-platform failures | Test on target platform |
+
+## Sources
+
+- [Docker Docs — CLI formatting (Go templates)](https://docs.docker.com/reference/cli/docker/#format)

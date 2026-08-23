@@ -428,3 +428,7 @@ services:
 - https://docs.docker.com/compose/compose-file/05-services/
 - https://docs.docker.com/compose/compose-file/deploy/
 - https://docs.docker.com/compose/how-tos/environment-variables/
+
+## Sources
+
+- [Docker Docs — Compose services reference](https://docs.docker.com/compose/compose-file/05-services/)

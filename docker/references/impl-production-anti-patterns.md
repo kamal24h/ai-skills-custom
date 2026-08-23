@@ -393,3 +393,8 @@ ALWAYS implement SIGTERM handling in the application. ALWAYS close connections a
 | AP-12 | VOLUME in Dockerfile | Unmanaged data | Orchestration-level volumes |
 | AP-13 | Single-platform only | ARM incompatibility | Multi-platform builds |
 | AP-14 | No graceful shutdown | Dropped requests | Handle SIGTERM |
+
+## Sources
+
+- [Docker Docs — Best practices](https://docs.docker.com/build/building/best-practices/)
+- Canonical links: see the category hub [`impl-production.md`](impl-production.md) → "Official Sources"

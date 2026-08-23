@@ -289,3 +289,8 @@ docker logs --tail 50 <container>
 docker update --restart unless-stopped <container>
 docker start <container>
 ```
+
+## Sources
+
+- [Docker Docs — Daemon troubleshooting](https://docs.docker.com/engine/daemon/troubleshoot/)
+- Canonical links: see the category hub [`errors-runtime.md`](errors-runtime.md) → "Official Sources"

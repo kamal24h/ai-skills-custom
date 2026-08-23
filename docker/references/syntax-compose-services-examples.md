@@ -602,3 +602,7 @@ networks:
 - https://docs.docker.com/compose/compose-file/05-services/
 - https://docs.docker.com/compose/compose-file/build/
 - https://docs.docker.com/compose/compose-file/deploy/
+
+## Sources
+
+- [Docker Docs — Compose services reference](https://docs.docker.com/compose/compose-file/05-services/)

@@ -113,3 +113,8 @@
 | `docker compose down --remove-orphans` | Clean stop with orphan removal |
 | `docker compose up --force-recreate` | Recreate all containers from scratch |
 | `docker compose up --build` | Rebuild images before starting |
+
+## Sources
+
+- [Docker Docs — Compose support and troubleshooting](https://docs.docker.com/compose/support-and-troubleshooting/)
+- Canonical links: see the category hub [`errors-compose.md`](errors-compose.md) → "Official Sources"

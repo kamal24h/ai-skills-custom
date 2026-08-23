@@ -308,3 +308,7 @@ NEVER use ARG or ENV for secrets. ALWAYS use `--mount=type=secret`.
 8. Are secrets using `--mount=type=secret` (not ARG/ENV)?
 9. Are install and cleanup in the same RUN layer?
 10. Is the final stage using a minimal base image?
+
+## Sources
+
+- [Docker Docs — Optimize builds](https://docs.docker.com/build/cache/optimize/)

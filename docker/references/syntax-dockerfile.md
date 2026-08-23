@@ -171,7 +171,7 @@ ONBUILD RUN /app/src/compile.sh
 | `--mount=type=ssh` | Forward SSH agent | `id` |
 | `--mount=type=tmpfs` | Temporary filesystem | `target` |
 
-See [references/instructions.md](syntax-dockerfile-instructions.md) for complete mount syntax and examples.
+See [syntax-dockerfile-instructions.md](syntax-dockerfile-instructions.md) for complete mount syntax and examples.
 
 ---
 
@@ -192,7 +192,7 @@ Supported in: `ADD`, `COPY`, `ENV`, `EXPOSE`, `FROM`, `LABEL`, `STOPSIGNAL`, `US
 
 ## Reference Links
 
-- [references/instructions.md](syntax-dockerfile-instructions.md) -- Complete syntax and parameters for all 17 instructions
+- [syntax-dockerfile-instructions.md](syntax-dockerfile-instructions.md) -- Complete syntax and parameters for all 17 instructions
 - [references/examples.md](syntax-dockerfile-examples.md) -- Production-ready Dockerfile examples for common scenarios
 - [references/anti-patterns.md](syntax-dockerfile-anti-patterns.md) -- Instruction misuse patterns with corrections
 

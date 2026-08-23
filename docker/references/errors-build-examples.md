@@ -551,3 +551,8 @@ RUN export SECRET_TOKEN=abc123 \
 ```
 
 NEVER use ENV for secrets. ENV values persist in the final image and are visible via `docker inspect` and `docker history`.
+
+## Sources
+
+- [Docker Docs — Build troubleshooting](https://docs.docker.com/build/troubleshoot/)
+- Canonical links: see the category hub [`errors-build.md`](errors-build.md) → "Official Sources"

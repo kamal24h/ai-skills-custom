@@ -442,3 +442,8 @@ docker compose ps
 
 ### Key Lesson
 **ALWAYS use health checks with `condition: service_healthy`** for service dependencies. The `depends_on` without condition only waits for the container to start, NOT for the service to be ready.
+
+## Sources
+
+- [Docker Docs — Network troubleshooting](https://docs.docker.com/engine/network/troubleshoot-and-diagnose/)
+- Canonical links: see the category hub [`errors-networking.md`](errors-networking.md) → "Official Sources"

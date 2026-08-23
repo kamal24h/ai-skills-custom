@@ -579,3 +579,6 @@ Compose:
 [ ] grep -c "privileged: true" compose.yaml                       # AP-S01
 [ ] grep -c "restart: always" compose.yaml                        # AP-C06 (check limits)
 ```
+
+## Sources
+

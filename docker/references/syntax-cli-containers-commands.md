@@ -461,3 +461,7 @@ Syntax: `docker ps [OPTIONS]`
 | `-s, --size` | Display file sizes |
 
 See SKILL.md for complete filter and format reference.
+
+## Sources
+
+- [Docker Docs — docker container CLI reference](https://docs.docker.com/reference/cli/docker/container/)

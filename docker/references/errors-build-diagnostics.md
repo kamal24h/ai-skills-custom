@@ -565,3 +565,8 @@ file Dockerfile
 # If it shows "UTF-8 Unicode (with BOM) text", remove BOM:
 sed -i '1s/^\xEF\xBB\xBF//' Dockerfile
 ```
+
+## Sources
+
+- [Docker Docs — Build troubleshooting](https://docs.docker.com/build/troubleshoot/)
+- Canonical links: see the category hub [`errors-build.md`](errors-build.md) → "Official Sources"

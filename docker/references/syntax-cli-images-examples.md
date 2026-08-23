@@ -434,3 +434,7 @@ echo "Dangling: $(docker images -q -f dangling=true | wc -l)"
 - https://docs.docker.com/reference/cli/docker/buildx/build/
 - https://docs.docker.com/reference/cli/docker/system/
 - https://docs.docker.com/reference/cli/docker/system/prune/
+
+## Sources
+
+- [Docker Docs — docker image CLI reference](https://docs.docker.com/reference/cli/docker/image/)

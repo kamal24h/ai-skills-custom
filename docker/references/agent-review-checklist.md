@@ -181,3 +181,6 @@ This checklist expands on the SKILL.md checklists with detailed verification ste
 | P-14 | Cache strategy | `cache-from` / `cache-to` configured | Full rebuild every CI run |
 | P-15 | .dockerignore complete | Excludes .git, node_modules, docs, tests | Sends GB of context to builder |
 | P-16 | Multi-platform ready | `--platform` configured if needed | amd64-only in mixed environments |
+
+## Sources
+

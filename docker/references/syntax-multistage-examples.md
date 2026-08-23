@@ -361,3 +361,8 @@ RUN dotnet publish src/MyApp/MyApp.csproj \
 With self-contained + trimmed, the final image can use `mcr.microsoft.com/dotnet/runtime-deps:8.0` (~30 MB) or even `alpine`.
 
 **Final image size:** ~220-300 MB (framework-dependent) or ~80-120 MB (self-contained + trimmed).
+
+## Sources
+
+- [Docker Docs — Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+- Canonical links: see the category hub [`syntax-multistage.md`](syntax-multistage.md) → "Official Sources"

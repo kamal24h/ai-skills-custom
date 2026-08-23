@@ -366,3 +366,8 @@ docker run -p 10.0.0.5:8080:80 nginx
 - https://docs.docker.com/engine/network/drivers/overlay/
 - https://docs.docker.com/engine/network/drivers/macvlan/
 - https://docs.docker.com/compose/how-tos/networking/
+
+## Sources
+
+- [Docker Docs — Networking overview](https://docs.docker.com/engine/network/)
+- Canonical links: see the category hub [`core-networking.md`](core-networking.md) → "Official Sources"

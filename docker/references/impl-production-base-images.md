@@ -238,3 +238,8 @@ NEVER use full images as production runtime images. ALWAYS use them only in buil
 | `scratch` | ~7 MB |
 
 The binary itself is ~7 MB. Everything above that is OS overhead.
+
+## Sources
+
+- [Docker Docs — Base images](https://docs.docker.com/build/building/base-images/)
+- Canonical links: see the category hub [`impl-production.md`](impl-production.md) → "Official Sources"

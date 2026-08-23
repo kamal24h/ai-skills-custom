@@ -237,3 +237,7 @@ In this example, only layers 5-7 rebuild. Layers 1-4 are reused from cache, savi
 5. **ALWAYS** use `.dockerignore` to exclude files that cause unnecessary COPY cache invalidation.
 6. **ALWAYS** use `--mount=type=cache` for package manager caches -- they survive layer rebuilds.
 7. **NEVER** put `COPY . .` before `RUN install-dependencies` -- any source file change triggers a full dependency reinstall.
+
+## Sources
+
+- [Docker Docs — Build cache](https://docs.docker.com/build/cache/)

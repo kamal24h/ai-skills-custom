@@ -353,3 +353,8 @@ docker buildx build \
 ```
 
 **Why:** Feature branches diverge from main. Without a fallback, the first build on a new branch starts from scratch. Multiple `--cache-from` sources let BuildKit find the best match.
+
+## Sources
+
+- [Docker Docs — BuildKit](https://docs.docker.com/build/buildkit/)
+- Canonical links: see the category hub [`syntax-buildkit.md`](syntax-buildkit.md) → "Official Sources"

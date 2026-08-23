@@ -432,3 +432,7 @@ docker context rm -f myctx   # Force
 - https://docs.docker.com/reference/cli/docker/system/
 - https://docs.docker.com/reference/cli/docker/system/df/
 - https://docs.docker.com/reference/cli/docker/system/prune/
+
+## Sources
+
+- [Docker Docs — docker image CLI reference](https://docs.docker.com/reference/cli/docker/image/)

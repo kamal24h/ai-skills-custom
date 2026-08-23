@@ -442,3 +442,8 @@ networks:
 | AP-010 | host.docker.internal in production | Platform-dependent, unreliable | Service names or explicit host mapping |
 | AP-011 | Publish database ports | Security exposure | Internal network, no port publishing |
 | AP-012 | Internet access for backend services | Data exfiltration risk | internal: true networks |
+
+## Sources
+
+- [Docker Docs — Network troubleshooting](https://docs.docker.com/engine/network/troubleshoot-and-diagnose/)
+- Canonical links: see the category hub [`errors-networking.md`](errors-networking.md) → "Official Sources"

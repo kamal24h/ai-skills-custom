@@ -443,3 +443,8 @@ docker run --rm --mount source=mydata,dst=/data,readonly alpine du -sh /data
 # Find containers using a volume
 docker ps -a --filter volume=mydata --format "{{.Names}}"
 ```
+
+## Sources
+
+- [Docker Docs — Storage overview](https://docs.docker.com/engine/storage/)
+- Canonical links: see the category hub [`impl-storage.md`](impl-storage.md) → "Official Sources"

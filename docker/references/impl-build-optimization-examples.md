@@ -446,3 +446,7 @@ docker buildx build \
 ```
 
 ALWAYS include `cache-main` as a fallback source -- new branches immediately benefit from the main branch cache.
+
+## Sources
+
+- [Docker Docs — Optimize builds](https://docs.docker.com/build/cache/optimize/)

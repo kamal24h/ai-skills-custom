@@ -430,3 +430,8 @@ Security checklist for multi-stage production images:
 - Read-only filesystem compatible
 - HEALTHCHECK defined
 - OCI metadata labels
+
+## Sources
+
+- [Docker Docs — Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+- Canonical links: see the category hub [`syntax-multistage.md`](syntax-multistage.md) → "Official Sources"

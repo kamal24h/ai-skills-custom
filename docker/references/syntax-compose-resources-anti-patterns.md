@@ -494,3 +494,7 @@ volumes:
 - https://docs.docker.com/compose/compose-file/07-volumes/
 - https://docs.docker.com/compose/compose-file/08-configs/
 - https://docs.docker.com/compose/compose-file/09-secrets/
+
+## Sources
+
+- [Docker Docs — Compose file reference](https://docs.docker.com/compose/compose-file/)

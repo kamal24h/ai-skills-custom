@@ -273,3 +273,8 @@ COPY . .
 - Use `docker push` and `docker pull` for image transfer
 - Implement CI/CD pipelines that build, scan, and push images automatically
 - Reserve `docker save`/`load` for air-gapped environments only
+
+## Sources
+
+- [Docker Docs — What is a container / architecture concepts](https://docs.docker.com/get-started/docker-concepts/building-blocks/what-is-a-container/)
+- Canonical links: see the category hub [`core-architecture.md`](core-architecture.md) → "Official Sources"

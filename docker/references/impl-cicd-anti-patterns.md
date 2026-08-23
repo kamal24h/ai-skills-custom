@@ -448,3 +448,8 @@ tags: |
 - https://docs.docker.com/build/building/multi-platform/
 - https://github.com/docker/build-push-action
 - https://github.com/docker/metadata-action
+
+## Sources
+
+- [Docker Docs — CI with Docker](https://docs.docker.com/build/ci/)
+- Canonical links: see the category hub [`impl-cicd.md`](impl-cicd.md) → "Official Sources"

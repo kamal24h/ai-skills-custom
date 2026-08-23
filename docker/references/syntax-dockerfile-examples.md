@@ -407,3 +407,8 @@ EXPOSE 9000
 
 CMD ["php-fpm"]
 ```
+
+## Sources
+
+- [Docker Docs — Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+- Canonical links: see the category hub [`syntax-dockerfile.md`](syntax-dockerfile.md) → "Official Sources"

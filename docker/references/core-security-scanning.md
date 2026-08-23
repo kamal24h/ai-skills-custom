@@ -256,3 +256,8 @@ trivy image --format spdx-json -o sbom.json myapp:v1
 # Via Docker Scout
 docker scout sbom --format spdx myapp:v1
 ```
+
+## Sources
+
+- [Docker Docs — Docker Scout](https://docs.docker.com/scout/)
+- Canonical links: see the category hub [`core-security.md`](core-security.md) → "Official Sources"

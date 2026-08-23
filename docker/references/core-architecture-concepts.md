@@ -256,3 +256,8 @@ The **Open Container Initiative (OCI)** defines three specifications that Docker
 - Registry endpoints: `/v2/`, `/v2/<name>/manifests/<ref>`, `/v2/<name>/blobs/<digest>`
 - Supports content discovery, pull, push, and deletion
 - Used by Docker Hub, GitHub Container Registry, AWS ECR, and all OCI-compliant registries
+
+## Sources
+
+- [Docker Docs — What is a container / architecture concepts](https://docs.docker.com/get-started/docker-concepts/building-blocks/what-is-a-container/)
+- Canonical links: see the category hub [`core-architecture.md`](core-architecture.md) → "Official Sources"

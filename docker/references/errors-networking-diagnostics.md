@@ -146,3 +146,8 @@ sudo iptables -L DOCKER -n -v 2>/dev/null || echo "No DOCKER chain"
 # 10. Docker daemon logs
 journalctl -u docker --no-pager -n 50
 ```
+
+## Sources
+
+- [Docker Docs — Network troubleshooting](https://docs.docker.com/engine/network/troubleshoot-and-diagnose/)
+- Canonical links: see the category hub [`errors-networking.md`](errors-networking.md) → "Official Sources"

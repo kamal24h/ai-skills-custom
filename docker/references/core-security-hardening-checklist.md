@@ -158,3 +158,8 @@ services:
 | 4 - Container Images | No secrets in layers, non-root user, health checks |
 | 5 - Container Runtime | Read-only FS, cap-drop ALL, resource limits, no-new-privileges |
 | 6 - Docker Security Operations | Image scanning, bench audit, monitoring |
+
+## Sources
+
+- [Docker Docs — Engine security](https://docs.docker.com/engine/security/)
+- Canonical links: see the category hub [`core-security.md`](core-security.md) → "Official Sources"

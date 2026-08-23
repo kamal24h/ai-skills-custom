@@ -522,3 +522,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 ```
+
+## Sources
+
+- [Docker Docs — BuildKit](https://docs.docker.com/build/buildkit/)
+- Canonical links: see the category hub [`syntax-buildkit.md`](syntax-buildkit.md) → "Official Sources"

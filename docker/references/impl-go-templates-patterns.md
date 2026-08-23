@@ -314,3 +314,7 @@ docker events --format '{{json .}}'
 | Configuration inspection | P-19 through P-28 |
 | Storage / volume management | P-29 through P-34, P-64 through P-68 |
 | System overview | P-69 through P-75 |
+
+## Sources
+
+- [Docker Docs — CLI formatting (Go templates)](https://docs.docker.com/reference/cli/docker/#format)

@@ -317,3 +317,7 @@ services:
 - https://docs.docker.com/compose/compose-file/06-networks/
 - https://docs.docker.com/engine/network/
 - https://docs.docker.com/engine/network/drivers/
+
+## Sources
+
+- [Docker Docs — Compose networking](https://docs.docker.com/compose/how-tos/networking/)

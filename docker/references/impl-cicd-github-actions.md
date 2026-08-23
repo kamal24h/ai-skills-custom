@@ -513,3 +513,8 @@ Use `no-cache: true` and `pull: true` together to ensure the scheduled rebuild p
 - https://github.com/docker/setup-buildx-action
 - https://github.com/docker/setup-qemu-action
 - https://github.com/docker/scout-action
+
+## Sources
+
+- [Docker Docs — Docker Build GitHub Actions](https://docs.docker.com/build/ci/github-actions/)
+- Canonical links: see the category hub [`impl-cicd.md`](impl-cicd.md) → "Official Sources"

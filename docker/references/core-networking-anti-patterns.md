@@ -359,3 +359,8 @@ docker network ls
 - https://docs.docker.com/engine/network/
 - https://docs.docker.com/engine/network/drivers/bridge/
 - https://docs.docker.com/engine/network/drivers/overlay/
+
+## Sources
+
+- [Docker Docs — Networking overview](https://docs.docker.com/engine/network/)
+- Canonical links: see the category hub [`core-networking.md`](core-networking.md) → "Official Sources"

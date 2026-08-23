@@ -350,3 +350,7 @@ services:
     ports:
       - "127.0.0.1:8080:8080"
 ```
+
+## Sources
+
+- [Docker Docs — Docker Compose docs](https://docs.docker.com/compose/)

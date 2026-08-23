@@ -387,3 +387,8 @@ services:
 ```
 
 **Rule**: NEVER create `depends_on` chains across different profiles unless you ALWAYS activate all required profiles together. Dependencies must share at least one profile with their dependents, or have no profile assignment.
+
+## Sources
+
+- [Docker Docs — Compose support and troubleshooting](https://docs.docker.com/compose/support-and-troubleshooting/)
+- Canonical links: see the category hub [`errors-compose.md`](errors-compose.md) → "Official Sources"

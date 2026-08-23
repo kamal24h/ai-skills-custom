@@ -419,3 +419,6 @@ When adapting these templates:
 8. **NEVER** add secrets via ENV or ARG — use `--mount=type=secret` if needed
 9. **NEVER** remove the WORKDIR instruction
 10. **NEVER** use shell-form ENTRYPOINT
+
+## Sources
+

@@ -381,3 +381,7 @@ docker run -d myapp@sha256:abc123...
 | AP-021 | Mounting Docker socket | Critical | Avoid or use API proxy |
 | AP-022 | Secrets in env vars | High | File-based secrets |
 | AP-023 | `latest` tag in production | High | Pin specific version or digest |
+
+## Sources
+
+- [Docker Docs — docker container CLI reference](https://docs.docker.com/reference/cli/docker/container/)

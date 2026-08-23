@@ -431,3 +431,6 @@ MONGO_DB=appdb
 6. **ALWAYS** use `${VAR:-default}` for optional variables with sensible defaults
 7. **NEVER** include services the application does not need
 8. **NEVER** hardcode passwords or secrets directly in Compose files
+
+## Sources
+

@@ -304,3 +304,8 @@ docker run --read-only \
 ```
 
 This prevents any writes to the container's root filesystem. ALWAYS use this pattern for production containers where possible.
+
+## Sources
+
+- [Docker Docs — Storage overview](https://docs.docker.com/engine/storage/)
+- Canonical links: see the category hub [`impl-storage.md`](impl-storage.md) → "Official Sources"

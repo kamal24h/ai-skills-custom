@@ -349,3 +349,8 @@ docker run --mount source=mydata,dst=/data myapp
 | Mount read-only for consumers | Give write access to all consumers |
 | Clean volumes in CI/CD pipelines | Leave orphaned volumes after builds |
 | Let users choose mounts at runtime | Use `VOLUME` in Dockerfile without intent |
+
+## Sources
+
+- [Docker Docs — Storage overview](https://docs.docker.com/engine/storage/)
+- Canonical links: see the category hub [`impl-storage.md`](impl-storage.md) → "Official Sources"

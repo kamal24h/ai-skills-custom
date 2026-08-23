@@ -472,3 +472,7 @@ docker compose -f git@github.com:myorg/infra.git#main:docker/compose.yaml up -d
 # Combine remote base with local override
 docker compose -f https://github.com/myorg/base.git@v1.0.0 -f compose.local.yaml up -d
 ```
+
+## Sources
+
+- [Docker Docs — Docker Compose docs](https://docs.docker.com/compose/)

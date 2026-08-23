@@ -432,3 +432,6 @@ Before delivering generated Docker infrastructure, verify NONE of these anti-pat
 | AP-018 | Ports on all interfaces | 127.0.0.1 binding in dev? |
 | AP-019 | container_name on scalable | No container_name? |
 | AP-020 | No log rotation | Logging configured? |
+
+## Sources
+

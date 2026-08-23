@@ -302,3 +302,8 @@ docker scout cves --only-severity critical,high --only-fixed -e myapp:v1
 | AP-10 | No .dockerignore | High | Create comprehensive .dockerignore |
 | AP-11 | Writable root FS | Medium | `--read-only` + `--tmpfs` |
 | AP-12 | No image scanning | High | Docker Scout or Trivy in CI/CD |
+
+## Sources
+
+- [Docker Docs — Engine security](https://docs.docker.com/engine/security/)
+- Canonical links: see the category hub [`core-security.md`](core-security.md) → "Official Sources"

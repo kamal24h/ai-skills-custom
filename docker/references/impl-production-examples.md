@@ -413,3 +413,8 @@ HEALTHCHECK --interval=30s --timeout=3s --retries=3 \
 ```
 
 The worker writes to `/tmp/worker-healthy` on each successful processing cycle. The health check verifies the file exists and was updated within the last 60 seconds.
+
+## Sources
+
+- [Docker Docs — Best practices](https://docs.docker.com/build/building/best-practices/)
+- Canonical links: see the category hub [`impl-production.md`](impl-production.md) → "Official Sources"

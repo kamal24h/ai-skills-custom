@@ -248,3 +248,8 @@ RUN --mount=type=tmpfs,target=/test-output \
 | Supports `required` | no | YES | YES | no | no |
 | Supports `env` mode | no | YES | no | no | no |
 | Triggers cache invalidation | no | no | no | YES (content changes) | no |
+
+## Sources
+
+- [Docker Docs — BuildKit](https://docs.docker.com/build/buildkit/)
+- Canonical links: see the category hub [`syntax-buildkit.md`](syntax-buildkit.md) → "Official Sources"

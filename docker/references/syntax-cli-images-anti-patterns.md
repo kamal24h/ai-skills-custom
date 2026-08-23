@@ -332,3 +332,7 @@ docker events --filter type=image --since 1h
 - https://docs.docker.com/reference/cli/docker/buildx/build/
 - https://docs.docker.com/build/building/best-practices/
 - https://docs.docker.com/reference/cli/docker/system/
+
+## Sources
+
+- [Docker Docs — docker image CLI reference](https://docs.docker.com/reference/cli/docker/image/)

@@ -398,3 +398,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ```
 
 **Why:** `--no-install-recommends` prevents apt from pulling in suggested and recommended packages. In a build stage this is less critical (the stage is discarded), but it speeds up the build and reduces the chance of conflicting packages. In a production stage it is CRITICAL for image size.
+
+## Sources
+
+- [Docker Docs — Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+- Canonical links: see the category hub [`syntax-multistage.md`](syntax-multistage.md) → "Official Sources"

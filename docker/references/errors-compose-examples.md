@@ -455,3 +455,8 @@ Remove or rename `compose.override.yaml` if it is not intentional. Or explicitly
 ```bash
 docker compose -f compose.yaml up -d    # Only base file, no override
 ```
+
+## Sources
+
+- [Docker Docs — Compose support and troubleshooting](https://docs.docker.com/compose/support-and-troubleshooting/)
+- Canonical links: see the category hub [`errors-compose.md`](errors-compose.md) → "Official Sources"

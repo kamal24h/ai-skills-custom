@@ -376,3 +376,8 @@ services:
 ```
 
 **Why**: Fixed container names prevent `docker compose up --scale web=3` and cause conflicts if multiple Compose projects use the same name.
+
+## Sources
+
+- [Docker Docs — Daemon troubleshooting](https://docs.docker.com/engine/daemon/troubleshoot/)
+- Canonical links: see the category hub [`errors-runtime.md`](errors-runtime.md) → "Official Sources"

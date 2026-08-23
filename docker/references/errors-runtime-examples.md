@@ -358,3 +358,8 @@ docker exec webapp curl http://api:3000/health
 - ALWAYS use user-defined bridge networks, NEVER the default bridge
 - Use Docker Compose (automatically creates a user-defined network)
 - Use `--network-alias` for additional DNS names
+
+## Sources
+
+- [Docker Docs — Daemon troubleshooting](https://docs.docker.com/engine/daemon/troubleshoot/)
+- Canonical links: see the category hub [`errors-runtime.md`](errors-runtime.md) → "Official Sources"

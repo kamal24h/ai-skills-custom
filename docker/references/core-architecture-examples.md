@@ -283,3 +283,8 @@ When containerd prepares a container for runc, it creates an OCI bundle:
     ├── usr/
     └── ...
 ```
+
+## Sources
+
+- [Docker Docs — What is a container / architecture concepts](https://docs.docker.com/get-started/docker-concepts/building-blocks/what-is-a-container/)
+- Canonical links: see the category hub [`core-architecture.md`](core-architecture.md) → "Official Sources"

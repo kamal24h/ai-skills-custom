@@ -348,3 +348,8 @@ docker run --network name=primary,gw-priority=1 --network secondary myimage
 - https://docs.docker.com/engine/network/drivers/macvlan/
 - https://docs.docker.com/engine/network/drivers/ipvlan/
 - https://docs.docker.com/engine/network/drivers/none/
+
+## Sources
+
+- [Docker Docs — Networking overview](https://docs.docker.com/engine/network/)
+- Canonical links: see the category hub [`core-networking.md`](core-networking.md) → "Official Sources"

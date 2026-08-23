@@ -451,3 +451,7 @@ secrets:
 - https://docs.docker.com/compose/compose-file/08-configs/
 - https://docs.docker.com/compose/compose-file/09-secrets/
 - https://docs.docker.com/compose/compose-file/05-services/
+
+## Sources
+
+- [Docker Docs — Compose how-tos (volumes, configs, secrets)](https://docs.docker.com/compose/how-tos/)

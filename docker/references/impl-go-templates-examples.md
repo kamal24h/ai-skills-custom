@@ -286,3 +286,7 @@ docker inspect --format="{{.State.Status}}" myapp
 ```
 
 **ALWAYS** prefer single-quoted `--format='...'` on Linux/macOS. On Windows CMD, use double quotes. On PowerShell, test both; single quotes work in most cases.
+
+## Sources
+
+- [Docker Docs — CLI formatting (Go templates)](https://docs.docker.com/reference/cli/docker/#format)

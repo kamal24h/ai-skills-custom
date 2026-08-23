@@ -646,3 +646,8 @@ Variables (`$variable` or `${variable}`) are supported in these instructions:
 | Replace all | `${variable//find/replace}` | Replace all occurrences |
 
 Escape with `\$foo` or `\${foo}` for literal dollar signs.
+
+## Sources
+
+- [Docker Docs — Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+- Canonical links: see the category hub [`syntax-dockerfile.md`](syntax-dockerfile.md) → "Official Sources"

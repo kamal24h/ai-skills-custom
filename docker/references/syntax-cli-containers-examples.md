@@ -413,3 +413,7 @@ docker logs job > job-output.log
 docker rm job
 exit $EXIT_CODE
 ```
+
+## Sources
+
+- [Docker Docs — docker container CLI reference](https://docs.docker.com/reference/cli/docker/container/)

@@ -5,7 +5,11 @@ description: Unified Docker and Docker Compose skill covering Dockerfiles, Build
 
 # Docker (Unified)
 
-A single, comprehensive skill for Docker Engine 24+, BuildKit, Dockerfiles, Docker Compose v2, image/container workflows, production readiness, security hardening, and troubleshooting.
+A single, comprehensive skill for Docker Engine, BuildKit, Dockerfiles, Docker Compose v2, image/container workflows, production readiness, security hardening, and troubleshooting.
+
+> **Version baseline:** targets Docker Engine **29.x** (current stable; 28.x reached end of support in May 2026) and Compose v2. Verify the host version with `docker version` before relying on newest features.
+>
+> **Related skills:** containerizing Go services → `golang` · PHP/Laravel apps → `php`/`laravel` · Node/TS services → `javascript` · service deployment patterns (health probes, graceful shutdown) → `microservices`.
 
 ## Specialized Agents
 

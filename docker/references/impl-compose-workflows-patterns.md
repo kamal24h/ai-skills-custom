@@ -403,3 +403,7 @@ ignore:
   - dist/
   - build/
 ```
+
+## Sources
+
+- [Docker Docs — Docker Compose docs](https://docs.docker.com/compose/)
