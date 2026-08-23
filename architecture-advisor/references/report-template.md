@@ -25,7 +25,7 @@ Copy this template for every report. Fill in all sections — do not skip Streng
 [3-5 sentences. Cover: what the project is, its overall architectural health, the most critical issue, and the primary strength. This section is read by stakeholders who won't read the rest.]
 
 Example:
-> This Laravel 11 e-commerce backend follows a mostly idiomatic Laravel structure with proper Eloquent usage and FormRequest validation. The primary architectural concern is business logic concentrated in controllers rather than dedicated Action or Service classes, making key workflows untestable without HTTP. The codebase has good migration discipline and strong validation coverage. Priority action: extract controller logic to Action classes before the next major feature addition.
+> This Laravel 13 e-commerce backend follows a mostly idiomatic Laravel structure with proper Eloquent usage and FormRequest validation. The primary architectural concern is business logic concentrated in controllers rather than dedicated Action or Service classes, making key workflows untestable without HTTP. The codebase has good migration discipline and strong validation coverage. Priority action: extract controller logic to Action classes before the next major feature addition.
 
 ---
 

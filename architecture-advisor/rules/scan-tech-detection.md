@@ -34,11 +34,11 @@ Applying React architectural rules to a Node.js backend, or Laravel rules to a W
 // PHP projects → read composer.json
 {
   "require": {
-    "laravel/framework": "^11.0",   // → Laravel 11
+    "laravel/framework": "^13.0",   // → Laravel 13
     "php": "^8.3"                   // → PHP 8.3+
   }
 }
-// → Stack: PHP 8.3 / Laravel 11 → load arch-php-pro
+// → Stack: PHP 8.3 / Laravel 13 → load arch-php-pro
 
 // ─────────────────────────────────────────────
 
@@ -108,7 +108,7 @@ Applying React architectural rules to a Node.js backend, or Laravel rules to a W
 - **Relevance**: Framework-specific rules only apply to the framework in use
 - **Trust**: A wrong stack identification immediately undermines the entire report
 - **Routing accuracy**: The SKILL.md persona routing depends entirely on correct stack detection
-- **Version matters**: Laravel 11 has different conventions than Laravel 8 — version affects findings
+- **Version matters**: Laravel 13 has different conventions than Laravel 8 — version affects findings
 
 ## Multi-Stack Projects
 

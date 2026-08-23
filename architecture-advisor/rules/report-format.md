@@ -42,7 +42,7 @@ Problems:
 
 # Architecture Report: [Project Name]
 **Analyzed:** 2025-05-05  
-**Stack:** PHP 8.3 / Laravel 11 / MySQL 8  
+**Stack:** PHP 8.3 / Laravel 13 / MySQL 8  
 **Analyst Persona:** arch-php-pro  
 
 ---
