@@ -99,8 +99,10 @@ Prefer the repo's existing test stack unless there is a clear reason to introduc
 
 ## Rule Index
 
-### 1. Test Patterns (`test-`) — CRITICAL
-`test-table-driven` · `test-parallel` · `test-helpers` · `test-goleak` · `test-integration-tags`
+### 1. Test Patterns (`gt-`, `test-`) — CRITICAL
+`gt-table-driven` · `test-parallel` · `test-helpers` · `gt-goleak` · `gt-integration-tags`
+
+> Note: `gt-*` ids are prefixed to avoid collisions with the same-named rules in the `golang` skill (different content, different context).
 
 ### 2. Assertions (`assert-`) — CRITICAL
 `test-require-vs-assert`
