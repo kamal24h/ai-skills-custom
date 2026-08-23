@@ -96,7 +96,7 @@ export class PaymentService {
 - Prefer self-documenting code
 - Use comments for business rules and non-obvious decisions
 
-**For function and variable naming conventions, see `naming-conventions` skill**
+**For function and variable naming conventions, see the Naming Conventions references (`references/naming-*.md`) in this skill**
 
 ## Single Level of Abstraction
 

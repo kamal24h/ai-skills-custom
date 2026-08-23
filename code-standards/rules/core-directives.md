@@ -101,3 +101,27 @@ Cite these ids in reviews (`solid-srp`, `clean-yagni`, `fn-early-returns`) so fe
 - **Context:** Choosing between data-oriented and object-oriented modelling.
 - **Rule:** Use plain data structures (DTOs, records, dictionaries) for transport and transformation pipelines. Use objects with behaviour where invariants must be enforced and cannot be allowed to break.
 - **Avoid:** Anaemic classes that are structs with getters and setters (use a record), and equally, "smart" data structures that acquire business logic while crossing a serialization boundary.
+
+## 5. Universal Naming (`name-`)
+
+Language-agnostic naming directives. Per-stack default conventions live in `references/naming-*.md`.
+
+### `name-intent-over-mechanism`
+- **Context:** Any identifier that will outlive the current task.
+- **Rule:** Name for *why* it exists in domain language, not for how it is implemented. Length scales with scope: loop index may be `i`; a class field may not be `d`.
+- **Avoid:** `data`, `info`, `manager`, `helper`, `process()`, `handle()` — names that survive refactors of their own meaning are lies waiting to happen. (Shared rule: [`fn-meaningful-names`](#fn-meaningful-names))
+
+### `name-boolean-predicate`
+- **Context:** Booleans, flags, validation functions.
+- **Rule:** Booleans read as predicates — `isEnabled`, `hasAccess`, `canEdit`, `isEmpty`. Functions returning booleans read as questions; functions with side effects read as verbs.
+- **Avoid:** Boolean names that are nouns (`status: true`) or verbs without auxiliaries (`send: false`).
+
+### `name-prefix-escaping`
+- **Context:** Ecosystems where identifiers share one global namespace (WordPress hooks/options/functions, CLI command signatures, environment variables, event names across services).
+- **Rule:** Prefix every escaping identifier with the unique project prefix agreed at kickoff (`myplugin_`, `wc_`). The prefix is part of the contract once published.
+- **Avoid:** Shipping a hook or option without a prefix because "the project is small" — collisions surface months later as unexplainable bugs.
+
+### `name-no-type-encoding`
+- **Context:** Typed languages and modern PHP/Python/TS codebases.
+- **Rule:** The type system already documents types; names document intent. Do not encode type or scope in the name (`strName`, `$arrUsers`, `IUserService`, `m_count`).
+- **Avoid:** Hungarian notation, `I`-prefixed interfaces (TypeScript's documented anti-recommendation), underscore scope markers in languages with real access modifiers. Framework suffixes (`-Controller`, `-Repository`) are conventions, not type encoding — those stay.
