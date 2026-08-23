@@ -106,5 +106,27 @@ Cite these ids in reviews (`qry-no-select-star`, `idx-leftmost-prefix`, `txn-sho
 
 ### `txn-zero-downtime-migrations`
 - **Context:** Schema changes on a live table.
-- **Rule:** Make changes additive and reversible in stages: add a nullable column → backfill in batches → start writing to it → switch reads → drop the old column in a later release. Build indexes without blocking (`CREATE INDEX CONCURRENTLY` on PostgreSQL, `ALGORITHM=INPLACE, LOCK=NONE` on MySQL, `WITH (ONLINE = ON)` on SQL Server Enterprise).
+- **Rule:** Make changes additive and reversible in stages: add a nullable column → backfill in batches → start writing to it → switch reads → drop the old column in a later release. Build indexes without blocking (`CREATE INDEX CONCURRENTLY` on PostgreSQL, `ALGORITHM=INPLACE, LOCK=NONE` on MySQL, `WITH (ONLINE = ON)` on SQL Server — available in Standard since 2016 SP1; SQLite rewrites the table, so schedule a maintenance window).
 - **Avoid:** Renaming or dropping a column in the same release that changes the code, adding a `NOT NULL` column with a default to a large table without checking whether your engine version rewrites the table, and unbatched `UPDATE`s that lock millions of rows.
+
+## 5. Advanced Query Patterns (`adv-`)
+
+### `adv-cte-over-nested-subquery`
+- **Context:** Multi-step reads: aggregations over aggregations, reusable intermediate results, hierarchies and graphs.
+- **Rule:** Name intermediate result sets with CTEs instead of nesting derived tables. Recursive CTEs traverse hierarchies and graphs set-based. Dialect notes: PostgreSQL 12+ inlines non-recursive CTEs (force materialization with `WITH x AS MATERIALIZED (...)` when it helps); MySQL 8 always materializes; SQL Server and SQLite inline or materialize at the optimizer's discretion.
+- **Avoid:** Deeply nested derived tables nobody can read, recursive CTEs without a recursion guard/depth limit (infinite loops on cyclic data), and using a recursive CTE where a plain join would do.
+
+### `adv-window-not-self-join`
+- **Context:** Running totals, rankings, per-group top-N, period-over-period comparisons, gap-and-island problems.
+- **Rule:** Use window functions (`ROW_NUMBER`, `RANK`, `LAG`/`LEAD`, running aggregates with explicit frames like `ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`) instead of correlated self-joins. Dialect notes: `PERCENTILE_CONT` exists on PostgreSQL and SQL Server but not MySQL 8.4 (emulate with `ROW_NUMBER`/`NTILE`); SQLite has window functions since 3.25.
+- **Avoid:** Emulating rankings with self-joins or correlated subqueries, computing running totals in application loops, and omitting an explicit frame when you need one — the default frame differs between `ORDER BY` and no-`ORDER BY` cases.
+
+### `adv-set-based-upsert`
+- **Context:** Insert-or-update logic expressed as one statement.
+- **Rule:** Use the engine's atomic upsert: `INSERT … ON CONFLICT DO UPDATE` (PostgreSQL, SQLite 3.24+), `INSERT … ON DUPLICATE KEY UPDATE` (MySQL), and on SQL Server prefer an explicit `UPDATE` followed by `INSERT` under an appropriate isolation level, or `MERGE` only with a unique index backing the target and awareness of its documented concurrency caveats. Add `RETURNING` (PostgreSQL 9.1+/SQLite 3.35+) to get the row back without a second query.
+- **Avoid:** Read-then-insert-or-update round trips from application code (lost-update race), and swallowing unique-violation errors as an upsert substitute.
+
+### `adv-json-typed-columns-first`
+- **Context:** Semi-structured data stored in JSON columns.
+- **Rule:** Anything filtered, joined, or sorted regularly belongs in a real column (or a generated/expression-backed index over the JSON path). Access operators per dialect: `->` / `->>` / `jsonb` operators (PostgreSQL), `JSON_EXTRACT` plus generated columns (MySQL), `JSON_VALUE` / `JSON_QUERY` with computed persisted columns (SQL Server), `json_extract` with expression indexes (SQLite, `jsonb` since 3.45).
+- **Avoid:** Storing frequently queried fields only inside JSON without an index, treating JSON as a schema-free dumping ground, and parsing JSON client-side to work around missing server-side support.

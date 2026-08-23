@@ -38,6 +38,8 @@ mysql --version
 psql --version
 # For SQLite
 sqlite3 --version
+# For SQL Server
+sqlcmd -?   # or run: SELECT @@VERSION;
 ```
 
 ## Core Directives
@@ -68,8 +70,9 @@ sqlite3 --version
 | 1 | Optimization | CRITICAL | Fixing slow queries, analyzing EXPLAIN plans | [`references/query-optimization.md`](references/query-optimization.md) | `qry-` |
 | 2 | Best Practices | CRITICAL | Designing schemas, naming conventions, security | [`references/best-practices.md`](references/best-practices.md) | `schema-` |
 | 3 | Indexing Strategy | CRITICAL | Creating indexes, composite index design, JSON column indexing | [`references/indexes-performance.md`](references/indexes-performance.md) | `idx-` |
-| 4 | Advanced Patterns | HIGH | Using CTEs, Window Functions, JSON operations | [`references/advanced-patterns.md`](references/advanced-patterns.md) | `qry-` |
-| 5 | Common Pitfalls | MEDIUM | Debugging common SQL errors or anti-patterns | [`references/common-pitfalls.md`](references/common-pitfalls.md) | `txn-` |
+| 4 | Advanced Patterns | HIGH | Using CTEs, Window Functions, JSON operations | [`references/advanced-patterns.md`](references/advanced-patterns.md) | `adv-` |
+| 5 | Common Pitfalls & Safe Change | CRITICAL | Debugging SQL errors/anti-patterns; transactions and migrations | [`references/common-pitfalls.md`](references/common-pitfalls.md) | `txn-` |
+| 6 | Engine Specifics | MEDIUM | SQLite or SQL Server specific behaviour and limits | [`references/engine-specifics.md`](references/engine-specifics.md) | — |
 
 ## Rule Index
 
@@ -87,6 +90,12 @@ All rules live in [`rules/core-directives.md`](rules/core-directives.md) in `Con
 ### 4. Transactions & Safe Change (`txn-`) — CRITICAL
 `txn-parameterized-statements` · `txn-short-transactions` · `txn-atomic-modifications` · `txn-zero-downtime-migrations`
 
+### 5. Advanced Query Patterns (`adv-`) — HIGH
+`adv-cte-over-nested-subquery` · `adv-window-not-self-join` · `adv-set-based-upsert` · `adv-json-typed-columns-first`
+
+### Engine Specifics
+SQLite and SQL Server behaviour, limits, and dialect differences live in [`references/engine-specifics.md`](references/engine-specifics.md).
+
 ## Validation Checklist
 
 - [ ] Query uses parameterized inputs (no concatenation)
@@ -102,5 +111,7 @@ All rules live in [`rules/core-directives.md`](rules/core-directives.md) in `Con
 
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [MySQL Documentation](https://dev.mysql.com/doc/)
+- [SQLite Documentation](https://www.sqlite.org/docs.html)
+- [SQL Server Documentation](https://learn.microsoft.com/en-us/sql/sql-server/)
 - [SQL Zoo (Tutorials)](https://sqlzoo.net)
 - [Use The Index, Luke](https://use-the-index-luke.com)
