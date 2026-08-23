@@ -38,12 +38,37 @@ The `@Observable` macro is the modern standard for state management, replacing `
 - **Avoid Global Singletons:** Prefer `@Environment` or Dependency Injection for testability.
 - **Observation Pitfall:** Remember that `@Observable` tracks access in `body`. If you access a property outside of `body` (e.g., in a helper method), it might not trigger a re-render unless called from `body`.
 
-## 4. Example: Modern MVVM
+## 4. Environment Injection Patterns
 
-## Cross References
+| Scenario | Pattern |
+|---|---|
+| Provide an `@Observable` instance app-wide | `.environment(store)` on the root, read with `@Environment(Store.self) private var store` |
+| Read a system value | `@Environment(\.dismiss)`, `@Environment(\.scenePhase)` |
+| Pass a *binding* to an `@Observable` property | `@Bindable var vm` → `$vm.name` |
+| Custom environment key | `EnvironmentKey` + computed `EnvironmentValues` extension (value types only) |
 
-- Related rules: `swiftui-state-observable`, `conc-actor-isolation`, `layout-focus-state`
-- Related references: [`architecture.md`](architecture.md), [`concurrency.md`](concurrency.md), [`view-structure.md`](view-structure.md), [`swiftdata.md`](swiftdata.md)
+```swift
+// Custom key - value types only; objects go through .environment(obj)
+private struct ThemeKey: EnvironmentKey {
+    static let defaultValue: Theme = .system
+}
+extension EnvironmentValues {
+    var theme: Theme {
+        get { self[ThemeKey.self] }
+        set { self[ThemeKey.self] = newValue }
+    }
+}
+```
+
+## 5. Observation Pitfalls and Scoping
+
+- **Track-by-access:** `@Observable` records which properties `body` reads. Reading `user.profile.avatar` tracks only that path — unrelated mutations of `user.settings` do not invalidate the view.
+- **Escape hatches break tracking:** accessing state inside closures stored away from `body`, or in `DispatchQueue`-style legacy callbacks, bypasses observation. Do all reads inside `body` or via `withObservationTracking`.
+- **Value semantics still matter:** `@Observable` classes are reference types — two views sharing one instance share state deliberately; copy into structs at boundaries when isolation is needed.
+- **Do not mix systems:** a class cannot be both `@Observable` and `ObservableObject`; pick per type.
+
+## 6. Example: Modern MVVM
+
 ```swift
 @Observable
 class UserViewModel {
@@ -62,6 +87,11 @@ struct UserView: View {
     }
 }
 ```
+
+## Cross References
+
+- Related rules: `swiftui-state-observable`, `conc-actor-isolation`, `layout-focus-state`
+- Related references: [`architecture.md`](architecture.md), [`concurrency.md`](concurrency.md), [`view-structure.md`](view-structure.md), [`swiftdata.md`](swiftdata.md)
 
 ## Sources
 

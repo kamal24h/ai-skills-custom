@@ -77,19 +77,28 @@ struct UserBadge: View {
 - Avoid animating on every state change; be explicit about what triggers animations.
 - Prefer `spring()` presets (`.smooth`, `.snappy`, `.bouncy`) over manual timing curves.
 
-## 8. MUST NOT DO
+## 8. Rendering Offloads
+
+- **`drawingGroup()`** flattens a view hierarchy into Metal for heavy static effects — useful when a row composites dozens of layers, but it breaks `List` row reuse and accessibility ordering; apply per-row only after measuring.
+- **Rasterize sparingly:** `.compositingGroup()` before opacity/shadow changes avoids re-compositing children.
+- **Scroll targets:** On iOS 17+, `.scrollTargetBehavior(.viewAligned)` plus lazy containers beats manual geometry readers for paging layouts.
+
+## 9. MUST NOT DO
+
+- **Unnecessary Bindings:** Don't create `@Binding` if the subview only needs read access. Pass the value directly.
+- **Frequent Global Updates:** Avoid triggering updates in a global `@Observable` accessed by many views unless necessary.
+- **Blocking Body:** No synchronous file I/O, heavy computation, or network calls in `body`.
+- **Shadow/blur in ForEach rows:** Compositing cost multiplies with scroll velocity.
+- **GeometryReader for layout:** Prefer modern containers (`containerRelativeFrame`, `ViewThatFits`) — GeometryReader forces a second layout pass.
 
 ## Cross References
 
 - Related rules: `swiftui-view-extraction`, `swiftui-lazy-layouts`, `swiftui-animation-scope`, `swiftui-task-lifecycle`
 - Related references: [`view-structure.md`](view-structure.md), [`animations.md`](animations.md), [`concurrency.md`](concurrency.md), [`gestures.md`](gestures.md)
 
-- **Unnecessary Bindings:** Don't create `@Binding` if the subview only needs read access. Pass the value directly.
-- **Frequent Global Updates:** Avoid triggering updates in a global `@Observable` accessed by many views unless necessary.
-- **Blocking Body:** No synchronous file I/O, heavy computation, or network calls in `body`.
-- **Shadow/blur in ForEach rows:** Compositing cost multiplies with scroll velocity.
-
 ## Sources
 
 - [Instruments](https://developer.apple.com/documentation/instruments)
 - [SwiftUI — View fundamentals](https://developer.apple.com/documentation/swiftui/view-fundamentals)
+- [WWDC23 — Explore SwiftUI animation](https://developer.apple.com/videos/play/wwdc2023/10157/)
+- [drawingGroup()](https://developer.apple.com/documentation/swiftui/view/drawinggroup(opaque:colormode:))

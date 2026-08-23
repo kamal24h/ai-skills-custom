@@ -83,13 +83,36 @@ for await location in stream { update(location) }
 | `DispatchQueue.global().async { }` | `Task.detached(priority: .background)` |
 | Completion handlers | `async throws` functions |
 | `OperationQueue` | `TaskGroup` |
+| DispatchSemaphore for async bridging | `AsyncStream` or continuations |
+| Combine `Publisher` chains | `AsyncSequence` / `for await` |
 
-## 8. MUST NOT DO
+### Bridging with Continuations
 
-## Cross References
+```swift
+func fetch(completion: @escaping (Result<Data, Error>) -> Void) async -> Data {
+    try? await withCheckedThrowingContinuation { continuation in
+        completion == nil
+            ? continuation.resume(throwing: CancellationError())
+            : nil
+    }
+    // Rules: resume EXACTLY once; store the continuation if resuming later,
+    // and prefer withCheckedContinuation in debug to catch double-resume.
+}
+```
 
-- Related rules: `conc-strict-checking`, `conc-actor-isolation`, `conc-task-groups`, `conc-cooperative-cancellation`, `conc-no-unchecked-sendable`, `swiftui-task-lifecycle`
-- Related references: [`state-management.md`](state-management.md), [`navigation.md`](navigation.md), [`networking.md`](networking.md), [`performance.md`](performance.md)
+### Sleeping and Timeouts
+
+- Sleep is `try await Task.sleep(for: .seconds(1))` — the duration-based overload accepts any `Duration` (`milliseconds`, `seconds`) and is cancel-safe.
+- Wrap network calls with `Task.timeout`-style helpers built on task groups: race the request against a sleep that cancels the group.
+
+## 8. Isolation Details Worth Knowing
+
+- **`nonisolated(nonsending)`** (Swift 6.1+): lets an `async` method run on the caller's actor instead of hopping to the global executor — use for cheap CPU-bound helpers called from `@MainActor`.
+- **Default isolation** (`defaultIsolation(MainActor.self)` build setting, Swift 6.2+): module-wide main-actor default suits app targets; libraries should stay nonisolated by default.
+- **`@preconcurrency import`**: temporary migration tool for third-party modules without Sendable annotations — track and remove these imports.
+- **Global variables:** mutable globals are concurrency errors under strict checking; wrap in actors, make them `let`, or confine via `@MainActor`.
+
+## 9. MUST NOT DO
 
 - **@unchecked Sendable:** Never use this as a "quick fix". Solve the underlying data race instead; address the root cause.
 - **Blocking the Main Thread:** Never perform heavy computation or I/O on the `@MainActor`. Use a background `Task` or separate `actor`.
@@ -97,7 +120,14 @@ for await location in stream { update(location) }
 - **Third-Party Frameworks:** Do not introduce Combine, RxSwift, or other concurrency frameworks without user consent.
 - **Unstructured in Loops:** Do NOT call `Task { }` inside a loop without the parent task collecting results.
 
+## Cross References
+
+- Related rules: `conc-strict-checking`, `conc-actor-isolation`, `conc-task-groups`, `conc-cooperative-cancellation`, `conc-no-unchecked-sendable`, `swiftui-task-lifecycle`
+- Related references: [`state-management.md`](state-management.md), [`navigation.md`](navigation.md), [`networking.md`](networking.md), [`performance.md`](performance.md)
+
 ## Sources
 
 - [Swift — Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
 - [Swift.org — Concurrency](https://www.swift.org/documentation/concurrency/)
+- [SE-0420 — Inheritance of actor isolation](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0420-inheritance-of-actor-isolation.md)
+- [WWDC21 — Protect mutable state with Swift actors](https://developer.apple.com/videos/play/wwdc2021/10133/)

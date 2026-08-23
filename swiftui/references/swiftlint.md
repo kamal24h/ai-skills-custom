@@ -124,11 +124,6 @@ Always re-enable after the region ends. Prefer excluded paths for generated code
 
 ## 8. Common Pitfalls
 
-## Cross References
-
-- Related rules: review alongside `swiftui-*`, `conc-*`, `data-*`, and `test-*` categories when enforcing conventions
-- Related references: [`architecture.md`](architecture.md), [`view-structure.md`](view-structure.md), [`../../swiftui-tester/references/swift-testing.md`](../../swiftui-tester/references/swift-testing.md)
-
 | Mistake | Fix |
 |---------|-----|
 | Running `--fix` in build phases | Only run `--fix` manually — it modifies files unpredictably during builds |
@@ -137,3 +132,14 @@ Always re-enable after the region ends. Prefer excluded paths for generated code
 | Adopting many opt-in rules at once | Add incrementally, verify each one |
 | No `excluded` for Pods/generated files | Always exclude third-party and generated code |
 | No baseline on large legacy codebase | Use `--write-baseline` for incremental adoption |
+
+## Cross References
+
+- Related rules: review alongside `swiftui-*`, `conc-*`, `data-*`, and `test-*` categories when enforcing conventions
+- Related references: [`architecture.md`](architecture.md), [`view-structure.md`](view-structure.md), [`../../swiftui-tester/references/swift-testing.md`](../../swiftui-tester/references/swift-testing.md)
+
+## Sources
+
+- [SwiftLint — Official README & Rules Reference](https://github.com/swiftlang/swiftlint)
+- [SwiftLintPlugins (Build Tool Plugin)](https://github.com/SimplyDanny/SwiftLintPlugins)
+- [SwiftLint Configuration Guide](https://realm.github.io/SwiftLint/)
