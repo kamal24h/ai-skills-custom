@@ -1,183 +1,90 @@
 # AI Skills & Agents
 
-A collection of specialized expert skills designed for AI coding agents. Includes structured rules, hook references, and best practices across multiple domains.
+A collection of specialized expert skills for AI coding agents. Each skill bundles rules, deep-dive references, and agent personas for a specific technology domain.
 
-**Contents:** 20 expert skills · 39 specialized agent personas.
+**21 skills · 40+ agent personas.**
 
-## Expert Skills
+## Skills
 
-### Analysis Skills
+### Analysis & Standards
 
-| Skill | Description | Personas |
-| :--- | :--- | :--- |
-| **Architecture Advisor** | Analyzes project architecture, detects tech stack, reports strengths and gaps. | `arch-php-pro`, `arch-node-pro`, `arch-react-pro`, `arch-vue-pro`, `arch-javascript-pro`, `arch-golang-pro`, `arch-kotlin-pro`, `arch-swift-pro`, `arch-swiftui-pro` |
-| **Code Standards** | Universal code design and clean code principles. | SOLID, KISS, YAGNI, DRY, TDA, Testability, Complexity, Naming conventions. |
+| Skill | What it can do | What it does NOT do |
+|-------|----------------|---------------------|
+| **architecture-advisor** | Detects the tech stack, routes to a language persona (`arch-php-pro`, `arch-node-pro`, …), and produces an evidence-based architecture report with prioritized recommendations. | Does not refactor code or make changes — it reports only. |
+| **code-standards** | Applies SOLID, KISS, YAGNI, DRY, TDA and pragmatic design principles to any code review or design task; includes the official default **naming conventions per stack** (WordPress, Laravel, Symfony, PHP/PSR, Go, Kotlin, Swift/SwiftUI, React, Vue, JS/TS, Python) sourced from each stack's style guide. | Not language-specific beyond naming tables; pair it with the relevant language skill for implementation guidance. |
 
-### Language & Framework Skills
+### Language & Framework Implementation
 
-Each implementation skill is paired with a dedicated testing skill where one exists.
+| Skill | Purpose |
+|-------|---------|
+| **golang** | Idiomatic modern Go: concurrency, error handling, performance, toolchain (Go 1.21→1.26 features). |
+| **javascript** | Node.js backends, advanced TypeScript type systems, ES6+ patterns, JS/TS testing (Vitest/Jest). React components live in the `react` skill. |
+| **kotlin** | Kotlin 2.x for Android and KMP: coroutines/Flow, Clean Architecture, Compose, Material 3, Hilt/Koin, Room. |
+| **laravel** | Laravel 13 development: Eloquent, queues, validation, security, testing with Pest/PHPUnit, Inertia.js. |
+| **php** | Modern PHP 8.x patterns and PSR standards — type safety, enums, readonly, property hooks (8.0–8.5), security. |
+| **react** | React component/hook development and Testing Library tests, based on official react.dev guidance. |
+| **swiftui** | SwiftUI for iOS/macOS: `@Observable`, Swift 6.x concurrency, SwiftData, navigation, HIG-compliant design. |
+| **vuejs** | Vue 3.5+ applications: Composition API, reactivity, Pinia, Router, composables, SSR/hydration, Vite. |
 
-| Skill | Tester Skill | Description | Key Focus Areas |
-| :--- | :--- | :--- | :--- |
-| **Go / Golang** | **Go Tester** | Modern Go development practices and idioms. | Package design, concurrency, error handling, performance, observability, toolchain conventions. |
-| **JavaScript / TypeScript** | *(built-in `js-test-pro`)* | Modern JS/TS for backend and advanced logic. | Node.js, Type systems, TS migration/interop, Runtime validation (Zod/io-ts), Backend architecture. |
-| **Kotlin** | **Kotlin Tester** | Kotlin for Android and Kotlin Multiplatform. | Coroutines/Flow, Clean Architecture, Jetpack Compose, Material Design 3, Hilt/Koin, Room, Gradle version catalogs. |
-| **Laravel** | *(built-in Pest/PHPUnit)* | Comprehensive Laravel 13 development. | Eloquent, Database optimization, Caching, OWASP security, Inertia.js. |
-| **PHP** | **PHPUnit** | Modern PHP 8.x patterns and PSR standards. | Type safety, PHP 8.4+ features, Enums, `declare(strict_types=1)`, Readonly, PSR-12, SOLID. |
-| **SwiftUI** | **SwiftUI Tester** | SwiftUI for iOS/macOS with Swift 6.3+ concurrency. | View composition, state management, `@Observable`, actors/Sendable, SwiftData, HIG compliance, Figma → SwiftUI. |
-| **Vue.js** | **Vue.js Tester** | Modern Vue 3 application development. | Composition API, `<script setup>`, reactivity, composables, Pinia, Vue Router, VueUse, SSR/hydration, Vite. |
+### Testing (pairs with implementation skills)
 
-### Testing Skills
+| Skill | Pairs with | Purpose |
+|-------|-----------|---------|
+| **golang-tester** | golang | Table-driven tests, mocking, goleak, integration tags, benchmarks, fuzzing. |
+| **kotlin-tester** | kotlin | JUnit 5, Kotest, MockK, Turbine, Compose Testing, Espresso, coverage/Kover. |
+| **phpunit** | php | PHPUnit 12 on PHP 8.3+: attributes-only metadata, test doubles, isolation, strict config. |
+| **swiftui-tester** | swiftui | Swift Testing + XCTest: `#expect`/`@Test`, mocking via protocol DI, coverage & CI. |
+| **vuejs-tester** | vuejs | Vitest, Vue Test Utils, Testing Library, MSW, Browser Mode, Playwright E2E. |
 
-| Skill | Description | Key Focus Areas |
-| :--- | :--- | :--- |
-| **Go Tester** | Expert guidance for Go testing. | Table-driven tests, parallelism, mocking boundaries, goleak, integration tags, fuzzing, benchmarks. |
-| **Kotlin Tester** | Kotlin/Android/KMP testing. | JUnit 5, Kotest, MockK, Coroutines Test, Turbine, Espresso, Compose Testing, UIAutomator, Kover. |
-| **PHPUnit** | PHPUnit 12.x testing for PHP 8.3+. | AAA pattern, assertion selection, test doubles, data providers, isolation/determinism, strict config, AI testing. |
-| **SwiftUI Tester** | Swift Testing and XCTest for SwiftUI apps. | `#expect`/`#require`, `@Test`/`@Suite`, async testing, mocking, XCTest migration. |
-| **Vue.js Tester** | Expert guidance for Vue 3 testing. | Vitest, Vue Test Utils, Testing Library, MSW, Pinia/router testing, Browser Mode, Playwright, coverage. |
+> **Separation of concerns:** implementation agents do not write tests; route test work to the matching tester skill/agent.
 
-### Platform & Infrastructure Skills
+### Platform & Infrastructure
 
-| Skill | Description | Key Focus Areas |
-| :--- | :--- | :--- |
-| **API Design Patterns** | RESTful API design and best practices. | Resource design, Error handling (RFC 7807), Security, Pagination, gRPC, Versioning. |
-| **Docker** | Unified Docker and Docker Compose skill. | Dockerfiles, BuildKit, multi-stage builds, Compose services, networking, storage, security hardening, CI/CD, troubleshooting. |
-| **Microservices** | Distributed systems patterns (PHP & TS). | Service boundaries, Data consistency (Saga/CQRS), Resilience, Observability, Idempotency. |
-| **SQL Expert** | Database design, queries, and optimization. | PostgreSQL 17, MySQL 8.4, SQL Server 2022, SQLite, JSON/Full-text, CTEs, Window functions, zero-downtime migrations. |
+| Skill | Can help with | Out of scope |
+|-------|--------------|--------------|
+| **api-design-patterns** | REST resource design, error envelopes (RFC 9457-aware), versioning/deprecation, pagination, API security, OpenAPI docs; GraphQL/gRPC selection guidance. | Protocol client libraries' internals. |
+| **docker** | Dockerfiles, BuildKit mounts/caches, multi-stage builds, Compose services/networks/volumes/secrets, hardening, CI/CD, troubleshooting. Engine 29.x baseline. | Kubernetes orchestration beyond deployment concerns. |
+| **microservices** | Service boundaries, saga/CQRS/event sourcing, transactional outbox, schema evolution, resilience patterns, observability, gateways/mesh — in PHP and TypeScript. | Single-service application design. |
+| **sql-expert** | Query writing and optimization (CTEs, window functions), indexing, schema design, safe migrations across PostgreSQL 17 / MySQL 8.4 / SQL Server 2022 / SQLite (engine specifics included). | ORM-specific API questions (see language skills). |
 
-### Domain Skills
+### WordPress Ecosystem
 
-| Skill | Description | Key Focus Areas |
-| :--- | :--- | :--- |
-| **WordPress** | WordPress plugin/theme/backend development. | Block editor, Plugin architecture, REST API, Performance, WP-CLI, Theme dev, Hook reference (2672 hooks). |
-| **WooCommerce** | WooCommerce development extending WordPress. | Products, Orders, Cart/Checkout, Payments, Shipping, Emails, REST API, Admin, Hook reference (2723 hooks). |
-
-## Agent Index
-
-All agents defined in this repository:
-
-| Agent | Skill | Role |
-| :--- | :--- | :--- |
-| `arch-php-pro` | Architecture Advisor | PHP/Laravel/Symfony/WordPress architecture analysis |
-| `arch-node-pro` | Architecture Advisor | Node.js backend architecture analysis |
-| `arch-react-pro` | Architecture Advisor | React/Next.js/Remix architecture analysis |
-| `arch-vue-pro` | Architecture Advisor | Vue 3 / Vue 2 / Nuxt architecture analysis |
-| `arch-javascript-pro` | Architecture Advisor | Vanilla JS / browser JS architecture analysis |
-| `arch-golang-pro` | Architecture Advisor | Go service and package architecture analysis |
-| `arch-kotlin-pro` | Architecture Advisor | Kotlin/Android/KMP architecture analysis |
-| `arch-swift-pro` | Architecture Advisor | Swift/iOS/macOS architecture analysis |
-| `arch-swiftui-pro` | Architecture Advisor | SwiftUI app architecture analysis |
-| `api-design-pro` | API Design Patterns | REST/GraphQL/gRPC API design |
-| `code-standards-pro` | Code Standards | SOLID, Clean Code, refactoring guidance |
-| `docker-pro` | Docker | Dockerfile/Compose authoring, hardening, troubleshooting, CI/CD |
-| `golang-pro` | Go / Golang | Idiomatic Go, concurrency, performance, package/API design |
-| `golang-tester-pro` | Go Tester | Go testing, table-driven suites, mocks, benchmarks, fuzzing |
-| `javascript-pro` | JavaScript | Modern JS, Node.js, async patterns |
-| `typescript-pro` | JavaScript | Advanced TypeScript, type systems |
-| `js-test-pro` | JavaScript | Vitest/Jest testing for JS/TS code |
-| `kotlin-pro` | Kotlin | Compose UI, Material Design 3, state management, accessibility |
-| `kotlin-coroutines-pro` | Kotlin | Structured concurrency, Flow, StateFlow, error handling |
-| `kotlin-conventions-pro` | Kotlin | Idiomatic Kotlin, null safety, DSL builders, collections |
-| `kotlin-build-pro` | Kotlin | Gradle Kotlin DSL, Version Catalogs, Convention Plugins, CI/CD |
-| `kotlin-tester-pro` | Kotlin Tester | JUnit/Kotest, MockK, Coroutines Test, Espresso, Compose Testing |
-| `laravel-pro` | Laravel | Laravel 13 implementation |
-| `microservices-pro` | Microservices | Distributed systems design |
-| `php-pro` | PHP | Modern PHP 8.x implementation |
-| `phpunit-pro` | PHPUnit | PHPUnit 12 testing, doubles, isolation, strict config |
-| `sql-pro` | SQL Expert | Query design and optimization |
-| `swiftui-pro` | SwiftUI | View composition, state, animations, layout, HIG compliance |
-| `concurrency-pro` | SwiftUI | Actor isolation, task structure, cancellation, Sendable correctness |
-| `swiftdata-pro` | SwiftUI | Model design, relationships, predicates, migration safety |
-| `figma-swiftui` | SwiftUI | Figma design → production SwiftUI views (Figma MCP) |
-| `swiftui-tester-pro` | SwiftUI Tester | Swift Testing, XCTest, async testing, mocking, migration |
-| `vue-pro` | Vue.js | SFC structure, component design, templates, built-ins, accessibility |
-| `vue-reactivity-pro` | Vue.js | Reactivity primitives, watchers, effect scope, composable API design |
-| `vue-state-pro` | Vue.js | Pinia stores, state boundaries, Vue Router 4, SSR-safe state |
-| `vue-build-pro` | Vue.js | Vite, vue-tsc, TypeScript contracts, ESLint, SSR/Nuxt config |
-| `vue-tester-pro` | Vue.js Tester | Vitest, VTU, MSW, Pinia/router tests, Browser Mode, Playwright |
-| `wordpress-pro` | WordPress | WordPress development |
-| `woocommerce-pro` | WooCommerce | WooCommerce development |
+| Skill | Purpose |
+|-------|---------|
+| **wordpress** | Plugin/theme/backend development: block editor, plugin architecture, REST API, WP-CLI, coding standards, plus hook references extracted from core source (params, since versions). |
+| **woocommerce** | Extends `wordpress` with WooCommerce-specific patterns: products, orders, checkout, payments, shipping, emails, REST API, HPOS awareness, plus 2,600+ core hooks sourced from the WooCommerce plugin. |
 
 ## How It Works
 
-### Skill Structure
+Each skill directory follows the same shape:
 
-Each skill directory follows a consistent structure:
-- **`SKILL.md`**: Entry point with core directives, a category index mapping tasks to references, a rule index, and a validation checklist.
-- **`rules/`**: Actionable rules in `Context` / `Rule` / `Avoid` form, each with a stable rule id (e.g. `rx-computed-pure`). Two layouts are in use — one file per rule (`php`, `laravel`, `golang`, `javascript`, `wordpress`, …) or a single consolidated directives file (`kotlin`, `swiftui`, `vuejs` and their testers).
-- **`references/`**: Detailed documentation, deep-dives, and hook references.
-- **`agents/`**: Specialized system prompts for different roles within the skill.
+```
+<skill>/
+├── SKILL.md          # Entry point: triggers, category index, rule index, validation checklist
+├── rules/            # Actionable directives (bad/good examples), one file per topic or one consolidated file
+├── references/       # Deep dives; every file ends with ## Sources linking canonical documentation
+└── agents/           # Specialized personas (e.g. golang-pro, kotlin-tester-pro)
+```
 
-Every skill now carries both `rules/` and `references/`. Rule ids are cited in reviews; reference files link back to the rules they cover and end with a `## Sources` section of canonical documentation links.
-
-Rule ids are stable identifiers — cite them in reviews (`rx-computed-pure`, `coro-no-globalscope`, `test-no-snapshot-only`) so feedback is traceable back to the source rule.
-
-### Skill Inventory
-
-| Skill | Agents | Rules | References |
-| :--- | ---: | ---: | ---: |
-| `api-design-patterns` | 1 | 40 | 7 |
-| `architecture-advisor` | 9 | 31 | 11 |
-| `code-standards` | 1 | consolidated | 5 |
-| `docker` | 1 | 15 | 86 |
-| `golang` | 1 | 33 | 20 |
-| `golang-tester` | 1 | 8 | 7 |
-| `javascript` | 3 | 45 | 7 |
-| `kotlin` | 4 | consolidated | 16 |
-| `kotlin-tester` | 1 | consolidated | 11 |
-| `laravel` | 1 | 98 | 9 |
-| `microservices` | 1 | 29 | 7 |
-| `php` | 1 | 53 | 7 |
-| `phpunit` | 1 | 20 | 8 |
-| `sql-expert` | 1 | consolidated | 5 |
-| `swiftui` | 4 | consolidated | 15 |
-| `swiftui-tester` | 1 | consolidated | 3 |
-| `vuejs` | 4 | consolidated | 17 |
-| `vuejs-tester` | 1 | consolidated | 12 |
-| `wordpress` | 1 | 28 | 24 |
-| `woocommerce` | 1 | 14 | 23 |
-
-### Hook References (WordPress & WooCommerce)
-
-Hook references are organized by domain in `references/hooks/`:
-- **WordPress**: 20 files (10 action + 10 filter categories, 2672 non-deprecated hooks)
-- **WooCommerce**: 22 files (11 action + 11 filter categories, 2723 hooks)
-- **Variable hooks**: Dynamic hook patterns documented in `references/variable-hooks.md`
+- Agents load only the `SKILL.md`, then only the references named by its category index.
+- Rules are cited by heading/id in review feedback so comments trace back to their source.
 
 ## Usage
 
-### For Users
-- Ask for an **architecture analysis** (e.g., "Review this project's architecture using the Architecture Advisor").
-- Ask for a **code review** based on a specific skill (e.g., "Review this PHP code using the PHP skill").
-- Request a **new feature** following specific standards (e.g., "Design a REST API endpoint following the API Design Patterns skill").
-- Use for **debugging** (e.g., "Explain why this SQL query is slow using the SQL Expert skill").
+**For users** — ask naturally:
+- "Review this project's architecture" → architecture-advisor
+- "Review this Go test suite" → golang-tester
+- "Design a REST endpoint for orders" → api-design-patterns
+- "Why is this query slow?" → sql-expert
 
-### For AI Agents
-- Proactively load the relevant `SKILL.md` when a task matches its description.
-- Load only the references named by the skill's category index — do not read the whole `references/` directory.
-- **Separation of Concerns (Mandatory):** Implementation agents (e.g., `golang-pro`, `typescript-pro`, `laravel-pro`, `kotlin-pro`, `swiftui-pro`, `vue-pro`) MUST NOT write tests. Delegate to the matching tester agent.
-- Reference specific rules in `rules/*.md` for concrete, example-backed feedback.
-- Use `references/*.md` for deeper understanding of patterns or hook lookups.
-
-## Agent Delegation Flow
-
-To maintain high specialization and context efficiency, follow this delegation pattern:
-
-1. **Architecture Analysis:** Use `architecture-advisor` (routes to the correct language persona automatically).
-2. **Implementation:** Use the specific `<domain>-pro` agent (e.g., `laravel-pro`, `typescript-pro`, `vue-pro`).
-3. **Testing:** Never combine implementation and testing in a single agent call. Route to the matching tester:
-
-| Stack | Implementation | Testing |
-| :--- | :--- | :--- |
-| Go | `golang-pro` | `golang-tester-pro` |
-| JavaScript / TypeScript | `javascript-pro`, `typescript-pro` | `js-test-pro` |
-| Kotlin / Android / KMP | `kotlin-pro` (+ specialists) | `kotlin-tester-pro` |
-| PHP / Laravel | `php-pro`, `laravel-pro` | `phpunit-pro` |
-| SwiftUI / iOS | `swiftui-pro` (+ specialists) | `swiftui-tester-pro` |
-| Vue.js | `vue-pro` (+ specialists) | `vue-tester-pro` |
+**For AI agents:**
+1. Proactively load the matching `SKILL.md` when a task matches its description triggers.
+2. Load only the references named by the category index — never the whole `references/` tree.
+3. Never combine implementation and testing in one pass; delegate to the tester counterpart.
 
 ## Scope
 
-- **Covered**: Best practices, modern syntax (Go 1.21+, PHP 8.4+, PHPUnit 12, TS 5.x, Kotlin 2.x, Swift 6.3+, Vue 3.5, Laravel 13, WordPress 6.9+, WooCommerce 9.6+, PostgreSQL 17 / MySQL 8.4 / SQL Server 2022), containerization (Docker / Compose), industry-standard design patterns, comprehensive hook references.
-- **Not Covered**: Project-specific business logic, legacy framework versions, or non-technical project management.
+- **Covered:** best practices, current major versions of the listed technologies, industry-standard design patterns, official naming standards, curated hook references.
+- **Not covered:** project-specific business logic, legacy framework versions, non-technical project management.
+
+Version baselines are stated inside each skill's `SKILL.md`; always detect the project's actual versions first.
