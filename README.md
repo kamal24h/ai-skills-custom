@@ -2,7 +2,7 @@
 
 A collection of specialized expert skills for AI coding agents. Each skill bundles rules, deep-dive references, and agent personas for a specific technology domain.
 
-**21 skills · 40+ agent personas.**
+**22 skills · 42+ agent personas.**
 
 ## Skills
 
@@ -12,6 +12,7 @@ A collection of specialized expert skills for AI coding agents. Each skill bundl
 |-------|----------------|---------------------|
 | **architecture-advisor** | Detects the tech stack, routes to a language persona (`arch-php-pro`, `arch-node-pro`, …), and produces an evidence-based architecture report with prioritized recommendations. | Does not refactor code or make changes — it reports only. |
 | **code-standards** | Applies SOLID, KISS, YAGNI, DRY, TDA and pragmatic design principles to any code review or design task; includes the official default **naming conventions per stack** (WordPress, Laravel, Symfony, PHP/PSR, Go, Kotlin, Swift/SwiftUI, React, Vue, JS/TS, Python) sourced from each stack's style guide. | Not language-specific beyond naming tables; pair it with the relevant language skill for implementation guidance. |
+| **ui-ux** | Framework-agnostic UI/UX design, modern CSS, semantic HTML, typography, 3-tier design tokens (OKLCH), motion, surfaces/elevation, WCAG 2.2 accessibility, 5-dimension technical audits, UX copywriting clarity, the Craft Floor, Core Web Vitals, real content design, interface affordances, and modern CSS architecture (@layer). Routes to `ui-designer-pro` and `ux-designer-pro`. | Not tied to specific frameworks or utility libraries (Bootstrap, Tailwind, React, etc.); focused on native web standards and design fundamentals. |
 
 ### Language & Framework Implementation
 
@@ -75,6 +76,7 @@ Each skill directory follows the same shape:
 - "Review this project's architecture" → architecture-advisor
 - "Review this Go test suite" → golang-tester
 - "Design a REST endpoint for orders" → api-design-patterns
+- "Audit this form's accessibility and contrast" → ui-ux
 - "Why is this query slow?" → sql-expert
 
 **For AI agents:**
