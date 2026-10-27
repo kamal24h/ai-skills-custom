@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  # ---------- LLM (Ollama) ----------
+  ollama:
+    image: ollama/ollama:latest
+    container_name: assistant-ollama
+    restart: unless-stopped
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      #- HTTPS_PROXY= http://آدرس-پروکسی-شما:پورت
+      # توجه: HTTP_PROXY را تنظیم نکنید، Ollama از HTTP برای pull مدل استفاده نمی‌کند.
+
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_NUM_PARALLEL=2
+      - OLLAMA_MAX_LOADED_MODELS=2
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # ---------- Vector DB (Qdrant) ----------
+  qdrant:
+    image: qdrant/qdrant:v1.13.0
+    container_name: assistant-qdrant
+    restart: unless-stopped
+    volumes:
+      - qdrant_data:/qdrant/storage
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    environment:
+      - QDRANT__SERVICE__GRPC_PORT=6334
+      - QDRANT__SERVICE__API_KEY=${QDRANT_API_KEY}
+
+  # ---------- Relational DB (PostgreSQL) ----------
+  postgres:
+    image: postgres:16-alpine
+    container_name: assistant-postgres
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: assistant_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: assistant_db
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U assistant_user -d assistant_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ---------- Cache / Session (Redis) ----------
+  redis:
+    image: redis:7-alpine
+    container_name: assistant-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+
+volumes:
+  ollama_data:
+  qdrant_data:
+  postgres_data:
+  redis_data:
