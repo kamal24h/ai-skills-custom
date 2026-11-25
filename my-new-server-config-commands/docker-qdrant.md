@@ -55,3 +55,14 @@ curl -X PUT 'http://IP_TARGET_SERVER:6333/collections/your-collection-name/snaps
 
 ### 💡 نکته کلیدی درباره نسخه‌ها
 قبل از شروع، مطمئن شوید که نسخه Qdrant روی سرور مقصد **دقیقاً برابر یا حداکثر یک نسخه مینور بالاتر** از سرور مبدأ باشد. برای مثال، می‌توانید Snapshot یک نسخه `1.17` را روی `1.18` بازیابی کنید، اما بازیابی آن روی `1.16` یا `1.19` ممکن است با مشکل مواجه شود .
+
+
+
+
+docker run --net=host --rm -it registry.cloud.qdrant.io/library/qdrant-migration qdrant \
+    --source.url 'http://78.39.10.22:6334' \
+    --source.collection 'assistant_knowledge1' \
+    --source.api-key '992b61d895665cd63484456f34950944dd181ea656ed5e2bf2e4268dae4e96d8' \
+    --target.url 'http://78.39.10.8:6334' \
+    --target.collection 'assistant_knowledge1' \
+    --target.api-key '992b61d895665cd63484456f34950944dd181ea656ed5e2bf2e4268dae4e96d8'
